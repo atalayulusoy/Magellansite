@@ -10,9 +10,9 @@ export const companyInfo = {
   address:
     "İkitelli OSB, Biksan Sanayi Sitesi Sosyal Tesis binası, 34490 Başakşehir/İstanbul",
   mapsHref:
-    "https://www.google.com/maps/search/?api=1&query=%C4%B0kitelli%20OSB%2C%20Biksan%20Sanayi%20Sitesi%20Sosyal%20Tesis%20binas%C4%B1%2C%2034490%20Ba%C5%9Fak%C5%9Fehir%2F%C4%B0stanbul",
+    "https://www.google.com/maps/place/Magellan+Serigrafi+Boylar%C4%B1/@41.0845741,28.8034047,17z/data=!3m1!4b1!4m6!3m5!1s0x14caafb050f00b17:0xac12d282c1d67d52!8m2!3d41.0845742!4d28.8082756!16s%2Fg%2F11z6ss239k?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D",
   mapsEmbedHref:
-    "https://www.google.com/maps?q=%C4%B0kitelli%20OSB%2C%20Biksan%20Sanayi%20Sitesi%20Sosyal%20Tesis%20binas%C4%B1%2C%2034490%20Ba%C5%9Fak%C5%9Fehir%2F%C4%B0stanbul&z=16&output=embed",
+    "https://www.google.com/maps?q=Magellan%20Serigrafi%20Boylar%C4%B1%2C%2041.0845742%2C28.8082756&z=17&output=embed",
   heroTitle: "Profesyonel Baskı Boyalarında Güçlü Çözüm Ortağınız",
   heroDescription:
     "Serigrafi, tekstil, poşet, eldiven, tişört ve endüstriyel baskı boyalarında yüksek kalite üretim.",
