@@ -134,6 +134,13 @@ export const productItems = [
     accent: ["#06b6d4", "#3b82f6"],
   },
   {
+    title: "Deri Boyası",
+    eyebrow: "Deri yüzeylerde güçlü renk ve esneklik",
+    image:
+      "https://images.pexels.com/photos/19619007/pexels-photo-19619007.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    accent: ["#b45309", "#38bdf8"],
+  },
+  {
     title: "Özel Üretim Boyalar",
     eyebrow: "İhtiyaca göre formül tasarımı",
     image:

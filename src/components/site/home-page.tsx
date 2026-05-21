@@ -414,22 +414,22 @@ function ProductCard({
         whileHover={{ y: -10 }}
         transition={{ duration: 0.35, ease: easeOut }}
       >
-        <div
-          className="relative overflow-hidden rounded-[1.6rem] border border-white/10 p-6"
-          style={{
-            background: `linear-gradient(145deg, ${product.accent[0]}33 0%, rgba(11,15,30,0.82) 48%, ${product.accent[1]}1f 100%)`,
-          }}
-        >
-          <div
-            className="absolute -left-8 top-8 h-24 w-24 rounded-full blur-2xl"
-            style={{ background: `${product.accent[0]}90` }}
-          />
-          <div
-            className="absolute -right-8 bottom-0 h-24 w-24 rounded-full blur-2xl"
-            style={{ background: `${product.accent[1]}80` }}
-          />
-          <div className="relative space-y-4">
-            <div className="flex items-center justify-between">
+        <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10">
+          <div className="relative h-56 overflow-hidden bg-black/30">
+            <Image
+              src={product.image}
+              alt={product.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1536px) 50vw, 33vw"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(180deg, rgba(6,8,20,0.08) 0%, rgba(6,8,20,0.46) 46%, rgba(6,8,20,0.92) 100%), linear-gradient(135deg, ${product.accent[0]}40, transparent 44%, ${product.accent[1]}33)`,
+              }}
+            />
+            <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
               <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.28em] text-white/70">
                 Premium Seri
               </span>
@@ -444,14 +444,7 @@ function ProductCard({
                 />
               </div>
             </div>
-            <div className="grid h-36 place-items-center rounded-[1.4rem] border border-white/10 bg-black/20">
-              <div className="product-orb-grid">
-                <span style={{ backgroundColor: product.accent[0] }} />
-                <span style={{ backgroundColor: product.accent[1] }} />
-                <span style={{ backgroundColor: "#ffffff" }} />
-              </div>
-            </div>
-            <div>
+            <div className="absolute inset-x-0 bottom-0 p-5">
               <p className="text-xs uppercase tracking-[0.3em] text-white/56">
                 {product.eyebrow}
               </p>
