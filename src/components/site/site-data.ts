@@ -24,6 +24,7 @@ export const navItems = [
   { label: "Ana Sayfa", href: "#anasayfa" },
   { label: "Hakkımızda", href: "#hakkimizda" },
   { label: "Ürünler", href: "#urunler" },
+  { label: "Uygulamalar", href: "#uygulamalar" },
   { label: "Hizmetler", href: "#hizmetler" },
   { label: "Üretim", href: "#uretim" },
   { label: "Referanslar", href: "#referanslar" },
@@ -81,7 +82,7 @@ export const productItems = [
     title: "Akrilik Boyalar",
     eyebrow: "Esnek ve hızlı kuruyan yapı",
     image:
-      "https://images.pexels.com/photos/27893067/pexels-photo-27893067.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/12261060/pexels-photo-12261060.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#22c55e", "#84cc16"],
   },
   {
@@ -135,9 +136,9 @@ export const productItems = [
   },
   {
     title: "Deri Boyası",
-    eyebrow: "Deri yüzeylerde güçlü renk ve esneklik",
+    eyebrow: "Deri, suni deri ve ham deri renklendirme",
     image:
-      "https://images.pexels.com/photos/11676702/pexels-photo-11676702.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/8764622/pexels-photo-8764622.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#b45309", "#38bdf8"],
   },
   {
@@ -264,28 +265,103 @@ export const processSteps = [
 
 export const applicationShowcaseItems = [
   {
-    title: "Cam Baskı",
-    category: "Cam Yüzey Uygulaması",
+    title: "Poşet Baskı",
+    category: "Kağıt ve ambalaj uygulaması",
     image:
-      "https://images.pexels.com/photos/34686413/pexels-photo-34686413.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/6555182/pexels-photo-6555182.jpeg?auto=compress&cs=tinysrgb&w=1400",
     summary:
-      "Şişe, kavanoz ve cam yüzeylerde yüksek netlikte, dayanıklı ve premium baskı görünümü.",
+      "Butik, tekstil ve perakende markaları için kağıt poşetlerde temiz logo ve iletişim baskısı.",
   },
   {
-    title: "Starbucks Plastik Bardak Baskısı",
-    category: "Plastik Bardak Uygulaması",
+    title: "Deri Üstü Baskı",
+    category: "Deri ve ham deri çözümleri",
     image:
-      "https://images.pexels.com/photos/33511696/pexels-photo-33511696.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/8764622/pexels-photo-8764622.jpeg?auto=compress&cs=tinysrgb&w=1400",
     summary:
-      "Soğuk içecek bardakları ve plastik yüzeylerde canlı renk, güçlü tutuculuk ve temiz transfer.",
+      "Deri yüzeylerde logo, yazı, desen baskısı ve ham deri renklendirme için güçlü tutuculuk.",
   },
   {
-    title: "Tişört Baskı",
-    category: "Tekstil Uygulaması",
+    title: "Uyarı Levhası",
+    category: "Endüstriyel işaretleme",
     image:
-      "https://images.pexels.com/photos/33650426/pexels-photo-33650426.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/28308520/pexels-photo-28308520.jpeg?auto=compress&cs=tinysrgb&w=1400",
     summary:
-      "Pamuklu ve karışım tekstillerde esnek, uzun ömürlü ve renk doygunluğu yüksek baskı sonucu.",
+      "Şantiye, yönlendirme ve iş güvenliği levhalarında okunaklı, dayanıklı ve net baskı.",
+  },
+];
+
+export const surfaceShowcaseItems = [
+  {
+    title: "Kağıt Poşet Baskısı",
+    category: "Perakende ambalaj",
+    image:
+      "https://images.pexels.com/photos/6555182/pexels-photo-6555182.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Butik ve mağaza poşetlerinde marka logosu, QR kod, sosyal medya ve adres baskıları için net transfer.",
+    tags: ["Kağıt poşet", "Butik", "Logo baskı"],
+  },
+  {
+    title: "Şeffaf Ambalaj Baskısı",
+    category: "Zip poşet ve paket",
+    image:
+      "https://images.pexels.com/photos/14920157/pexels-photo-14920157.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Tekstil ve ürün paketlerinde şeffaf yüzey üstüne okunaklı marka, slogan ve QR baskısı.",
+    tags: ["Şeffaf poşet", "Ambalaj", "Paketleme"],
+  },
+  {
+    title: "Deri Üstü Logo Baskısı",
+    category: "Deri yüzey uygulaması",
+    image:
+      "https://images.pexels.com/photos/7598668/pexels-photo-7598668.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Siyah veya renkli deri yüzeylerde yazı, logo ve ince detayların yüzeye güçlü şekilde tutunması.",
+    tags: ["Deri", "Logo", "Premium yüzey"],
+  },
+  {
+    title: "Ham Deri Boyası",
+    category: "Deri renklendirme",
+    image:
+      "https://images.pexels.com/photos/3784143/pexels-photo-3784143.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Ham deri, suni deri ve deri ürünlerde yüzeye işleyen, esnekliği koruyan renk çözümleri.",
+    tags: ["Ham deri", "Renklendirme", "Esnek tutuş"],
+  },
+  {
+    title: "Uyarı ve Şantiye Levhaları",
+    category: "İş güvenliği baskıları",
+    image:
+      "https://images.pexels.com/photos/28308520/pexels-photo-28308520.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Şantiye, fabrika ve saha kullanımı için dikkat, uyarı, yönlendirme ve zorunluluk levhaları.",
+    tags: ["Levha", "İSG", "Dış ortam"],
+  },
+  {
+    title: "Tişört Baskısı",
+    category: "Tekstil uygulaması",
+    image:
+      "https://images.pexels.com/photos/18805427/pexels-photo-18805427.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Pamuklu ve karışım kumaşlarda esnek, yıkamaya dayanıklı ve net konturlu tekstil baskıları.",
+    tags: ["Tişört", "Tekstil", "Yıkama dayanımı"],
+  },
+  {
+    title: "Plastik Bardak Baskısı",
+    category: "Plastik yüzeyler",
+    image:
+      "https://images.pexels.com/photos/7829478/pexels-photo-7829478.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Şeffaf ve sert plastik bardaklarda kafe, etkinlik ve marka baskıları için güçlü yüzey uyumu.",
+    tags: ["Bardak", "Plastik", "Kafe"],
+  },
+  {
+    title: "Şişe ve Kozmetik Ambalaj",
+    category: "Ürün ambalajı",
+    image:
+      "https://images.pexels.com/photos/1887946/pexels-photo-1887946.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    summary:
+      "Parfüm, kozmetik ve promosyon ambalajlarında ince yazı, logo ve marka etiket görünümü.",
+    tags: ["Şişe", "Kozmetik", "Ambalaj"],
   },
 ];
 

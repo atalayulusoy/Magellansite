@@ -56,6 +56,7 @@ import {
   referenceBrands,
   serviceItems,
   statItems,
+  surfaceShowcaseItems,
   testimonialItems,
 } from "./site-data";
 
@@ -493,6 +494,123 @@ function ProductCard({
         </div>
       </motion.article>
     </Reveal>
+  );
+}
+
+function SurfaceShowcaseSection() {
+  return (
+    <section
+      id="uygulamalar"
+      className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
+    >
+      <div className="section-shell">
+        <SectionHeading
+          eyebrow="Uygulama Örnekleri"
+          title="Poşetten deriye, levhadan tekstile kadar nerede kullanıldığını görün"
+          description="Magellan boyaları; kağıt poşet, şeffaf ambalaj, ham deri, deri üstü logo, uyarı levhası, tişört, plastik bardak ve ürün ambalajı gibi farklı yüzeylerde net ve dayanıklı baskı için geliştirilir."
+        />
+
+        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {surfaceShowcaseItems.map((item, index) => (
+            <Reveal key={item.title} delay={index * 0.04}>
+              <article
+                className={cn(
+                  "group glass-panel h-full overflow-hidden rounded-[2rem] p-3",
+                  index === 0 || index === 3 ? "xl:col-span-2" : ""
+                )}
+              >
+                <div
+                  className={cn(
+                    "relative overflow-hidden rounded-[1.55rem] border border-white/10 bg-[#050812]",
+                    index === 0 || index === 3
+                      ? "aspect-[16/10]"
+                      : "aspect-[4/5]"
+                  )}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes={
+                      index === 0 || index === 3
+                        ? "(max-width: 768px) 100vw, 50vw"
+                        : "(max-width: 768px) 100vw, 25vw"
+                    }
+                    className="object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,8,20,0.02),rgba(6,8,20,0.86))]" />
+                  <div className="absolute inset-x-0 bottom-0 p-5">
+                    <p className="text-[10px] uppercase tracking-[0.26em] text-white/58">
+                      {item.category}
+                    </p>
+                    <h3 className="mt-2 font-display text-2xl font-semibold text-white">
+                      {item.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-3">
+                  <p className="text-sm leading-7 text-white/68">
+                    {item.summary}
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-xs text-white/62"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={0.08}>
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            <article className="glass-panel rounded-[2rem] p-7">
+              <p className="text-xs uppercase tracking-[0.28em] text-white/52">
+                Deri Grubu
+              </p>
+              <h3 className="mt-3 font-display text-2xl font-semibold text-white">
+                Hem ham derinin rengini hem de deri üstü baskıyı destekler
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/66">
+                Ham deri renklendirme, suni deri yüzey uyumu ve hazır deri
+                ürünlerde logo/yazı baskısı için esnek formül desteği sunuyoruz.
+              </p>
+            </article>
+            <article className="glass-panel rounded-[2rem] p-7">
+              <p className="text-xs uppercase tracking-[0.28em] text-white/52">
+                Ambalaj Grubu
+              </p>
+              <h3 className="mt-3 font-display text-2xl font-semibold text-white">
+                Kağıt poşet, şeffaf poşet ve ürün paketlerinde temiz marka izi
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/66">
+                Logo, QR kod, sosyal medya ve kampanya metinlerinde netlik,
+                tutuculuk ve seri üretime uygun baskı akışı hedeflenir.
+              </p>
+            </article>
+            <article className="glass-panel rounded-[2rem] p-7">
+              <p className="text-xs uppercase tracking-[0.28em] text-white/52">
+                Endüstriyel Grup
+              </p>
+              <h3 className="mt-3 font-display text-2xl font-semibold text-white">
+                Uyarı levhası ve saha işaretlerinde okunaklı, kalıcı sonuç
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/66">
+                Şantiye, fabrika ve dış ortam ihtiyaçlarında zemin uyumu,
+                kontrast ve uzun ömürlü baskı performansı birlikte planlanır.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
@@ -1113,12 +1231,12 @@ export function HomePage() {
             <BrandMark />
           </Link>
 
-          <nav className="hidden items-center gap-7 xl:flex">
+          <nav className="hidden items-center gap-5 xl:flex 2xl:gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm uppercase tracking-[0.24em] text-white/66 transition-colors duration-300 hover:text-white"
+                className="text-xs uppercase tracking-[0.18em] text-white/66 transition-colors duration-300 hover:text-white 2xl:text-sm 2xl:tracking-[0.24em]"
               >
                 {item.label}
               </Link>
@@ -1130,7 +1248,7 @@ export function HomePage() {
               href={companyInfo.whatsappHref}
               target="_blank"
               rel="noreferrer"
-              className="button-primary hidden items-center px-5 py-3 text-sm lg:inline-flex"
+              className="button-primary hidden items-center px-5 py-3 text-sm 2xl:inline-flex"
             >
               WhatsApp’tan İletişime Geç
               <ArrowRight className="h-4 w-4" />
@@ -1298,6 +1416,8 @@ export function HomePage() {
             </div>
           </div>
         </section>
+
+        <SurfaceShowcaseSection />
 
         <section
           id="hizmetler"
