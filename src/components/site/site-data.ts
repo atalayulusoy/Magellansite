@@ -74,28 +74,28 @@ export const productItems = [
     title: "Serigrafi Boyaları",
     eyebrow: "Hassas ağ ve yüksek transfer",
     image:
-      "https://images.pexels.com/photos/697673/pexels-photo-697673.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/27893067/pexels-photo-27893067.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#ef4444", "#f97316"],
   },
   {
     title: "Akrilik Boyalar",
     eyebrow: "Esnek ve hızlı kuruyan yapı",
     image:
-      "https://images.pexels.com/photos/3735718/pexels-photo-3735718.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/27893067/pexels-photo-27893067.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#22c55e", "#84cc16"],
   },
   {
     title: "Hobi Boyaları",
     eyebrow: "Canlı tonlar ve pratik kullanım",
     image:
-      "https://images.pexels.com/photos/10275085/pexels-photo-10275085.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/12640857/pexels-photo-12640857.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#facc15", "#fb7185"],
   },
   {
     title: "Poşet Baskı Boyaları",
     eyebrow: "Kaygan yüzeylerde güçlü tutuculuk",
     image:
-      "https://images.pexels.com/photos/3900505/pexels-photo-3900505.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/30154784/pexels-photo-30154784.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#38bdf8", "#0ea5e9"],
   },
   {
@@ -123,7 +123,7 @@ export const productItems = [
     title: "Tekstil Baskı Boyaları",
     eyebrow: "Yumuşak tuşe ve kalıcı renk",
     image:
-      "https://images.pexels.com/photos/14944431/pexels-photo-14944431.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/11134390/pexels-photo-11134390.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#6366f1", "#8b5cf6"],
   },
   {
@@ -137,7 +137,7 @@ export const productItems = [
     title: "Deri Boyası",
     eyebrow: "Deri yüzeylerde güçlü renk ve esneklik",
     image:
-      "https://images.pexels.com/photos/19619007/pexels-photo-19619007.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/11676702/pexels-photo-11676702.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#b45309", "#38bdf8"],
   },
   {
