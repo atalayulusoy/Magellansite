@@ -73,51 +73,71 @@ export const productItems = [
   {
     title: "Serigrafi Boyaları",
     eyebrow: "Hassas ağ ve yüksek transfer",
+    image:
+      "https://images.pexels.com/photos/697673/pexels-photo-697673.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#ef4444", "#f97316"],
   },
   {
     title: "Akrilik Boyalar",
     eyebrow: "Esnek ve hızlı kuruyan yapı",
+    image:
+      "https://images.pexels.com/photos/3735718/pexels-photo-3735718.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#22c55e", "#84cc16"],
   },
   {
     title: "Hobi Boyaları",
     eyebrow: "Canlı tonlar ve pratik kullanım",
+    image:
+      "https://images.pexels.com/photos/10275085/pexels-photo-10275085.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#facc15", "#fb7185"],
   },
   {
     title: "Poşet Baskı Boyaları",
     eyebrow: "Kaygan yüzeylerde güçlü tutuculuk",
+    image:
+      "https://images.pexels.com/photos/3900505/pexels-photo-3900505.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#38bdf8", "#0ea5e9"],
   },
   {
     title: "Tişört Baskı Boyaları",
     eyebrow: "Tekstilde esnek, doygun baskı",
+    image:
+      "https://images.pexels.com/photos/33650426/pexels-photo-33650426.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#a855f7", "#ec4899"],
   },
   {
     title: "Eldiven Baskı Boyaları",
     eyebrow: "Fonksiyonel ve dayanıklı işaretleme",
+    image:
+      "https://images.pexels.com/photos/9754819/pexels-photo-9754819.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#14b8a6", "#06b6d4"],
   },
   {
     title: "Endüstriyel Baskı Boyaları",
     eyebrow: "Yoğun kullanım için kararlı performans",
+    image:
+      "https://images.pexels.com/photos/18569745/pexels-photo-18569745.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#f97316", "#eab308"],
   },
   {
     title: "Tekstil Baskı Boyaları",
     eyebrow: "Yumuşak tuşe ve kalıcı renk",
+    image:
+      "https://images.pexels.com/photos/14944431/pexels-photo-14944431.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#6366f1", "#8b5cf6"],
   },
   {
     title: "Plastik Baskı Boyaları",
     eyebrow: "Sert yüzeylere özel formül",
+    image:
+      "https://images.pexels.com/photos/33511696/pexels-photo-33511696.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#06b6d4", "#3b82f6"],
   },
   {
     title: "Özel Üretim Boyalar",
     eyebrow: "İhtiyaca göre formül tasarımı",
+    image:
+      "https://images.pexels.com/photos/34686413/pexels-photo-34686413.jpeg?auto=compress&cs=tinysrgb&w=1400",
     accent: ["#fb7185", "#f43f5e"],
   },
 ];
