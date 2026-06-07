@@ -1239,7 +1239,7 @@ function FloatingWhatsApp() {
 }
 
 export function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [navCompact, setNavCompact] = useState(false);
   const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(

@@ -48,6 +48,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      {
+        url: "/magellan-logo-square.png",
+        type: "image/png",
+      },
+    ],
+    shortcut: ["/magellan-logo-square.png"],
+    apple: [
+      {
+        url: "/magellan-logo-square.png",
+        type: "image/png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
