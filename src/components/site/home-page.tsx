@@ -50,6 +50,7 @@ import {
   featureItems,
   galleryItems,
   navItems,
+  productCatalogItems,
   processSteps,
   productHighlights,
   productItems,
@@ -493,6 +494,69 @@ function ProductCard({
           </a>
         </div>
       </motion.article>
+    </Reveal>
+  );
+}
+
+function ProductCatalogCard({
+  product,
+  index,
+}: {
+  product: (typeof productCatalogItems)[number];
+  index: number;
+}) {
+  const whatsappMessage = encodeURIComponent(
+    `Merhaba, ${product.title} ürünü için fiyat ve detaylı bilgi almak istiyorum.`
+  );
+
+  return (
+    <Reveal delay={index * 0.035}>
+      <article className="glass-panel group flex h-full flex-col overflow-hidden rounded-[2rem] p-3">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-[1.55rem] border border-white/10 bg-white">
+          <Image
+            src={product.image}
+            alt={product.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            className="object-contain p-3 transition duration-700 group-hover:scale-105"
+          />
+        </div>
+
+        <div className="flex flex-1 flex-col p-4">
+          <p className="text-[11px] uppercase tracking-[0.26em] text-[var(--accent-2)]">
+            {product.category}
+          </p>
+          <h3 className="mt-3 font-display text-2xl font-semibold text-white">
+            {product.title}
+          </h3>
+          <p className="mt-4 text-sm leading-7 text-white/68">
+            {product.description}
+          </p>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            {product.features.map((feature) => (
+              <span
+                key={feature}
+                className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-xs text-white/62"
+              >
+                {feature}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-auto pt-6">
+            <a
+              href={`${companyInfo.whatsappHref}?text=${whatsappMessage}`}
+              target="_blank"
+              rel="noreferrer"
+              className="button-primary inline-flex w-full items-center justify-center"
+            >
+              Fiyat için WhatsApp
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </article>
     </Reveal>
   );
 }
@@ -1413,6 +1477,33 @@ export function HomePage() {
               {productItems.map((item, index) => (
                 <ProductCard key={item.title} product={item} index={index} />
               ))}
+            </div>
+
+            <div className="mt-24">
+              <Reveal className="mx-auto max-w-3xl text-center">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/65 backdrop-blur-xl">
+                  <span className="h-2 w-2 rounded-full bg-[var(--accent-2)] shadow-[0_0_18px_rgba(34,211,238,0.85)]" />
+                  Tüm Ürünler
+                </div>
+                <h3 className="mt-6 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                  Magellan ürün kataloğu
+                </h3>
+                <p className="mt-5 text-base leading-8 text-white/68">
+                  Serigrafi boyaları, plastisol tekstil serileri, kalıp
+                  kimyasalları ve baskı ekipmanları için fiyat bilgisi
+                  WhatsApp üzerinden hızlıca paylaşılır.
+                </p>
+              </Reveal>
+
+              <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                {productCatalogItems.map((item, index) => (
+                  <ProductCatalogCard
+                    key={item.title}
+                    product={item}
+                    index={index}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>

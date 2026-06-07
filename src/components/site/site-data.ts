@@ -157,6 +157,89 @@ export const productHighlights = [
   "Uzun ömürlü baskı performansı sağlar.",
 ];
 
+export const productCatalogItems = [
+  {
+    title: "PVC Altın Yaldız Serigrafi Boyası",
+    category: "PVC Serigrafi Boyaları",
+    image: "/products/pvc-altin-yaldiz.png",
+    description:
+      "PVC, suni deri, pleksiglas, asetat, karton ve sert plastik gibi yüzeylerde parlak yaldız etkisi isteyen baskılar için solvent esaslı Magellan serigrafi mürekkebi.",
+    features: ["Yaldız efekt", "PVC ve sert plastik", "Manuel ve otomatik baskı"],
+  },
+  {
+    title: "PVC Gümüş Yaldız Serigrafi Boyası",
+    category: "PVC Serigrafi Boyaları",
+    image: "/products/pvc-gumus-yaldiz.png",
+    description:
+      "Metal görünümlü gümüş baskılar için geliştirilmiş; ambalaj, etiket, dekoratif baskı ve premium yüzey uygulamalarında temiz transfer sağlayan seri.",
+    features: ["Gümüş efekt", "Yüksek örtücülük", "Hızlı kuruma"],
+  },
+  {
+    title: "Plastisol Çeşitleri",
+    category: "Tekstil ve Transfer Baskı",
+    image: "/products/plastisol-cesitleri.png",
+    description:
+      "Pamuk, pamuk-polyester karışımları ve birçok doğal veya sentetik kumaşta kullanılabilen, transfer baskıya uyumlu Magellan plastisol boya çeşitleri.",
+    features: ["Tekstil uyumlu", "Transfer baskı", "Canlı renkler"],
+  },
+  {
+    title: "Su Bazlı Siyah Beyaz Boyalar",
+    category: "Su Bazlı Baskı Boyaları",
+    image: "/products/su-bazli-siyah-beyaz.jpeg",
+    description:
+      "Tekstil ve uygun baskı yüzeylerinde daha yumuşak tuşe, temiz renk geçişi ve pratik uygulama isteyen işler için su bazlı siyah-beyaz seri.",
+    features: ["Su bazlı yapı", "Siyah-beyaz seri", "Yumuşak tuşe"],
+  },
+  {
+    title: "UV Renkli Serigrafi Boyaları",
+    category: "UV Serigrafi Boyaları",
+    image: "/products/uv-renkliler.jpeg",
+    description:
+      "Çeşitli malzemeler üzerine parlak, örtücü ve hızlı kürlenen renkli baskılar için UV bazlı Magellan serigrafi boya seçenekleri.",
+    features: ["UV kürlenme", "Parlak görünüm", "Renkli seri"],
+  },
+  {
+    title: "Alüminyum Ragle ve Çekecekler",
+    category: "Baskı Ekipmanları",
+    image: "/products/ragle-cekcek.png",
+    description:
+      "Boya transferini kontrollü yapmak, baskı basıncını eşit dağıtmak ve kalıp üzerinde stabil uygulama almak için kullanılan alüminyum ragle ve çekecek setleri.",
+    features: ["Eşit basınç", "Alüminyum gövde", "Farklı ölçüler"],
+  },
+  {
+    title: "Emülsiyon Sökücü",
+    category: "Kalıp Temizleme Kimyasalları",
+    image: "/products/emulsiyon-sokucu.png",
+    description:
+      "İpek şablon temizliği ve kalıp yenileme süreçlerinde emülsiyon kalıntılarını çözmeye yardımcı olan Magellan kalıp temizleme kimyasalı.",
+    features: ["Kalıp temizliği", "Şablon yenileme", "Pratik uygulama"],
+  },
+  {
+    title: "Serigrafi Emülsiyonu",
+    category: "Fotoemülsiyon Çeşitleri",
+    image: "/products/emulsiyon.png",
+    description:
+      "Serigrafi kalıbı hazırlığında net pozlama, temiz detay ve stabil şablon oluşturmak için kullanılan fotoemülsiyon grubu.",
+    features: ["Kalıp hazırlığı", "Net detay", "Stabil şablon"],
+  },
+  {
+    title: "İnceltici",
+    category: "Yardımcı Kimyasallar",
+    image: "/products/inceltici.png",
+    description:
+      "Baskı viskozitesini ayarlamak, akış dengesini kontrol etmek ve uygulama karakterini yüzeye göre düzenlemek için kullanılan yardımcı ürün.",
+    features: ["Viskozite ayarı", "Akış kontrolü", "Uygulama desteği"],
+  },
+  {
+    title: "Sertleştirici",
+    category: "Yardımcı Kimyasallar",
+    image: "/products/sertlestirici.png",
+    description:
+      "Yüzey dayanımı, tutuculuk ve baskı performansını artırmak için uygun boya sistemleriyle birlikte kullanılan Magellan yardımcı kimyasalı.",
+    features: ["Dayanım desteği", "Tutuculuk", "Yüzey performansı"],
+  },
+];
+
 export const serviceItems = [
   {
     icon: "swatchbook",
