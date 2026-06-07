@@ -1469,25 +1469,6 @@ export function HomePage() {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Ürün Portföyü"
-              title="Her baskı yüzeyi ve üretim ihtiyacı için profesyonel boya çözümleri"
-              description="Premium kart sistemi ile ürün gruplarını hızlıca keşfedin; tüm seriler özel renk, özel formül ve yüksek pigment kalitesi ile üretilebilir."
-            />
-
-            <div className="mt-14 grid gap-6 md:grid-cols-2 2xl:grid-cols-3">
-              {productItems.map((item, index) => (
-                <ProductCard key={item.title} product={item} index={index} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="tum-urunler"
-          className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
-        >
-          <div className="section-shell">
-            <SectionHeading
-              eyebrow="Tüm Ürünler"
               title="Magellan ürün kataloğu"
               description="Serigrafi boyaları, plastisol tekstil serileri, kalıp kimyasalları ve baskı ekipmanları için fiyat bilgisi WhatsApp üzerinden hızlıca paylaşılır."
             />
@@ -1501,10 +1482,32 @@ export function HomePage() {
                 />
               ))}
             </div>
-          </div>
-        </section>
 
-        <SurfaceShowcaseSection />
+            <div className="mt-24">
+              <Reveal className="mx-auto max-w-3xl text-center">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/65 backdrop-blur-xl">
+                  <span className="h-2 w-2 rounded-full bg-[var(--accent-1)] shadow-[0_0_18px_rgba(249,115,22,0.85)]" />
+                  Ürün Grupları
+                </div>
+                <h3 className="mt-6 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                  Her baskı yüzeyi için profesyonel boya çözümleri
+                </h3>
+                <p className="mt-5 text-base leading-8 text-white/68">
+                  Tüm seriler özel renk, özel formül ve yüksek pigment kalitesi
+                  ile üretilebilir.
+                </p>
+              </Reveal>
+
+              <div className="mt-12 grid gap-6 md:grid-cols-2 2xl:grid-cols-3">
+                {productItems.map((item, index) => (
+                  <ProductCard key={item.title} product={item} index={index} />
+                ))}
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <SurfaceShowcaseSection />
 
         <section
           id="hizmetler"
