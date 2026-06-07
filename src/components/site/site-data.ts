@@ -21,14 +21,14 @@ export const companyInfo = {
 };
 
 export const navItems = [
-  { label: "Ana Sayfa", href: "#anasayfa" },
-  { label: "Hakkımızda", href: "#hakkimizda" },
-  { label: "Ürünler", href: "#urunler" },
-  { label: "Uygulamalar", href: "#uygulamalar" },
-  { label: "Hizmetler", href: "#hizmetler" },
-  { label: "Üretim", href: "#uretim" },
-  { label: "Referanslar", href: "#referanslar" },
-  { label: "İletişim", href: "#iletisim" },
+  { label: "Ana Sayfa", href: "/" },
+  { label: "Hakkımızda", href: "/hakkimizda" },
+  { label: "Ürünler", href: "/urunler" },
+  { label: "Uygulamalar", href: "/uygulamalar" },
+  { label: "Hizmetler", href: "/hizmetler" },
+  { label: "Üretim", href: "/uretim" },
+  { label: "Referanslar", href: "/referanslar" },
+  { label: "İletişim", href: "/iletisim" },
 ];
 
 export const featureItems = [

@@ -285,7 +285,7 @@ function MouseGlow() {
   );
 }
 
-function IntroLoader() {
+export function IntroLoader() {
   return (
     <motion.div
       className="fixed inset-0 z-[90] flex items-center justify-center overflow-hidden bg-[#060814]"
@@ -1238,21 +1238,22 @@ function FloatingWhatsApp() {
   );
 }
 
-export function HomePage() {
-  const [isLoading, setIsLoading] = useState(false);
+export type SitePage =
+  | "home"
+  | "about"
+  | "products"
+  | "applications"
+  | "services"
+  | "production"
+  | "references"
+  | "contact";
+
+export function HomePage({ page = "home" }: { page?: SitePage }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [navCompact, setNavCompact] = useState(false);
   const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(
     null
   );
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
-
-    return () => window.clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => setNavCompact(window.scrollY > 28);
@@ -1262,11 +1263,11 @@ export function HomePage() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = isLoading || isMenuOpen ? "hidden" : "";
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isLoading, isMenuOpen]);
+  }, [isMenuOpen]);
 
   const selectedGalleryItem =
     selectedGalleryIndex !== null ? galleryItems[selectedGalleryIndex] : null;
@@ -1282,8 +1283,6 @@ export function HomePage() {
       <div className="blob blob-cyan right-[-10rem] top-[18rem]" />
       <div className="blob blob-pink bottom-[10rem] left-[15%]" />
 
-      <AnimatePresence>{isLoading && <IntroLoader />}</AnimatePresence>
-
       <header className="fixed inset-x-0 top-0 z-[75] px-3 py-3 sm:px-5">
         <motion.div
           className={cn(
@@ -1291,7 +1290,7 @@ export function HomePage() {
             navCompact ? "py-3 shadow-[0_16px_40px_rgba(0,0,0,0.35)]" : "py-4"
           )}
         >
-          <Link href="#anasayfa" className="shrink-0">
+          <Link href="/" className="shrink-0">
             <BrandMark />
           </Link>
 
@@ -1371,6 +1370,7 @@ export function HomePage() {
       </AnimatePresence>
 
       <main className="relative z-[10]">
+        {page === "home" && (
         <section
           id="anasayfa"
           className="content-visibility relative min-h-screen overflow-hidden px-4 pb-24 pt-32 sm:px-6 lg:px-8 lg:pb-28 lg:pt-36"
@@ -1390,7 +1390,7 @@ export function HomePage() {
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
-                  href="#urunler"
+                  href="/urunler"
                   className="button-primary inline-flex items-center justify-center px-6 py-4"
                 >
                   Ürünleri İncele
@@ -1427,7 +1427,9 @@ export function HomePage() {
             </Reveal>
           </div>
         </section>
+        )}
 
+        {page === "about" && (
         <section
           id="hakkimizda"
           className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
@@ -1461,7 +1463,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "products" && (
         <section
           id="urunler"
           className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
@@ -1506,9 +1510,11 @@ export function HomePage() {
             </div>
         </div>
       </section>
+        )}
 
-      <SurfaceShowcaseSection />
+      {page === "applications" && <SurfaceShowcaseSection />}
 
+        {page === "services" && (
         <section
           id="hizmetler"
           className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
@@ -1546,7 +1552,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "services" && (
         <section className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
           <div className="section-shell">
             <SectionHeading
@@ -1585,7 +1593,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "production" && (
         <section
           id="uretim"
           className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
@@ -1640,7 +1650,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "references" && (
         <section
           id="referanslar"
           className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
@@ -1666,7 +1678,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "references" && (
         <section className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
           <div className="section-shell">
             <SectionHeading
@@ -1679,7 +1693,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
+        {page === "contact" && (
         <section
           id="iletisim"
           className="content-visibility relative px-4 pb-24 pt-24 sm:px-6 lg:px-8 lg:pb-28 lg:pt-28"
@@ -1797,6 +1813,7 @@ export function HomePage() {
             </div>
           </div>
         </section>
+        )}
       </main>
 
       <footer className="relative z-[10] border-t border-white/8 px-4 pb-12 pt-12 sm:px-6 lg:px-8">

@@ -25,7 +25,7 @@ export default function Page() {
           __html: JSON.stringify(organizationJsonLd),
         }}
       />
-      <HomePage />
+      <HomePage page="home" />
     </>
   );
 }
