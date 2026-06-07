@@ -3,28 +3,35 @@ import "@fontsource-variable/space-grotesk";
 import "@fontsource-variable/sora";
 import "./globals.css";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://www.magellanserigrafiboyalari.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.magellanboya.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "MAGELLAN SERİGRAFİ BOYALARI",
-  title: "MAGELLAN SERİGRAFİ BOYALARI | Endüstriyel Baskı Boyaları",
+  title: {
+    default:
+      "Serigrafi Boyaları Üreticisi | Türkiye Geneli Hızlı Gönderim | Magellan",
+    template: "%s | Magellan Serigrafi Boyaları",
+  },
   description:
-    "Magellan Serigrafi Boyaları; serigrafi, tekstil, poşet, eldiven, tişört ve endüstriyel baskı boyalarında premium kalite üretim ve özel renk çözümleri sunar.",
+    "Magellan Serigrafi Boyaları; serigrafi boyaları, tekstil baskı, poşet baskı, deri boyası ve endüstriyel baskı boyalarında üretici firma olarak tüm Türkiye'ye hızlı gönderim sunar.",
   keywords: [
     "serigrafi boyaları",
+    "serigrafi boyası",
+    "serigrafi boya üreticisi",
     "endüstriyel baskı boyaları",
     "tekstil baskı boyaları",
     "poşet baskı boyaları",
-    "özel renk üretimi",
+    "deri boyası",
+    "plastisol boya",
+    "UV serigrafi boyası",
+    "Türkiye geneli hızlı gönderim",
     "Magellan Serigrafi Boyaları",
   ],
   openGraph: {
-    title: "MAGELLAN SERİGRAFİ BOYALARI",
+    title: "Serigrafi Boyaları Üreticisi | Magellan",
     description:
-      "Premium görünüm, yüksek kalite üretim ve endüstriyel baskı çözümleri.",
+      "Serigrafi, tekstil, poşet, deri ve endüstriyel baskı boyalarında üretici firma. Tüm Türkiye'ye hızlı gönderim.",
     url: siteUrl,
     siteName: "MAGELLAN SERİGRAFİ BOYALARI",
     images: [
@@ -40,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MAGELLAN SERİGRAFİ BOYALARI",
+    title: "Serigrafi Boyaları Üreticisi | Magellan",
     description:
-      "Serigrafi ve endüstriyel baskı sektörüne yüksek kaliteli boya üretimi.",
+      "Serigrafi ve endüstriyel baskı sektörüne yüksek kaliteli boya üretimi ve Türkiye geneli hızlı gönderim.",
     images: ["/magellan-label.png"],
   },
   alternates: {

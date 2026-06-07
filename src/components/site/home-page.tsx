@@ -222,20 +222,24 @@ function SectionHeading({
   eyebrow,
   title,
   description,
+  titleLevel = "h2",
 }: {
   eyebrow: string;
   title: string;
   description: string;
+  titleLevel?: "h1" | "h2";
 }) {
+  const TitleTag = titleLevel;
+
   return (
     <Reveal className="mx-auto max-w-3xl text-center">
       <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/65 backdrop-blur-xl">
         <span className="h-2 w-2 rounded-full bg-[var(--accent-1)] shadow-[0_0_18px_rgba(249,115,22,0.85)]" />
         {eyebrow}
       </div>
-      <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+      <TitleTag className="mt-6 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
         {title}
-      </h2>
+      </TitleTag>
       <p className="mt-5 text-base leading-8 text-white/68 sm:text-lg">
         {description}
       </p>
@@ -572,6 +576,7 @@ function SurfaceShowcaseSection() {
           eyebrow="Uygulama Örnekleri"
           title="Poşetten deriye, levhadan tekstile kadar nerede kullanıldığını görün"
           description="Magellan boyaları; kağıt poşet, şeffaf ambalaj, ham deri, deri üstü logo, uyarı levhası, tişört, plastik bardak ve ürün ambalajı gibi farklı yüzeylerde net ve dayanıklı baskı için geliştirilir."
+          titleLevel="h1"
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -1429,6 +1434,67 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
         </section>
         )}
 
+        {page === "home" && (
+          <section className="content-visibility relative px-4 pb-24 sm:px-6 lg:px-8 lg:pb-28">
+            <div className="section-shell">
+              <Reveal>
+                <article className="glass-panel rounded-[2rem] p-7 sm:p-9">
+                  <p className="text-xs uppercase tracking-[0.3em] text-white/52">
+                    Serigrafi Boyaları Üreticisi
+                  </p>
+                  <div className="mt-5 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+                    <div>
+                      <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+                        Serigrafi boyaları, özel renk üretimi ve tüm Türkiye&apos;ye hızlı gönderim
+                      </h2>
+                      <p className="mt-5 text-base leading-8 text-white/68">
+                        Magellan Serigrafi Boyaları; PVC, UV, plastisol, su bazlı,
+                        tekstil, poşet, deri ve endüstriyel yüzeyler için yüksek
+                        tutuculuk sağlayan profesyonel baskı boyaları üretir.
+                        İstanbul Başakşehir&apos;deki üretim ve tedarik altyapımızla
+                        Türkiye genelindeki atölye, matbaa, tekstil ve ambalaj
+                        üreticilerine hızlı sevkiyat desteği sunuyoruz.
+                      </p>
+                    </div>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {[
+                        "Serigrafi boyaları üretimi",
+                        "PVC, UV ve plastisol seriler",
+                        "Poşet, tekstil ve deri baskı",
+                        "Türkiye geneli hızlı kargo",
+                      ].map((item) => (
+                        <div
+                          key={item}
+                          className="rounded-[1.35rem] border border-white/10 bg-white/[0.05] px-4 py-4 text-sm font-medium text-white/78"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                      href="/urunler"
+                      className="button-primary inline-flex items-center justify-center"
+                    >
+                      Serigrafi Boyalarını İncele
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                    <a
+                      href={companyInfo.whatsappHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="button-secondary inline-flex items-center justify-center"
+                    >
+                      Hızlı Fiyat ve Gönderim Bilgisi Al
+                    </a>
+                  </div>
+                </article>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
         {page === "about" && (
         <section
           id="hakkimizda"
@@ -1439,6 +1505,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               eyebrow="Kurumsal Profil"
               title="Yüksek performanslı baskı boyalarında güven veren üretim altyapısı"
               description={companyInfo.aboutDescription}
+              titleLevel="h1"
             />
 
             <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -1473,8 +1540,9 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Ürün Portföyü"
-              title="Magellan ürün kataloğu"
+              title="Serigrafi Boyaları ve Baskı Boyaları Ürün Kataloğu"
               description="Serigrafi boyaları, plastisol tekstil serileri, kalıp kimyasalları ve baskı ekipmanları için fiyat bilgisi WhatsApp üzerinden hızlıca paylaşılır."
+              titleLevel="h1"
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -1524,6 +1592,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               eyebrow="Hizmetler"
               title="Sadece boya değil, üretimi güçlendiren teknik partnerlik sunuyoruz"
               description="Renk eşleştirme, proses desteği ve sürdürülebilir tedarik yaklaşımı ile işinize katma değer sağlayan bir çözüm ortağı olarak çalışıyoruz."
+              titleLevel="h1"
             />
             <div className="mt-14 grid gap-6 lg:grid-cols-2">
               {serviceItems.map((item, index) => {
@@ -1605,6 +1674,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               eyebrow="Üretim Süreci"
               title="Analizden teslimata kadar net, kontrollü ve animasyonlu üretim akışı"
               description="Her aşama ölçülebilir kalite ve termin güveni için tasarlanır; böylece ortaya sadece bir ürün değil, süreklilik sağlayan bir iş ortaklığı çıkar."
+              titleLevel="h1"
             />
 
             <div className="relative mt-16 space-y-6 before:absolute before:left-5 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-[linear-gradient(180deg,rgba(249,115,22,0.95),rgba(34,211,238,0.18))] lg:space-y-8 lg:before:left-1/2">
@@ -1662,6 +1732,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               eyebrow="Referanslar / Galeri"
               title="Baskı örneklerinden üretim alanlarına uzanan modern görsel vitrin"
               description="Premium masonry galeri, hover zoom ve lightbox akışı ile üretim kalitesini görsel olarak da güçlü biçimde hissettirecek şekilde tasarlandı."
+              titleLevel="h1"
             />
 
             <ReferenceLogoCloud />
@@ -1705,6 +1776,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               eyebrow="İletişim"
               title="Teklif, renk danışmanlığı ve üretim planlaması için doğrudan bize ulaşın"
               description="Telefon, WhatsApp ve sosyal medya üzerinden hızlıca iletişime geçebilir; formu doldurarak talebinizi doğrudan WhatsApp mesajına dönüştürebilirsiniz."
+              titleLevel="h1"
             />
 
             <div className="mt-14 grid gap-6 xl:grid-cols-[0.88fr_1.12fr]">
