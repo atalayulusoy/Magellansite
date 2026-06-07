@@ -24,6 +24,7 @@ export const navItems = [
   { label: "Ana Sayfa", href: "#anasayfa" },
   { label: "Hakkımızda", href: "#hakkimizda" },
   { label: "Ürünler", href: "#urunler" },
+  { label: "Tüm Ürünler", href: "#tum-urunler" },
   { label: "Uygulamalar", href: "#uygulamalar" },
   { label: "Hizmetler", href: "#hizmetler" },
   { label: "Üretim", href: "#uretim" },

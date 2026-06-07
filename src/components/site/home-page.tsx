@@ -1295,12 +1295,12 @@ export function HomePage() {
             <BrandMark />
           </Link>
 
-          <nav className="hidden items-center gap-5 xl:flex 2xl:gap-7">
+          <nav className="hidden items-center gap-4 xl:flex 2xl:gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-xs uppercase tracking-[0.18em] text-white/66 transition-colors duration-300 hover:text-white 2xl:text-sm 2xl:tracking-[0.24em]"
+                className="text-xs uppercase tracking-[0.14em] text-white/66 transition-colors duration-300 hover:text-white 2xl:text-sm 2xl:tracking-[0.2em]"
               >
                 {item.label}
               </Link>
@@ -1478,32 +1478,28 @@ export function HomePage() {
                 <ProductCard key={item.title} product={item} index={index} />
               ))}
             </div>
+          </div>
+        </section>
 
-            <div className="mt-24">
-              <Reveal className="mx-auto max-w-3xl text-center">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/65 backdrop-blur-xl">
-                  <span className="h-2 w-2 rounded-full bg-[var(--accent-2)] shadow-[0_0_18px_rgba(34,211,238,0.85)]" />
-                  Tüm Ürünler
-                </div>
-                <h3 className="mt-6 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                  Magellan ürün kataloğu
-                </h3>
-                <p className="mt-5 text-base leading-8 text-white/68">
-                  Serigrafi boyaları, plastisol tekstil serileri, kalıp
-                  kimyasalları ve baskı ekipmanları için fiyat bilgisi
-                  WhatsApp üzerinden hızlıca paylaşılır.
-                </p>
-              </Reveal>
+        <section
+          id="tum-urunler"
+          className="content-visibility relative px-4 py-24 sm:px-6 lg:px-8 lg:py-28"
+        >
+          <div className="section-shell">
+            <SectionHeading
+              eyebrow="Tüm Ürünler"
+              title="Magellan ürün kataloğu"
+              description="Serigrafi boyaları, plastisol tekstil serileri, kalıp kimyasalları ve baskı ekipmanları için fiyat bilgisi WhatsApp üzerinden hızlıca paylaşılır."
+            />
 
-              <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {productCatalogItems.map((item, index) => (
-                  <ProductCatalogCard
-                    key={item.title}
-                    product={item}
-                    index={index}
-                  />
-                ))}
-              </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {productCatalogItems.map((item, index) => (
+                <ProductCatalogCard
+                  key={item.title}
+                  product={item}
+                  index={index}
+                />
+              ))}
             </div>
           </div>
         </section>
