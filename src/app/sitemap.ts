@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { seoLandingPages } from "@/components/site/seo-landing-data";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
@@ -15,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/uretim", priority: 0.75 },
     { path: "/referanslar", priority: 0.75 },
     { path: "/iletisim", priority: 0.9 },
+    ...seoLandingPages.map((page) => ({
+      path: `/${page.slug}`,
+      priority: 0.72,
+    })),
   ];
 
   return routes.map((route) => ({
