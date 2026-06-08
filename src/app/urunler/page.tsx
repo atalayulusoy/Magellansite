@@ -43,6 +43,12 @@ const productListJsonLd = {
         "@type": "Brand",
         name: "Magellan",
       },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "TRY",
+        availability: "https://schema.org/InStock",
+        url: "https://www.magellanboya.com/urunler",
+      },
     },
   })),
 };
