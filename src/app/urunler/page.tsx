@@ -3,18 +3,33 @@ import { HomePage } from "@/components/site/home-page";
 import { productCatalogItems } from "@/components/site/site-data";
 
 export const metadata: Metadata = {
-  title: "Serigrafi Boyaları ve Baskı Boyaları Ürünleri",
+  title: {
+    absolute: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+  },
   description:
-    "PVC, UV, plastisol, su bazlı, tekstil, poşet ve deri baskı için Magellan serigrafi boyaları. Üreticiden fiyat ve Türkiye geneli hızlı gönderim için WhatsApp.",
+    "Plastisol boya, serigrafi boya, emülsiyon, inceltici, geciktirici ve serigrafi baskı yardımcı ürünlerini Magellan Boya’da inceleyin.",
   alternates: {
-    canonical: "/urunler",
+    canonical: "https://www.magellanboya.com/urunler",
+  },
+  openGraph: {
+    title: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+    description:
+      "Plastisol boya, serigrafi boya, emülsiyon, inceltici, geciktirici ve serigrafi baskı yardımcı ürünlerini Magellan Boya’da inceleyin.",
+    url: "https://www.magellanboya.com/urunler",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+    description:
+      "Magellan Boya’da serigrafi boya, plastisol boya ve serigrafi yardımcı kimyasalları.",
   },
 };
 
 const productListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Magellan serigrafi boyaları ürün kataloğu",
+  name: "Magellan Boya serigrafi boyaları ve plastisol boya ürün kataloğu",
   itemListElement: productCatalogItems.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,

@@ -2,11 +2,26 @@ import type { Metadata } from "next";
 import { HomePage } from "@/components/site/home-page";
 
 export const metadata: Metadata = {
-  title: "İletişim | Serigrafi Boyaları Fiyat ve Hızlı Gönderim",
+  title: {
+    absolute: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
+  },
   description:
-    "Serigrafi boyaları fiyat bilgisi, özel renk üretimi ve Türkiye geneli hızlı gönderim için Magellan ile WhatsApp, telefon veya konum üzerinden iletişime geçin.",
+    "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
   alternates: {
-    canonical: "/iletisim",
+    canonical: "https://www.magellanboya.com/iletisim",
+  },
+  openGraph: {
+    title: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
+    description:
+      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
+    url: "https://www.magellanboya.com/iletisim",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
+    description:
+      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya iletişim bilgileri.",
   },
 };
 

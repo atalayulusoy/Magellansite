@@ -1440,28 +1440,30 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               <Reveal>
                 <article className="glass-panel rounded-[2rem] p-7 sm:p-9">
                   <p className="text-xs uppercase tracking-[0.3em] text-white/52">
-                    Serigrafi Boyaları Üreticisi
+                    Serigrafi Boya İmalatı ve Tedarik
                   </p>
                   <div className="mt-5 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
                     <div>
                       <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                        Serigrafi boyaları, özel renk üretimi ve tüm Türkiye&apos;ye hızlı gönderim
+                        Serigrafi boya çeşitleri, plastisol boya ve yardımcı kimyasallar
                       </h2>
                       <p className="mt-5 text-base leading-8 text-white/68">
-                        Magellan Serigrafi Boyaları; PVC, UV, plastisol, su bazlı,
-                        tekstil, poşet, deri ve endüstriyel yüzeyler için yüksek
-                        tutuculuk sağlayan profesyonel baskı boyaları üretir.
-                        İstanbul Başakşehir&apos;deki üretim ve tedarik altyapımızla
-                        Türkiye genelindeki atölye, matbaa, tekstil ve ambalaj
-                        üreticilerine hızlı sevkiyat desteği sunuyoruz.
+                        Magellan Boya; serigrafi boyaları, plastisol boya
+                        çeşitleri, tekstil baskı boyaları ve ipek baskı boyası
+                        arayan işletmeler için üretim ve satış hizmeti sunar.
+                        Ürün grubumuzda emülsiyon, inceltici, geciktirici ve
+                        serigrafi yardımcı kimyasalları da yer alır. Atölye,
+                        matbaa, tekstil ve ambalaj üreticilerine toptan satış,
+                        rekabetçi fiyat ve Türkiye geneli hızlı gönderim desteği
+                        sağlıyoruz.
                       </p>
                     </div>
                     <div className="grid gap-3 sm:grid-cols-2">
                       {[
-                        "Serigrafi boyaları üretimi",
-                        "PVC, UV ve plastisol seriler",
-                        "Poşet, tekstil ve deri baskı",
-                        "Türkiye geneli hızlı kargo",
+                        "Serigrafi boya imalatı",
+                        "Plastisol boya çeşitleri",
+                        "Emülsiyon ve yardımcı kimyasallar",
+                        "Toptan satış ve rekabetçi fiyat",
                       ].map((item) => (
                         <div
                           key={item}
@@ -1477,7 +1479,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                       href="/urunler"
                       className="button-primary inline-flex items-center justify-center"
                     >
-                      Serigrafi Boyalarını İncele
+                      Serigrafi Boya Çeşitlerini İncele
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                     <a
@@ -1486,7 +1488,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                       rel="noreferrer"
                       className="button-secondary inline-flex items-center justify-center"
                     >
-                      Hızlı Fiyat ve Gönderim Bilgisi Al
+                      Uygun Fiyat ve Toptan Satış Bilgisi Al
                     </a>
                   </div>
                 </article>
@@ -1540,8 +1542,8 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Ürün Portföyü"
-              title="Serigrafi Boyaları ve Baskı Boyaları Ürün Kataloğu"
-              description="Serigrafi boyaları, plastisol tekstil serileri, kalıp kimyasalları ve baskı ekipmanları için fiyat bilgisi WhatsApp üzerinden hızlıca paylaşılır."
+              title="Serigrafi Boyaları ve Plastisol Boya Çeşitleri"
+              description="Serigrafi boya, plastisol boya, tekstil baskı boyası, emülsiyon, inceltici, geciktirici ve serigrafi yardımcı kimyasalları için fiyat bilgisi WhatsApp üzerinden hızlıca paylaşılır."
               titleLevel="h1"
             />
 

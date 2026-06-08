@@ -13,11 +13,11 @@ export const companyInfo = {
     "https://www.google.com/maps/place/Magellan+Serigrafi+Boylar%C4%B1/@41.0845741,28.8034047,17z/data=!3m1!4b1!4m6!3m5!1s0x14caafb050f00b17:0xac12d282c1d67d52!8m2!3d41.0845742!4d28.8082756!16s%2Fg%2F11z6ss239k?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D",
   mapsEmbedHref:
     "https://www.google.com/maps?q=Magellan%20Serigrafi%20Boylar%C4%B1%2C%2041.0845742%2C28.8082756&z=17&output=embed",
-  heroTitle: "Serigrafi Boyaları Üreticisi | Türkiye Geneli Hızlı Gönderim",
+  heroTitle: "Serigrafi Boya İmalatçısı ve Plastisol Boya Üreticisi",
   heroDescription:
-    "Magellan; serigrafi boyaları, tekstil baskı boyaları, poşet baskı boyaları, deri boyası ve endüstriyel baskı çözümlerinde üretici firma olarak tüm Türkiye'ye hızlı gönderim sağlar.",
+    "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, ipek baskı boyası ve yardımcı kimyasallar alanında üretim ve satış hizmeti sunar.",
   aboutDescription:
-    "Magellan Serigrafi Boyaları olarak serigrafi ve endüstriyel baskı sektörüne yüksek kaliteli boya üretimi sunuyoruz. Müşterilerimizin ihtiyaçlarına özel renk ve içerik üretimi yapabiliyoruz. Güçlü tutuculuk, kaliteli pigment yapısı, uzun ömürlü baskı performansı ve Türkiye geneli hızlı gönderim ile profesyonel çözümler sunuyoruz.",
+    "Magellan Boya olarak serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunuyoruz. Müşterilerimizin ihtiyaçlarına özel renk ve içerik üretimi yapabiliyor; güçlü tutuculuk, kaliteli pigment yapısı, uzun ömürlü baskı performansı ve rekabetçi fiyat yaklaşımıyla profesyonel çözümler sağlıyoruz.",
 };
 
 export const navItems = [

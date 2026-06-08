@@ -7,39 +7,48 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.magellanboya.co
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  applicationName: "MAGELLAN SERİGRAFİ BOYALARI",
+  applicationName: "Magellan Boya",
   title: {
     default:
-      "Serigrafi Boyaları Üreticisi | Türkiye Geneli Hızlı Gönderim | Magellan",
-    template: "%s | Magellan Serigrafi Boyaları",
+      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
+    template: "%s | Magellan Boya",
   },
   description:
-    "Magellan Serigrafi Boyaları; serigrafi boyaları, tekstil baskı, poşet baskı, deri boyası ve endüstriyel baskı boyalarında üretici firma olarak tüm Türkiye'ye hızlı gönderim sunar.",
+    "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
   keywords: [
     "serigrafi boyaları",
-    "serigrafi boyası",
+    "serigrafi boya",
+    "serigrafi boya imalatçısı",
+    "serigrafi boya imalatı",
     "serigrafi boya üreticisi",
-    "endüstriyel baskı boyaları",
-    "tekstil baskı boyaları",
-    "poşet baskı boyaları",
-    "deri boyası",
     "plastisol boya",
-    "UV serigrafi boyası",
-    "Türkiye geneli hızlı gönderim",
-    "Magellan Serigrafi Boyaları",
+    "plastisol boyaları",
+    "plastisol boya imalatçısı",
+    "serigrafi baskı boyası",
+    "tekstil baskı boyaları",
+    "ipek baskı boyası",
+    "emülsiyon serigrafi",
+    "serigrafi emülsiyon",
+    "serigrafi boya çeşitleri",
+    "uygun fiyatlı serigrafi boya",
+    "toptan serigrafi boya",
+    "serigrafi yardımcı kimyasalları",
+    "serigrafi boya tedarikçisi",
+    "Magellan Boya",
   ],
   openGraph: {
-    title: "Serigrafi Boyaları Üreticisi | Magellan",
+    title:
+      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
     description:
-      "Serigrafi, tekstil, poşet, deri ve endüstriyel baskı boyalarında üretici firma. Tüm Türkiye'ye hızlı gönderim.",
+      "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
     url: siteUrl,
-    siteName: "MAGELLAN SERİGRAFİ BOYALARI",
+    siteName: "Magellan Boya",
     images: [
       {
         url: "/magellan-label.png",
         width: 1536,
         height: 1024,
-        alt: "Magellan Serigrafi Boyaları ürün etiketi",
+        alt: "Magellan Boya serigrafi boya etiketi",
       },
     ],
     locale: "tr_TR",
@@ -47,13 +56,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Serigrafi Boyaları Üreticisi | Magellan",
+    title:
+      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
     description:
-      "Serigrafi ve endüstriyel baskı sektörüne yüksek kaliteli boya üretimi ve Türkiye geneli hızlı gönderim.",
+      "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
     images: ["/magellan-label.png"],
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://www.magellanboya.com/",
   },
   icons: {
     icon: [

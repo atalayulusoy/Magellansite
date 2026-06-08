@@ -7,7 +7,7 @@ const siteUrl =
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const routes = [
-    { path: "", priority: 1 },
+    { path: "/", priority: 1 },
     { path: "/hakkimizda", priority: 0.8 },
     { path: "/urunler", priority: 0.95 },
     { path: "/uygulamalar", priority: 0.85 },
