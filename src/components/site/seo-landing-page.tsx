@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageCircleMore } from "lucide-react";
-import { SeoLandingPage } from "./seo-landing-data";
+import { SeoLandingPage, seoLandingPageMap } from "./seo-landing-data";
 import { companyInfo } from "./site-data";
 
 function buildParagraphs(page: SeoLandingPage) {
@@ -13,6 +13,9 @@ function buildParagraphs(page: SeoLandingPage) {
     `Kalite tarafında odak noktası ${page.qualityNote} sağlamaktır. Serigrafi baskı yapan işletmeler için boya yalnızca renk veren bir malzeme değildir; üretim hızını, fire oranını, müşteri memnuniyetini ve tekrar sipariş güvenini doğrudan etkileyen bir girdidir. Düşük performanslı bir ürün kısa vadede ucuz gibi görünse de kalıp tıkanması, yüzeyden atma, renk solması veya tekrar baskı ihtiyacı gibi maliyetler doğurabilir. Bu yüzden Magellan Boya, ürün tavsiyesinde fiyat kadar uygulama güvenliğini de dikkate alır.`,
     `Fiyat konusu serigrafi sektöründe doğal olarak önemlidir. ${page.priceNote}. Ancak “en ucuz” ürün her zaman en verimli çözüm anlamına gelmez. Doğru ürün, doğru yüzey ve doğru uygulama ile birleştiğinde toplam maliyet düşer; çünkü daha az fire oluşur, baskı tekrarı azalır ve üretim akışı kesintiye uğramaz. Magellan Boya, uygun fiyatlı serigrafi boya ve yardımcı ürün arayan işletmelere kaliteyi koruyan, uzun vadeli ve şeffaf bir tedarik yaklaşımı sunmayı hedefler.`,
     `Toptan alım yapan veya düzenli üretim gerçekleştiren firmalar için stok sürekliliği de teknik kalite kadar önemlidir. Serigrafi boya tedarikçisi seçilirken ürün çeşitliliği, termin planı, iletişim hızı ve teknik destek birlikte değerlendirilmelidir. Magellan Boya, ihtiyaç duyulan ürün grubunu belirledikten sonra sevkiyat, ambalaj miktarı ve kullanım sıklığına göre planlama yapılmasına yardımcı olur. Böylece atölye veya üretim hattı, kritik ürünleri son anda aramak zorunda kalmadan daha düzenli çalışabilir.`,
+    `Bölgesel ve şehir dışı tedariklerde lojistik planlama da ürün kalitesinin bir parçası haline gelir. Bir işletmenin doğru ürünü seçmesi kadar, o ürüne ihtiyaç duyduğu zamanda ulaşabilmesi de önemlidir. Magellan Boya, İstanbul merkezli üretim ve tedarik yapısının sağladığı esneklikle farklı şehirlerdeki müşterilerin ihtiyaçlarını değerlendirir. Ürün grubu, tüketim miktarı ve teslimat beklentisi netleştiğinde daha sağlıklı bir sevkiyat planı hazırlanabilir. Bu yaklaşım özellikle üretim hattı duran, seri sipariş alan veya sezonluk yoğunluk yaşayan işletmeler için ciddi avantaj sağlar.`,
+    `Teknik destek tarafında amaç yalnızca ürün adı vermek değil, baskı sürecini doğru okumaktır. Kullanılan elek numarası, rakle yapısı, baskı adedi, ortam sıcaklığı, kurutma yöntemi ve yüzey hazırlığı ürün performansını etkileyebilir. Aynı boya farklı yüzeylerde farklı davranabileceği için, ürün seçimi pratik üretim bilgisiyle desteklenmelidir. Magellan Boya, ${page.focusKeyword} konusunda bilgi almak isteyen işletmelere bu nedenle ürün ailesi, yardımcı kimyasal ve uygulama koşullarını birlikte düşünmelerini önerir. Bu sayede yalnızca satın alma değil, üretim verimliliği de iyileşir.`,
+    `Uzun vadeli çalışmalarda ürün dokümantasyonu, tekrar sipariş kolaylığı ve renk standardı önemli hale gelir. Aynı müşterinin belirli bir yüzeyde aynı sonucu yeniden alabilmesi için kullanılan ürünün, uygulama notunun ve tedarik planının kayıt altında tutulması faydalıdır. Bu profesyonel yaklaşım, özellikle marka baskısı yapan tekstil atölyeleri, ambalaj üreticileri ve kurumsal promosyon tedarikçileri için değer yaratır. Magellan Boya, ürün seçimi ve fiyatlandırma sürecini mümkün olduğunca açık tutarak müşterinin hem bugünkü hem de sonraki üretim ihtiyaçlarını daha doğru planlamasına yardımcı olur.`,
     `Magellan Boya ile çalışırken ürün seçimi için uzun ve karmaşık bir süreç gerekmez. ${page.ctaNote}. Baskı yüzeyi, mevcut boya deneyimi, hedef renk, üretim adedi ve varsa yaşanan teknik problem paylaşıldığında daha doğru yönlendirme yapılabilir. Ürünler sayfasında serigrafi boyaları, plastisol boya, emülsiyon, inceltici, geciktirici ve yardımcı kimyasal gruplarını inceleyebilir; fiyat ve tedarik detayları için WhatsApp üzerinden doğrudan iletişime geçebilirsiniz.`,
   ];
 }
@@ -42,9 +45,32 @@ function buildFaq(page: SeoLandingPage) {
   ];
 }
 
+function getRelatedPages(page: SeoLandingPage) {
+  const fromPage = (page.relatedSlugs ?? [])
+    .map((slug) => seoLandingPageMap.get(slug))
+    .filter(
+      (item): item is SeoLandingPage =>
+        item !== undefined && item.slug !== page.slug
+    );
+
+  if (fromPage.length > 0) {
+    return fromPage;
+  }
+
+  return [
+    seoLandingPageMap.get("serigrafi-boyalari"),
+    seoLandingPageMap.get("plastisol-boya"),
+    seoLandingPageMap.get("toptan-serigrafi-boya"),
+  ].filter(
+    (item): item is SeoLandingPage =>
+      item !== undefined && item.slug !== page.slug
+  );
+}
+
 export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
   const paragraphs = buildParagraphs(page);
   const faq = buildFaq(page);
+  const relatedPages = getRelatedPages(page);
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#060814] text-white">
@@ -73,6 +99,12 @@ export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
               className="button-secondary inline-flex items-center justify-center text-sm"
             >
               Ürünleri İncele
+            </Link>
+            <Link
+              href="/iletisim"
+              className="button-secondary inline-flex items-center justify-center text-sm"
+            >
+              İletişim
             </Link>
             <a
               href={companyInfo.whatsappHref}
@@ -116,6 +148,12 @@ export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
               >
                 Teklif Al
               </a>
+              <Link
+                href="/iletisim"
+                className="button-secondary inline-flex items-center justify-center"
+              >
+                İletişime Geç
+              </Link>
             </div>
           </div>
 
@@ -160,7 +198,32 @@ export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
                 >
                   WhatsApp&apos;tan Sor
                 </a>
+                <Link
+                  href="/iletisim"
+                  className="button-secondary mt-3 inline-flex w-full items-center justify-center text-sm"
+                >
+                  İletişim Sayfası
+                </Link>
               </div>
+
+              {relatedPages.length > 0 && (
+                <div className="glass-panel rounded-[2rem] p-6">
+                  <h2 className="font-display text-2xl font-semibold text-white">
+                    İlgili Sayfalar
+                  </h2>
+                  <div className="mt-5 space-y-3">
+                    {relatedPages.map((item) => (
+                      <Link
+                        key={item.slug}
+                        href={`/${item.slug}`}
+                        className="block rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm text-white/70 transition hover:border-white/20 hover:bg-white/[0.09] hover:text-white"
+                      >
+                        {item.eyebrow}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
             </aside>
           </article>
 
