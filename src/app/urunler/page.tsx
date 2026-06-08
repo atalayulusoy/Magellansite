@@ -45,6 +45,7 @@ const productListJsonLd = {
       },
       offers: {
         "@type": "Offer",
+        price: "0",
         priceCurrency: "TRY",
         availability: "https://schema.org/InStock",
         url: "https://www.magellanboya.com/urunler",
