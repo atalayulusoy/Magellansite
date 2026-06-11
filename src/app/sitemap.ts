@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { blogPosts } from "@/components/site/blog-data";
 import { seoLandingPages } from "@/components/site/seo-landing-data";
 
 const siteUrl =
@@ -16,9 +17,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/uretim", priority: 0.75 },
     { path: "/referanslar", priority: 0.75 },
     { path: "/iletisim", priority: 0.9 },
+    { path: "/blog", priority: 0.8 },
     ...seoLandingPages.map((page) => ({
       path: `/${page.slug}`,
       priority: 0.72,
+    })),
+    ...blogPosts.map((post) => ({
+      path: `/blog/${post.slug}`,
+      priority: 0.7,
     })),
   ];
 

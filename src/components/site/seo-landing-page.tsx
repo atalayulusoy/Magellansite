@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageCircleMore } from "lucide-react";
+import { blogPosts } from "./blog-data";
 import { SeoLandingPage, seoLandingPageMap } from "./seo-landing-data";
 import { companyInfo } from "./site-data";
 
@@ -67,10 +68,36 @@ function getRelatedPages(page: SeoLandingPage) {
   );
 }
 
+function getRelatedBlogPosts(page: SeoLandingPage) {
+  const pageText = [
+    page.slug,
+    page.focusKeyword,
+    page.productFocus,
+    ...page.relatedKeywords,
+  ]
+    .join(" ")
+    .toLocaleLowerCase("tr-TR");
+
+  const matches = blogPosts.filter((post) => {
+    const postText = [post.focusKeyword, post.title, ...post.relatedLandingSlugs]
+      .join(" ")
+      .toLocaleLowerCase("tr-TR");
+
+    return (
+      post.relatedLandingSlugs.includes(page.slug) ||
+      pageText.includes(post.focusKeyword.toLocaleLowerCase("tr-TR")) ||
+      postText.includes(page.focusKeyword.toLocaleLowerCase("tr-TR"))
+    );
+  });
+
+  return (matches.length > 0 ? matches : blogPosts.slice(0, 3)).slice(0, 3);
+}
+
 export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
   const paragraphs = buildParagraphs(page);
   const faq = buildFaq(page);
   const relatedPages = getRelatedPages(page);
+  const relatedBlogPosts = getRelatedBlogPosts(page);
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#060814] text-white">
@@ -224,6 +251,23 @@ export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
                   </div>
                 </div>
               )}
+
+              <div className="glass-panel rounded-[2rem] p-6">
+                <h2 className="font-display text-2xl font-semibold text-white">
+                  Teknik Rehberler
+                </h2>
+                <div className="mt-5 space-y-3">
+                  {relatedBlogPosts.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="block rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm text-white/70 transition hover:border-white/20 hover:bg-white/[0.09] hover:text-white"
+                    >
+                      {post.eyebrow}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </aside>
           </article>
 
