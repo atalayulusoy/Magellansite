@@ -654,12 +654,146 @@ const commercialSeoPages: SeoLandingPage[] = [
   commercialPage("serigrafi-yardimci-malzemeleri", "Serigrafi Yardımcı Malzemeleri", "yardımcı malzeme seçiminde üretim alışkanlığı, boya tipi, kalıp hazırlığı ve temizlik süreci dikkate alınır", ["serigrafi-yardimci-kimyasallari", "emulsiyon-sokucu", "geciktirici"]),
 ];
 
+const expandedCitySeoPageData: Array<[string, string, string]> = [
+  ["adana-serigrafi-boya", "Adana", "Adana'nın tekstil, ambalaj, plastik ve baskı odaklı üretim yapısı"],
+  ["antalya-serigrafi-boya", "Antalya", "Antalya'nın reklam, promosyon, turizm ekipmanı ve ambalaj üretim ağı"],
+  ["kayseri-serigrafi-boya", "Kayseri", "Kayseri'nin mobilya, tekstil, ambalaj ve sanayi üretim gücü"],
+  ["mersin-serigrafi-boya", "Mersin", "Mersin'in lojistik, ambalaj, plastik ve ihracat odaklı üretim yapısı"],
+  ["denizli-serigrafi-boya", "Denizli", "Denizli'nin tekstil, havlu, promosyon ve ihracat odaklı baskı ihtiyaçları"],
+  ["manisa-serigrafi-boya", "Manisa", "Manisa'nın plastik, beyaz eşya yan sanayi, ambalaj ve endüstriyel üretim alanları"],
+  ["sakarya-serigrafi-boya", "Sakarya", "Sakarya'nın otomotiv yan sanayi, ambalaj, plastik ve reklam üretim yapısı"],
+  ["tekirdag-serigrafi-boya", "Tekirdağ", "Tekirdağ'ın tekstil, plastik, ambalaj ve sanayi bölgesi yoğunluğu"],
+  ["corlu-serigrafi-boya", "Çorlu", "Çorlu'nun tekstil, deri, plastik, ambalaj ve sanayi üretim ağı"],
+  ["corum-serigrafi-boya", "Çorum", "Çorum'un makine, ambalaj, reklam ve yerel üretim işletmeleri"],
+  ["samsun-serigrafi-boya", "Samsun", "Samsun'un reklam, ambalaj, tekstil ve Karadeniz üretim ağı"],
+  ["trabzon-serigrafi-boya", "Trabzon", "Trabzon'un reklam, tabela, ambalaj ve bölgesel üretim işletmeleri"],
+  ["eskisehir-serigrafi-boya", "Eskişehir", "Eskişehir'in endüstriyel üretim, ambalaj, reklam ve plastik işleme yapısı"],
+  ["balikesir-serigrafi-boya", "Balıkesir", "Balıkesir'in ambalaj, gıda, plastik ve yerel üretim sanayisi"],
+  ["canakkale-serigrafi-boya", "Çanakkale", "Çanakkale'nin ambalaj, reklam, promosyon ve yerel üretim ağı"],
+  ["mugla-serigrafi-boya", "Muğla", "Muğla'nın turizm promosyonu, tabela, ambalaj ve butik üretim ihtiyaçları"],
+  ["aydin-serigrafi-boya", "Aydın", "Aydın'ın ambalaj, tekstil, reklam ve gıda etiketleme üretim yapısı"],
+  ["diyarbakir-serigrafi-boya", "Diyarbakır", "Diyarbakır'ın tekstil, ambalaj, reklam ve bölgesel üretim gücü"],
+  ["malatya-serigrafi-boya", "Malatya", "Malatya'nın ambalaj, gıda, reklam ve sanayi üretim alanları"],
+  ["kahramanmaras-serigrafi-boya", "Kahramanmaraş", "Kahramanmaraş'ın tekstil, ambalaj, iplik ve sanayi üretim altyapısı"],
+  ["hatay-serigrafi-boya", "Hatay", "Hatay'ın ambalaj, metal, reklam ve lojistik odaklı üretim yapısı"],
+  ["adiyaman-serigrafi-boya", "Adıyaman", "Adıyaman'ın tekstil, ambalaj, reklam ve yerel üretim işletmeleri"],
+  ["sanliurfa-serigrafi-boya", "Şanlıurfa", "Şanlıurfa'nın tekstil, ambalaj, tarım ekipmanı ve reklam üretim ağı"],
+  ["van-serigrafi-boya", "Van", "Van'ın reklam, tabela, promosyon ve bölgesel ambalaj üretim ihtiyaçları"],
+  ["erzurum-serigrafi-boya", "Erzurum", "Erzurum'un reklam, tabela, ambalaj ve Doğu Anadolu üretim ağı"],
+  ["sivas-serigrafi-boya", "Sivas", "Sivas'ın makine, reklam, ambalaj ve sanayi üretim işletmeleri"],
+  ["afyon-serigrafi-boya", "Afyon", "Afyon'un gıda ambalajı, mermer yan sanayi, reklam ve etiket üretim yapısı"],
+  ["usak-serigrafi-boya", "Uşak", "Uşak'ın tekstil, deri, ambalaj ve geri dönüşüm odaklı sanayi yapısı"],
+  ["nevsehir-serigrafi-boya", "Nevşehir", "Nevşehir'in turizm promosyonu, ambalaj, reklam ve yerel üretim ağı"],
+  ["karaman-serigrafi-boya", "Karaman", "Karaman'ın gıda ambalajı, reklam, plastik ve üretim işletmeleri"],
+];
+
+const expandedCitySeoPages: SeoLandingPage[] = expandedCitySeoPageData.map(
+  ([slug, city, industryNote]) => cityPage(slug, city, industryNote)
+);
+
+const expandedRegionalSeoPageData: Array<[string, string, string]> = [
+  ["tuzla-serigrafi-boya", "Tuzla", "Tuzla OSB, deri sanayi ve tersane çevresindeki endüstriyel üretim yapısı"],
+  ["pendik-serigrafi-boya", "Pendik", "Pendik'in plastik, reklam, ambalaj ve atölye odaklı üretim ağı"],
+  ["kartal-serigrafi-boya", "Kartal", "Kartal'ın reklam, promosyon, ambalaj ve küçük sanayi işletmeleri"],
+  ["umraniye-serigrafi-boya", "Ümraniye", "Ümraniye'nin tabela, reklam, tekstil ve ambalaj üretim çevresi"],
+  ["sancaktepe-serigrafi-boya", "Sancaktepe", "Sancaktepe'nin ambalaj, plastik, mobilya yan sanayi ve reklam işletmeleri"],
+  ["sultanbeyli-serigrafi-boya", "Sultanbeyli", "Sultanbeyli'nin promosyon, reklam, tekstil ve yerel üretim yapısı"],
+  ["atasehir-serigrafi-boya", "Ataşehir", "Ataşehir'in kurumsal promosyon, reklam ve marka baskı ihtiyaçları"],
+  ["gebze-serigrafi-boya", "Gebze", "Gebze OSB ve çevresindeki plastik, otomotiv yan sanayi, ambalaj ve teknik üretim yapısı"],
+  ["arnavutkoy-serigrafi-boya", "Arnavutköy", "Arnavutköy'ün lojistik, ambalaj, tekstil ve sanayi işletmeleri"],
+  ["bagcilar-serigrafi-boya", "Bağcılar", "Bağcılar'ın tekstil, promosyon, matbaa ve reklam atölyeleri"],
+  ["gungoren-serigrafi-boya", "Güngören", "Güngören'in tekstil, hazır giyim, etiket ve baskı atölyeleri"],
+  ["bahcelievler-serigrafi-boya", "Bahçelievler", "Bahçelievler'in reklam, tekstil, ambalaj ve promosyon üretim ağı"],
+  ["sefakoy-serigrafi-boya", "Sefaköy", "Sefaköy ve çevresindeki tekstil, reklam, promosyon ve ambalaj işletmeleri"],
+  ["kucukcekmece-serigrafi-boya", "Küçükçekmece", "Küçükçekmece'nin tekstil, ambalaj, plastik ve baskı üretim çevresi"],
+  ["avcilar-serigrafi-boya", "Avcılar", "Avcılar'ın reklam, tabela, ambalaj ve promosyon üretim ihtiyaçları"],
+  ["beylikduzu-serigrafi-boya", "Beylikdüzü", "Beylikdüzü'nün sanayi siteleri, ambalaj, plastik ve reklam işletmeleri"],
+  ["hadimkoy-serigrafi-boya", "Hadımköy", "Hadımköy'ün lojistik, plastik, ambalaj ve endüstriyel üretim altyapısı"],
+  ["catalca-serigrafi-boya", "Çatalca", "Çatalca'nın lojistik, ambalaj, plastik ve üretim tesisleri"],
+  ["silivri-serigrafi-boya", "Silivri", "Silivri'nin ambalaj, plastik, reklam ve sanayi üretim işletmeleri"],
+  ["esenler-serigrafi-boya", "Esenler", "Esenler'in tekstil, promosyon, reklam ve küçük üretim ağı"],
+  ["sultangazi-serigrafi-boya", "Sultangazi", "Sultangazi'nin tekstil, ayakkabı yan sanayi, plastik ve reklam işletmeleri"],
+  ["kagithane-serigrafi-boya", "Kağıthane", "Kağıthane'nin reklam, tabela, promosyon ve kurumsal baskı ihtiyaçları"],
+  ["topkapi-serigrafi-boya", "Topkapı", "Topkapı ve çevresindeki matbaa, ambalaj, etiket ve baskı üretim ağı"],
+  ["davutpasa-serigrafi-boya", "Davutpaşa", "Davutpaşa'nın tekstil, matbaa, ambalaj ve küçük sanayi üretim yapısı"],
+  ["dudullu-serigrafi-boya", "Dudullu", "Dudullu OSB ve çevresindeki ambalaj, plastik, metal ve endüstriyel üretim ağı"],
+];
+
+const expandedRegionalSeoPages: SeoLandingPage[] = expandedRegionalSeoPageData.map(
+  ([slug, region, industryNote]) => regionalPage(slug, region, industryNote)
+);
+
+const expandedProductSeoPageData: Array<[string, string, string, string[]]> = [
+  ["akrilik-baski-boyasi", "Akrilik Baskı Boyası", "akrilik ve benzeri plastik yüzeylerde logo, işaretleme ve dekoratif baskı için boya çözümleri", ["plastik-serigrafi-boyasi", "uv-serigrafi-boyasi", "serigrafi-baski-boyasi"]],
+  ["abs-plastik-baski-boyasi", "ABS Plastik Baskı Boyası", "ABS plastik parçalarda tutunma, çizilme dayanımı ve net ikon baskısı hedefleyen serigrafi boya çözümleri", ["plastik-serigrafi-boyasi", "pvc-serigrafi-boyasi", "endustriyel-serigrafi-boyasi"]],
+  ["polikarbon-baski-boyasi", "Polikarbon Baskı Boyası", "polikarbon panel, etiket, teknik parça ve endüstriyel işaretleme için baskı boyası çözümleri", ["plastik-serigrafi-boyasi", "membran-switch-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["pleksi-baski-boyasi", "Pleksi Baskı Boyası", "pleksi tabela, dekoratif ürün ve promosyon yüzeylerinde serigrafi baskıya uygun boya çözümleri", ["akrilik-baski-boyasi", "tabela-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["folyo-baski-boyasi", "Folyo Baskı Boyası", "folyo, etiket ve esnek yüzeylerde marka baskısı ve teknik işaretleme için boya çözümleri", ["etiket-baski-boyasi", "rulo-etiket-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["rulo-etiket-baski-boyasi", "Rulo Etiket Baskı Boyası", "rulo etiket üretiminde net yazı, barkod okunurluğu ve seri üretim uyumu sağlayan boya çözümleri", ["etiket-baski-boyasi", "uv-serigrafi-boyasi", "ambalaj-serigrafi-boyasi"]],
+  ["kumas-baski-boyasi", "Kumaş Baskı Boyası", "tekstil, bez çanta, iş kıyafeti ve promosyon kumaş yüzeylerde serigrafi baskı boya çözümleri", ["tekstil-baski-boyasi", "su-bazli-tekstil-boyasi", "plastisol-boya"]],
+  ["bez-canta-baski-boyasi", "Bez Çanta Baskı Boyası", "bez çanta ve promosyon tekstil ürünlerinde logo, desen ve kurumsal baskı için boya çözümleri", ["kumas-baski-boyasi", "tekstil-baski-boyasi", "su-bazli-tekstil-boyasi"]],
+  ["sweatshirt-baski-boyasi", "Sweatshirt Baskı Boyası", "sweatshirt, hoodie ve kalın kumaşlarda opak, dayanıklı ve canlı tekstil baskı çözümleri", ["tekstil-serigrafi-boyasi", "plastisol-boya", "tekstil-baski-boyasi"]],
+  ["canta-baski-boyasi", "Çanta Baskı Boyası", "bez, suni deri, PVC ve promosyon çanta yüzeylerinde marka baskısı için boya çözümleri", ["bez-canta-baski-boyasi", "deri-boyasi", "pvc-serigrafi-boyasi"]],
+  ["deri-etiket-baski-boyasi", "Deri Etiket Baskı Boyası", "deri etiket, suni deri arma ve marka baskılarında net görünüm sağlayan boya çözümleri", ["deri-boyasi", "suni-deri-baski-boyasi", "pvc-serigrafi-boyasi"]],
+  ["suni-deri-baski-boyasi", "Suni Deri Baskı Boyası", "suni deri, PVC kaplı yüzey ve aksesuar baskılarında tutunma hedefleyen boya çözümleri", ["deri-boyasi", "pvc-serigrafi-boyasi", "ayakkabi-baski-boyasi"]],
+  ["kozmetik-ambalaj-baski-boyasi", "Kozmetik Ambalaj Baskı Boyası", "kozmetik kutu, plastik kap, şişe ve etiket yüzeylerinde net marka baskısı sağlayan boya çözümleri", ["ambalaj-baski-boyasi", "cam-baski-boyasi", "plastik-kutu-baski-boyasi"]],
+  ["plastik-kutu-baski-boyasi", "Plastik Kutu Baskı Boyası", "plastik kutu, kapak, promosyon kutusu ve teknik ambalajlarda serigrafi baskı boya çözümleri", ["plastik-serigrafi-boyasi", "ambalaj-baski-boyasi", "pvc-baski-boyasi"]],
+  ["oyuncak-baski-boyasi", "Oyuncak Baskı Boyası", "plastik oyuncak, promosyon figür ve renkli teknik parçalarda marka ve detay baskısı için boya çözümleri", ["plastik-serigrafi-boyasi", "abs-plastik-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["elektronik-panel-baski-boyasi", "Elektronik Panel Baskı Boyası", "elektronik panel, cihaz gövdesi, tuş takımı ve ikon baskıları için teknik boya çözümleri", ["membran-switch-baski-boyasi", "polikarbon-baski-boyasi", "endustriyel-serigrafi-boyasi"]],
+  ["membran-switch-baski-boyasi", "Membran Switch Baskı Boyası", "membran switch, kontrol paneli ve teknik etiket baskılarında dayanım hedefleyen boya çözümleri", ["polikarbon-baski-boyasi", "elektronik-panel-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["tabela-baski-boyasi", "Tabela Baskı Boyası", "tabela, uyarı levhası, yönlendirme paneli ve reklam yüzeylerinde baskı boya çözümleri", ["uyari-levhasi-baski-boyasi", "pleksi-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["uyari-levhasi-baski-boyasi", "Uyarı Levhası Baskı Boyası", "uyarı levhası, güvenlik tabelası ve teknik işaretleme yüzeylerinde dayanıklı baskı çözümleri", ["tabela-baski-boyasi", "metal-baski-boyasi", "endustriyel-serigrafi-boyasi"]],
+  ["pvc-etiket-baski-boyasi", "PVC Etiket Baskı Boyası", "PVC etiket, yapışkanlı yüzey ve teknik etiketlerde net logo ve yazı baskısı için boya çözümleri", ["pvc-baski-boyasi", "etiket-baski-boyasi", "folyo-baski-boyasi"]],
+  ["karton-ambalaj-baski-boyasi", "Karton Ambalaj Baskı Boyası", "karton kutu, kraft ambalaj ve marka kutularında serigrafi baskıya uygun boya çözümleri", ["kagit-serigrafi-boyasi", "ambalaj-baski-boyasi", "kraft-poset-baski-boyasi"]],
+  ["kraft-poset-baski-boyasi", "Kraft Poşet Baskı Boyası", "kraft poşet, kağıt poşet ve butik ambalajlarda logo baskısı için boya çözümleri", ["poset-baski-boyasi", "kagit-serigrafi-boyasi", "karton-ambalaj-baski-boyasi"]],
+  ["transfer-baski-boyasi", "Transfer Baskı Boyası", "tekstil transfer, promosyon baskı ve özel efekt uygulamalarında kullanılabilecek boya çözümleri", ["tekstil-baski-boyasi", "plastisol-boya", "tisort-baski-boyasi"]],
+  ["flok-baski-boyasi", "Flok Baskı Boyası", "tekstil ve promosyon yüzeylerde flok efektli baskı süreçlerine uygun boya ve yardımcı ürün çözümleri", ["tekstil-serigrafi-boyasi", "transfer-baski-boyasi", "plastisol-boya"]],
+  ["varak-baski-boyasi", "Varak Baskı Boyası", "varak efekt, metalik görünüm ve premium marka baskılarında kullanılabilecek boya çözümleri", ["plastisol-altin-yaldiz", "pvc-altin-yaldiz-serigrafi-boyasi", "promosyon-baski-boyasi"]],
+];
+
+const expandedProductSeoPages: SeoLandingPage[] = expandedProductSeoPageData.map(
+  ([slug, name, descriptionFocus, relatedSlugs]) =>
+    productPage(slug, name, descriptionFocus, relatedSlugs)
+);
+
+const expandedCommercialSeoPageData: Array<[string, string, string, string[]?]> = [
+  ["serigrafi-boya-bayiligi", "Serigrafi Boya Bayiliği", "bayilik ve düzenli tedarik modelinde ürün grubu, bölge, stok planı ve teknik destek beklentisi birlikte değerlendirilir"],
+  ["serigrafi-boya-toplu-alim", "Serigrafi Boya Toplu Alım", "toplu alım planında aylık tüketim, ambalaj tercihi, renk ihtiyacı ve sevkiyat takvimi birlikte netleştirilir"],
+  ["serigrafi-boya-numune-calismasi", "Serigrafi Boya Numune Çalışması", "numune çalışmasında yüzey, hedef renk, kuruma koşulu ve dayanım beklentisi birlikte test edilir"],
+  ["serigrafi-boya-renk-eslestirme", "Serigrafi Boya Renk Eşleştirme", "renk eşleştirme sürecinde numune, marka standardı, baskı kalınlığı ve yüzey rengi birlikte değerlendirilir"],
+  ["serigrafi-boya-teknik-destek", "Serigrafi Boya Teknik Destek", "teknik destek sürecinde baskı yüzeyi, kullanılan ürün, kalıp yapısı ve yaşanan sorun birlikte okunur"],
+  ["serigrafi-boya-stoklu-tedarik", "Serigrafi Boya Stoklu Tedarik", "stoklu tedarikte hızlı erişim, ürün sürekliliği, düzenli tüketim ve kritik renk planı birlikte ele alınır"],
+  ["serigrafi-boya-hizli-sevkiyat", "Serigrafi Boya Hızlı Sevkiyat", "hızlı sevkiyat ihtiyacında ürün grubu, ambalaj, teslimat adresi ve üretim takvimi birlikte planlanır"],
+  ["tekstil-atolyeleri-icin-serigrafi-boya", "Tekstil Atölyeleri İçin Serigrafi Boya", "tekstil atölyelerinde kumaş tipi, baskı adedi, yıkama dayanımı ve plastisol/su bazlı seçim birlikte değerlendirilir", ["tekstil-baski-boyasi", "plastisol-boya", "su-bazli-tekstil-boyasi"]],
+  ["ambalaj-firmalari-icin-serigrafi-boya", "Ambalaj Firmaları İçin Serigrafi Boya", "ambalaj üretiminde yüzey, logo okunurluğu, kuruma hızı ve seri üretim uyumu birlikte planlanır", ["ambalaj-baski-boyasi", "karton-ambalaj-baski-boyasi", "etiket-baski-boyasi"]],
+  ["matbaalar-icin-serigrafi-boya", "Matbaalar İçin Serigrafi Boya", "matbaalarda kağıt, karton, etiket, ambalaj ve özel yüzey baskıları için ürün grubu doğru seçilmelidir", ["kagit-serigrafi-boyasi", "etiket-baski-boyasi", "serigrafi-baski-boyasi"]],
+  ["promosyon-firmalari-icin-serigrafi-boya", "Promosyon Firmaları İçin Serigrafi Boya", "promosyon üretiminde farklı yüzeyler, renk tekrarları, logo netliği ve hızlı tedarik birlikte önem kazanır", ["promosyon-baski-boyasi", "plastik-serigrafi-boyasi", "bez-canta-baski-boyasi"]],
+  ["tabela-ureticileri-icin-serigrafi-boya", "Tabela Üreticileri İçin Serigrafi Boya", "tabela üretiminde dış ortam dayanımı, yüzey uyumu, renk görünürlüğü ve kuruma planı birlikte ele alınır", ["tabela-baski-boyasi", "uyari-levhasi-baski-boyasi", "uv-serigrafi-boyasi"]],
+  ["deri-urun-ureticileri-icin-baski-boyasi", "Deri Ürün Üreticileri İçin Baskı Boyası", "deri ve suni deri ürünlerde yüzey esnekliği, tutunma, sürtünme ve marka baskısı birlikte değerlendirilir", ["deri-boyasi", "suni-deri-baski-boyasi", "deri-etiket-baski-boyasi"]],
+  ["plastik-ureticileri-icin-serigrafi-boya", "Plastik Üreticileri İçin Serigrafi Boya", "plastik üreticilerinde hammadde türü, yüzey enerjisi, çizilme dayanımı ve üretim adedi birlikte analiz edilir", ["plastik-serigrafi-boyasi", "abs-plastik-baski-boyasi", "pvc-baski-boyasi"]],
+  ["ihracat-uretimleri-icin-serigrafi-boya", "İhracat Üretimleri İçin Serigrafi Boya", "ihracat odaklı üretimlerde kalite tekrarı, numune onayı, paketleme ve tedarik takvimi birlikte planlanır"],
+  ["fason-baski-atolyeleri-icin-serigrafi-boya", "Fason Baskı Atölyeleri İçin Serigrafi Boya", "fason atölyelerde farklı müşteri işleri, hızlı renk değişimi, stok sürekliliği ve uygulama pratikliği önemlidir"],
+  ["kurumsal-serigrafi-boya-tedariki", "Kurumsal Serigrafi Boya Tedariki", "kurumsal tedarikte satın alma süreci, düzenli sevkiyat, fiyat standardı ve teknik destek birlikte yönetilir"],
+  ["serigrafi-boya-fiyat-teklifi", "Serigrafi Boya Fiyat Teklifi", "fiyat teklifi hazırlanırken ürün tipi, renk, ambalaj, yüzey, adet ve teslimat beklentisi birlikte netleştirilir"],
+  ["serigrafi-boya-malzeme-listesi", "Serigrafi Boya Malzeme Listesi", "malzeme listesi hazırlanırken boya, emülsiyon, inceltici, geciktirici, sertleştirici ve ekipman ihtiyacı birlikte ele alınır", ["serigrafi-malzemeleri", "serigrafi-yardimci-malzemeleri", "serigrafi-kimyasallari"]],
+  ["serigrafi-boya-kalite-kontrol", "Serigrafi Boya Kalite Kontrol", "kalite kontrol sürecinde renk, viskozite, tutunma, kuruma, dayanım ve parti sürekliliği birlikte değerlendirilir"],
+];
+
+const expandedCommercialSeoPages: SeoLandingPage[] = expandedCommercialSeoPageData.map(
+  ([slug, keyword, angle, relatedSlugs]) =>
+    commercialPage(slug, keyword, angle, relatedSlugs)
+);
+
 export const seoLandingPages: SeoLandingPage[] = [
   ...coreSeoLandingPages,
   ...regionalSeoPages,
   ...citySeoPages,
   ...additionalProductSeoPages,
   ...commercialSeoPages,
+  ...expandedCitySeoPages,
+  ...expandedRegionalSeoPages,
+  ...expandedProductSeoPages,
+  ...expandedCommercialSeoPages,
 ];
 
 export const seoLandingPageMap = new Map(
