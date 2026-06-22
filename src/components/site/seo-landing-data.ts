@@ -83,6 +83,42 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     ],
   },
   {
+    slug: "serigrafi-malzemeleri",
+    title: "Serigrafi Malzemeleri | Boya, Emülsiyon, Ragle ve Kimyasallar | Magellan Boya",
+    description:
+      "Serigrafi malzemeleri; serigrafi boya, plastisol, PVC ve UV boya, emülsiyon, inceltici, geciktirici, sertleştirici ve ragle ürünleri.",
+    h1: "Serigrafi Malzemeleri ve Profesyonel Baskı Ürünleri",
+    eyebrow: "Serigrafi Malzemeleri",
+    focusKeyword: "serigrafi malzemeleri",
+    relatedKeywords: [
+      "serigrafi baskı malzemeleri",
+      "serigrafi kimyasalları",
+      "serigrafi yardımcı malzemeleri",
+      "serigrafi boya",
+      "serigrafi emülsiyonu",
+    ],
+    productFocus:
+      "serigrafi boyaları, plastisol boya, PVC ve UV seriler, emülsiyon, emülsiyon sökücü, inceltici, geciktirici, sertleştirici, ragle ve kalıp hazırlama ürünleri",
+    audience:
+      "serigrafi atölyeleri, tekstil baskı üreticileri, ambalaj firmaları, tabela üreticileri, promosyon işletmeleri ve teknik baskı yapan firmalar",
+    surfaceExamples:
+      "tekstil, PVC, plastik, ambalaj, etiket, deri, cam, metal, kağıt poşet, levha ve promosyon ürünleri",
+    processNote:
+      "baskı yapılacak yüzey, kalıp hazırlığı, boya tipi, yardımcı kimyasal ihtiyacı, rakle seçimi, kuruma sistemi ve üretim adedi birlikte değerlendirilir",
+    qualityNote:
+      "baskı netliği, kalıp dayanımı, boya akışı, yüzey tutunması, renk tekrarı, ekipman uyumu ve tedarik sürekliliği",
+    priceNote:
+      "serigrafi malzemeleri fiyatı ürün grubuna, ambalaj miktarına, düzenli tüketim planına ve teknik beklentiye göre belirlenir",
+    ctaNote:
+      "serigrafi malzeme listenizi, kullandığınız boya tipini ve baskı yüzeyinizi paylaşarak ürün grubu bazlı teklif alabilirsiniz",
+    relatedSlugs: [
+      "serigrafi-baski-boyalari",
+      "serigrafi-yardimci-malzemeleri",
+      "serigrafi-kimyasallari",
+      "serigrafi-boyalari",
+    ],
+  },
+  {
     slug: "plastisol-boya",
     title: "Plastisol Boya | Tekstil Baskı Boyaları | Magellan Boya",
     description:

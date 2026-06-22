@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPostMap, blogPosts } from "@/components/site/blog-data";
-import { BlogPostPageView, buildBlogPostText } from "@/components/site/blog-page";
+import {
+  BlogPostPageView,
+  buildBlogFaq,
+  buildBlogPostText,
+} from "@/components/site/blog-page";
 
 const siteUrl = "https://www.magellanboya.com";
 
@@ -69,6 +73,7 @@ export default async function BlogPostRoute({ params }: Props) {
   }
 
   const url = `${siteUrl}/blog/${post.slug}`;
+  const faq = buildBlogFaq(post);
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -124,6 +129,18 @@ export default async function BlogPostRoute({ params }: Props) {
         },
       ],
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    },
   ];
 
   return (
@@ -131,7 +148,7 @@ export default async function BlogPostRoute({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd),
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <BlogPostPageView post={post} />

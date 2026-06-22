@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageCircleMore } from "lucide-react";
 import { BlogPost, blogPosts } from "./blog-data";
+import { productDetailPages } from "./product-detail-data";
 import { seoLandingPageMap } from "./seo-landing-data";
 import { companyInfo } from "./site-data";
 
@@ -24,6 +25,55 @@ function getRelatedLandingPages(post: BlogPost) {
   return post.relatedLandingSlugs
     .map((slug) => seoLandingPageMap.get(slug))
     .filter((page): page is NonNullable<typeof page> => page !== undefined);
+}
+
+function getRelatedProducts(post: BlogPost) {
+  const postText = [post.slug, post.focusKeyword, ...post.relatedLandingSlugs]
+    .join(" ")
+    .toLocaleLowerCase("tr-TR");
+
+  const matches = productDetailPages.filter((product) => {
+    const productText = [
+      product.slug,
+      product.focusKeyword,
+      product.categorySlug,
+      ...product.relatedLandingSlugs,
+      ...product.relatedBlogSlugs,
+    ]
+      .join(" ")
+      .toLocaleLowerCase("tr-TR");
+
+    return (
+      product.relatedBlogSlugs.includes(post.slug) ||
+      post.relatedLandingSlugs.some((slug) =>
+        product.relatedLandingSlugs.includes(slug)
+      ) ||
+      productText.includes(post.focusKeyword.toLocaleLowerCase("tr-TR")) ||
+      postText.includes(product.categorySlug)
+    );
+  });
+
+  return (matches.length > 0 ? matches : productDetailPages.slice(0, 4)).slice(0, 4);
+}
+
+export function buildBlogFaq(post: BlogPost) {
+  return [
+    {
+      question: `${post.focusKeyword} için ürün seçerken nelere dikkat edilmeli?`,
+      answer:
+        "Baskı yüzeyi, beklenen dayanım, kuruma koşulu, renk örtücülüğü, üretim adedi ve yardımcı kimyasal uyumu birlikte değerlendirilmelidir.",
+    },
+    {
+      question: "Bu konuda fiyat bilgisi nasıl alınır?",
+      answer:
+        "Ürün grubu, yüzey tipi, renk beklentisi, ambalaj miktarı ve düzenli alım planı paylaşıldığında daha doğru teklif hazırlanabilir.",
+    },
+    {
+      question: "Magellan Boya teknik destek veriyor mu?",
+      answer:
+        "Evet. Baskı yüzeyi, mevcut ürün, hedef renk ve üretim koşulları paylaşıldığında uygun boya veya yardımcı kimyasal grubu için yönlendirme yapılabilir.",
+    },
+  ];
 }
 
 export function BlogIndexPage() {
@@ -111,6 +161,8 @@ export function BlogIndexPage() {
 export function BlogPostPageView({ post }: { post: BlogPost }) {
   const paragraphs = buildBlogParagraphs(post);
   const relatedPages = getRelatedLandingPages(post);
+  const relatedProducts = getRelatedProducts(post);
+  const faq = buildBlogFaq(post);
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#060814] text-white">
@@ -222,8 +274,38 @@ export function BlogPostPageView({ post }: { post: BlogPost }) {
                   ))}
                 </div>
               </div>
+
+              <div className="glass-panel rounded-[2rem] p-6">
+                <h2 className="font-display text-2xl font-semibold text-white">
+                  İlgili Ürünler
+                </h2>
+                <div className="mt-5 space-y-3">
+                  {relatedProducts.map((product) => (
+                    <Link
+                      key={product.slug}
+                      href={`/urun/${product.slug}`}
+                      className="block rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm text-white/70 transition hover:border-white/20 hover:bg-white/[0.09] hover:text-white"
+                    >
+                      {product.focusKeyword}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </aside>
           </article>
+
+          <section className="mt-8 grid gap-5 md:grid-cols-3">
+            {faq.map((item) => (
+              <article key={item.question} className="glass-panel rounded-[1.6rem] p-6">
+                <h2 className="font-display text-xl font-semibold text-white">
+                  {item.question}
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-white/68">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </section>
         </div>
       </section>
     </main>
@@ -231,5 +313,10 @@ export function BlogPostPageView({ post }: { post: BlogPost }) {
 }
 
 export function buildBlogPostText(post: BlogPost) {
-  return [post.h1, post.description, ...buildBlogParagraphs(post)].join(" ");
+  return [
+    post.h1,
+    post.description,
+    ...buildBlogParagraphs(post),
+    ...buildBlogFaq(post).flatMap((item) => [item.question, item.answer]),
+  ].join(" ");
 }

@@ -1,14 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageCircleMore } from "lucide-react";
+import { productDetailPages } from "./product-detail-data";
 import { ProductCategoryPage, productCategoryPageMap } from "./product-category-data";
-import { companyInfo, productCatalogItems } from "./site-data";
+import { companyInfo } from "./site-data";
 
 function getProductsForCategory(page: ProductCategoryPage) {
-  const featured = new Set(page.featuredProducts);
-  const matched = productCatalogItems.filter((product) => featured.has(product.title));
+  const matched = productDetailPages.filter(
+    (product) =>
+      product.categorySlug === page.slug ||
+      page.relatedLandingSlugs.includes(product.categorySlug) ||
+      page.featuredProducts.some((name) =>
+        product.h1.toLocaleLowerCase("tr-TR").includes(name.toLocaleLowerCase("tr-TR"))
+      )
+  );
 
-  return matched.length > 0 ? matched : productCatalogItems.slice(0, 6);
+  return matched.length > 0 ? matched.slice(0, 9) : productDetailPages.slice(0, 9);
 }
 
 export function ProductCategoryPageView({ page }: { page: ProductCategoryPage }) {
@@ -193,8 +200,9 @@ export function ProductCategoryPageView({ page }: { page: ProductCategoryPage })
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {products.map((product) => (
-                <article
+                <Link
                   key={product.title}
+                  href={`/urun/${product.slug}`}
                   className="glass-panel group flex h-full flex-col overflow-hidden rounded-[2rem] p-3"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-[1.55rem] border border-white/10 bg-white">
@@ -208,16 +216,16 @@ export function ProductCategoryPageView({ page }: { page: ProductCategoryPage })
                   </div>
                   <div className="flex flex-1 flex-col p-4">
                     <p className="text-[11px] uppercase tracking-[0.26em] text-[var(--accent-2)]">
-                      {product.category}
+                      {product.categoryLabel}
                     </p>
                     <h3 className="mt-3 font-display text-2xl font-semibold text-white">
-                      {product.title}
+                      {product.focusKeyword}
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-white/68">
                       {product.description}
                     </p>
                     <div className="mt-5 flex flex-wrap gap-2">
-                      {product.features.map((feature) => (
+                      {product.surfaces.slice(0, 3).map((feature) => (
                         <span
                           key={feature}
                           className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-xs text-white/62"
@@ -227,7 +235,7 @@ export function ProductCategoryPageView({ page }: { page: ProductCategoryPage })
                       ))}
                     </div>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </section>

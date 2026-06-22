@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HomePage } from "@/components/site/home-page";
 import { productCategoryPages } from "@/components/site/product-category-data";
+import { productDetailPages } from "@/components/site/product-detail-data";
 import { productCatalogItems } from "@/components/site/site-data";
 
 export const metadata: Metadata = {
@@ -60,6 +61,18 @@ const categoryListJsonLd = {
   })),
 };
 
+const productDetailListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Magellan Boya ürün detay sayfaları",
+  itemListElement: productDetailPages.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: product.h1,
+    url: `https://www.magellanboya.com/urun/${product.slug}`,
+  })),
+};
+
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -88,6 +101,7 @@ export default function ProductsPage() {
           __html: JSON.stringify([
             productListJsonLd,
             categoryListJsonLd,
+            productDetailListJsonLd,
             breadcrumbJsonLd,
           ]).replace(/</g, "\\u003c"),
         }}

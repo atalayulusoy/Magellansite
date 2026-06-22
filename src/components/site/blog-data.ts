@@ -14,7 +14,7 @@ export type BlogPost = {
   relatedLandingSlugs: string[];
 };
 
-export const blogPosts: BlogPost[] = [
+const coreBlogPosts: BlogPost[] = [
   {
     slug: "plastisol-boya-nedir",
     title: "Plastisol Boya Nedir? Kullanım Alanları | Magellan Boya",
@@ -336,5 +336,299 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+function technicalBlogPost(
+  slug: string,
+  title: string,
+  h1: string,
+  eyebrow: string,
+  focusKeyword: string,
+  topic: string,
+  productContext: string,
+  applicationContext: string,
+  relatedLandingSlugs: string[]
+): BlogPost {
+  return {
+    slug,
+    title: `${title} | Magellan Boya`,
+    description: `${h1} hakkında ürün seçimi, kullanım alanı, teknik dikkat noktaları ve fiyat/tedarik değerlendirmesi için Magellan Boya rehberi.`,
+    h1,
+    eyebrow,
+    focusKeyword,
+    intro: `${topic} serigrafi üretiminde doğru boya, doğru yardımcı kimyasal ve doğru uygulama koşulu kurulmadığında baskı kalitesini doğrudan etkileyen önemli bir başlıktır.`,
+    productContext,
+    applicationContext,
+    technicalNotes: [
+      `${focusKeyword} değerlendirilirken baskı yüzeyi, üretim adedi, kuruma koşulu ve dayanım beklentisi birlikte ele alınmalıdır.`,
+      "Numune baskı, özellikle yeni yüzey veya yeni renk çalışmalarında seri üretim riskini azaltır.",
+      "Ürün seçimi yapılırken yalnızca litre fiyatı değil; fire, tekrar baskı, temizlik ve tedarik sürekliliği de toplam maliyete dahil edilmelidir.",
+    ],
+    mistakes: [
+      "Yüzey bilgisini dikkate almadan ürün seçmek hatalı sonuçlara yol açabilir.",
+      "Yardımcı kimyasalı ölçüsüz kullanmak baskı karakterini ve dayanımı bozabilir.",
+      "Test baskısı yapmadan yüksek adetli üretime geçmek gereksiz maliyet oluşturabilir.",
+    ],
+    cta: `${h1} konusunda doğru ürün önerisi almak için baskı yüzeyinizi, hedef renginizi ve üretim adedinizi Magellan Boya ile paylaşabilirsiniz.`,
+    relatedLandingSlugs,
+  };
+}
+
+const additionalBlogPosts: BlogPost[] = [
+  technicalBlogPost(
+    "serigrafi-nedir",
+    "Serigrafi Nedir?",
+    "Serigrafi Nedir ve Hangi Alanlarda Kullanılır?",
+    "Serigrafi Rehberi",
+    "serigrafi nedir",
+    "Serigrafi baskı yöntemi",
+    "Magellan Boya serigrafi boyaları, plastisol, PVC, UV ve su bazlı ürün gruplarıyla farklı yüzeylerde baskı yapan atölyelerin ürün seçimini destekler.",
+    "Serigrafi; tekstil, PVC, plastik, cam, metal, deri, ambalaj ve promosyon ürünleri gibi birçok yüzeyde uygulanabilen esnek bir baskı yöntemidir.",
+    ["serigrafi-boyalari", "serigrafi-baski-boyasi", "serigrafi-malzemeleri"]
+  ),
+  technicalBlogPost(
+    "serigrafi-boya-nedir",
+    "Serigrafi Boya Nedir?",
+    "Serigrafi Boya Nedir ve Nasıl Seçilir?",
+    "Boya Rehberi",
+    "serigrafi boya nedir",
+    "Serigrafi boya seçimi",
+    "Magellan Boya; serigrafi baskı boyaları, tekstil baskı boyaları, PVC ve UV seriler, emülsiyon ve yardımcı kimyasallarla profesyonel tedarik sunar.",
+    "Boya seçimi tekstil, plastik, PVC, ambalaj, etiket veya deri gibi yüzeyin karakterine göre yapılmalıdır.",
+    ["serigrafi-boyalari", "serigrafi-baski-boyalari", "serigrafi-boya-fiyatlari"]
+  ),
+  technicalBlogPost(
+    "su-bazli-serigrafi-boyasi-nedir",
+    "Su Bazlı Serigrafi Boyası Nedir?",
+    "Su Bazlı Serigrafi Boyası Nedir ve Ne Zaman Kullanılır?",
+    "Su Bazlı Boya",
+    "su bazlı serigrafi boyası",
+    "Su bazlı baskı sistemleri",
+    "Magellan Boya su bazlı tekstil ürünleri, yumuşak tuşe ve daha doğal baskı hissi isteyen üretimler için değerlendirilir.",
+    "Su bazlı sistemler özellikle pamuklu kumaş, bez çanta, tişört ve tekstil aksesuarlarında tercih edilebilir.",
+    ["su-bazli-serigrafi-boyasi", "su-bazli-tekstil-boyasi", "tekstil-baski-boyasi"]
+  ),
+  technicalBlogPost(
+    "serigrafi-boya-secimi",
+    "Serigrafi Boya Seçimi",
+    "Serigrafi Boya Seçimi Yaparken Nelere Dikkat Edilmeli?",
+    "Ürün Seçimi",
+    "serigrafi boya seçimi",
+    "Doğru serigrafi boyasını belirleme",
+    "Magellan Boya, yüzeye ve üretim ihtiyacına göre plastisol, PVC, UV, su bazlı ve yardımcı kimyasal gruplarını birlikte değerlendirir.",
+    "Doğru seçim için yüzey, renk beklentisi, kuruma sistemi, dayanım ve üretim adedi aynı anda düşünülmelidir.",
+    ["serigrafi-boyalari", "serigrafi-boya-ureticisi", "serigrafi-boya-tedarikcisi"]
+  ),
+  technicalBlogPost(
+    "plastisol-boya-ile-pvc-boya-farki",
+    "Plastisol Boya ile PVC Boya Farkı",
+    "Plastisol Boya ile PVC Boya Arasındaki Farklar",
+    "Karşılaştırma",
+    "plastisol boya ile PVC boya farkı",
+    "Tekstil ve PVC boya sistemlerinin karşılaştırılması",
+    "Plastisol ürünleri tekstil odaklı değerlendirilirken PVC boyalar plastik, PVC, suni deri ve ambalaj yüzeylerinde öne çıkar.",
+    "Seçim yapılırken kumaş esnekliği, yüzey tutunması, kuruma davranışı ve kullanım alanı birlikte analiz edilmelidir.",
+    ["plastisol-boya", "pvc-serigrafi-boyasi", "tekstil-baski-boyasi"]
+  ),
+  technicalBlogPost(
+    "uv-boya-ile-pvc-boya-farki",
+    "UV Boya ile PVC Boya Farkı",
+    "UV Boya ile PVC Boya Arasındaki Farklar",
+    "Karşılaştırma",
+    "UV boya ile PVC boya farkı",
+    "UV ve PVC serigrafi sistemleri",
+    "UV serigrafi boyaları hızlı kürlenme ve parlak görünüm sunarken PVC seriler yüzey tutunması ve solvent dengesiyle değerlendirilir.",
+    "Ambalaj, etiket, plastik ve endüstriyel baskı işlerinde üretim hattı ve yüzey tipi seçimde belirleyicidir.",
+    ["uv-serigrafi-boyasi", "pvc-serigrafi-boyasi", "endustriyel-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "emulsiyon-nedir",
+    "Emülsiyon Nedir?",
+    "Serigrafi Emülsiyonu Nedir ve Ne İşe Yarar?",
+    "Emülsiyon",
+    "emülsiyon nedir",
+    "Kalıp hazırlama emülsiyonu",
+    "Magellan Boya emülsiyon ve emülsiyon sökücü ürünleri, kalıp hazırlama ve kalıp yenileme süreçlerinde kullanılır.",
+    "Kalıp netliği, pozlama süresi, elek numarası ve kullanılan boya sistemi emülsiyon seçimini etkiler.",
+    ["serigrafi-emulsiyonu", "emulsiyon", "serigrafi-yardimci-kimyasallari"]
+  ),
+  technicalBlogPost(
+    "emulsiyon-sokucu-nedir",
+    "Emülsiyon Sökücü Nedir?",
+    "Emülsiyon Sökücü Nedir ve Nasıl Kullanılır?",
+    "Kalıp Temizleme",
+    "emülsiyon sökücü",
+    "Serigrafi kalıp temizleme",
+    "Magellan Boya emülsiyon sökücü ürünleri, eski şablon kalıntılarını temizleyerek kalıbın tekrar kullanılmasına yardımcı olur.",
+    "Kalıp yenileme yapan tekstil, ambalaj ve serigrafi atölyelerinde temizlik süreci üretim verimini etkiler.",
+    ["emulsiyon-sokucu", "serigrafi-emulsiyonu", "serigrafi-kimyasallari"]
+  ),
+  technicalBlogPost(
+    "serigrafi-boyasi-nasil-inceltilir",
+    "Serigrafi Boyası Nasıl İnceltilir?",
+    "Serigrafi Boyası Nasıl İnceltilir ve Viskozite Nasıl Ayarlanır?",
+    "İnceltici",
+    "serigrafi boyası nasıl inceltilir",
+    "Viskozite ve akış kontrolü",
+    "Magellan Boya inceltici ürünleri, uygun boya sistemiyle birlikte kullanıldığında akış ve uygulama kontrolüne yardımcı olur.",
+    "İnceltme işlemi boya tipi, yüzey, baskı hızı ve ortam sıcaklığına göre ölçülü şekilde yapılmalıdır.",
+    ["inceltici", "serigrafi-yardimci-kimyasallari", "serigrafi-kimyasallari"]
+  ),
+  technicalBlogPost(
+    "sertlestirici-nasil-kullanilir",
+    "Sertleştirici Nasıl Kullanılır?",
+    "Serigrafi Sertleştirici Nasıl Kullanılır?",
+    "Sertleştirici",
+    "serigrafi sertleştirici",
+    "Baskı dayanımını destekleme",
+    "Magellan Boya sertleştirici ürünleri, uygun boya sistemlerinde yüzey dayanımı ve tutunma beklentisini desteklemek için değerlendirilir.",
+    "Sertleştirici kullanımı yüzey, boya tipi, kuruma koşulu ve beklenen nihai dayanım bilgisiyle planlanmalıdır.",
+    ["sertlestirici", "serigrafi-yardimci-kimyasallari", "endustriyel-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "geciktirici-ne-ise-yarar",
+    "Geciktirici Ne İşe Yarar?",
+    "Serigrafi Geciktirici Ne İşe Yarar?",
+    "Geciktirici",
+    "serigrafi geciktirici",
+    "Kuruma süresi kontrolü",
+    "Magellan Boya geciktirici ürünleri, hızlı kuruma veya kalıp tıkanması yaşanan işlerde uygulama rahatlığı için değerlendirilir.",
+    "Geciktirici seçimi ortam sıcaklığı, boya sistemi, baskı hızı ve kalıp yapısıyla birlikte düşünülmelidir.",
+    ["geciktirici", "inceltici", "serigrafi-yardimci-kimyasallari"]
+  ),
+  technicalBlogPost(
+    "ragle-nedir",
+    "Ragle Nedir?",
+    "Serigrafi Ragle Nedir ve Baskıda Neden Önemlidir?",
+    "Ragle",
+    "ragle nedir",
+    "Boya transfer ekipmanı",
+    "Magellan Boya ragle ve çekecek ürünleri, boya transferinin kontrollü yapılması ve baskı basıncının dengelenmesi için kullanılır.",
+    "Ragle sertliği, açısı, baskı basıncı ve kalıp yapısı baskıdaki boya geçişini doğrudan etkiler.",
+    ["serigrafi-yardimci-malzemeleri", "serigrafi-malzemeleri", "serigrafi-baski-boyasi"]
+  ),
+  technicalBlogPost(
+    "ipek-kalip-nedir",
+    "İpek Kalıp Nedir?",
+    "İpek Kalıp Nedir ve Serigrafi Baskıda Nasıl Hazırlanır?",
+    "Kalıp",
+    "ipek kalıp",
+    "Serigrafi kalıp sistemi",
+    "Magellan Boya emülsiyon, emülsiyon sökücü ve yardımcı ürünleri kalıp hazırlama sürecini destekler.",
+    "İpek kalıp kalitesi; desen netliği, boya geçişi, pozlama ve yıkama süreciyle birlikte belirlenir.",
+    ["serigrafi-emulsiyonu", "emulsiyon", "serigrafi-kalip-hazirlama"]
+  ),
+  technicalBlogPost(
+    "poset-baski-boyasi-secimi",
+    "Poşet Baskı Boyası Seçimi",
+    "Poşet Baskı Boyası Seçerken Nelere Dikkat Edilmeli?",
+    "Poşet Baskı",
+    "poşet baskı boyası",
+    "Ambalaj ve poşet baskı boyası",
+    "Magellan Boya poşet, ambalaj ve etiket baskılarında yüzeye göre PVC, UV veya uygun serigrafi boya gruplarını değerlendirir.",
+    "Kağıt poşet, plastik poşet ve şeffaf ambalaj yüzeyleri farklı boya ve kuruma yaklaşımı gerektirir.",
+    ["poset-baski-boyasi", "ambalaj-baski-boyasi", "ambalaj-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "polietilen-baski-boyasi",
+    "Polietilen Baskı Boyası",
+    "Polietilen Baskı Boyası Nasıl Seçilir?",
+    "PE Baskı",
+    "polietilen baskı boyası",
+    "PE yüzey baskısı",
+    "Magellan Boya plastik baskı boyaları, PE ve benzeri yüzeylerde tutunma beklentisine göre değerlendirilir.",
+    "Polietilen yüzeylerde yüzey enerjisi, temizlik ve test baskısı ürün seçimi için kritik olabilir.",
+    ["polietilen-baski-boyasi", "plastik-serigrafi-boyasi", "ambalaj-baski-boyasi"]
+  ),
+  technicalBlogPost(
+    "polipropilen-baski-boyasi",
+    "Polipropilen Baskı Boyası",
+    "Polipropilen Baskı Boyası Nasıl Seçilir?",
+    "PP Baskı",
+    "polipropilen baskı boyası",
+    "PP yüzey baskısı",
+    "Magellan Boya plastik baskı uygulamalarında PP yüzeylerin tutunma ve dayanım ihtiyacına göre ürün grubu önerir.",
+    "Polipropilen baskıda yüzey hazırlığı, kuruma ve çizilme dayanımı birlikte değerlendirilmelidir.",
+    ["polipropilen-baski-boyasi", "plastik-serigrafi-boyasi", "pvc-baski-boyasi"]
+  ),
+  technicalBlogPost(
+    "kumanda-baskisi-icin-hangi-boya",
+    "Kumanda Baskısı İçin Hangi Boya?",
+    "Kumanda Baskısı İçin Hangi Serigrafi Boyası Kullanılır?",
+    "Kumanda Baskısı",
+    "kumanda baskısı için boya",
+    "Teknik plastik parça baskısı",
+    "Magellan Boya plastik ve PVC yüzeylerde logo, ikon ve teknik işaretleme için uygun serigrafi boya gruplarını değerlendirir.",
+    "Kumanda gibi plastik parçalarda yüzey türü, tuş hareketi, sürtünme ve kullanım dayanımı önemlidir.",
+    ["plastik-serigrafi-boyasi", "pvc-serigrafi-boyasi", "endustriyel-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "cam-baskisi-icin-hangi-boya",
+    "Cam Baskısı İçin Hangi Boya?",
+    "Cam Baskısı İçin Hangi Serigrafi Boyası Kullanılır?",
+    "Cam Baskı",
+    "cam baskısı için boya",
+    "Cam yüzey serigrafi baskısı",
+    "Magellan Boya cam, şişe, kozmetik ambalaj ve promosyon yüzeylerinde yüzey uyumuna göre UV veya uygun serigrafi boya gruplarını değerlendirir.",
+    "Cam yüzeylerde tutunma, çizilme dayanımı ve parlaklık beklentisi ürün seçimini etkiler.",
+    ["cam-serigrafi-boyasi", "cam-baski-boyasi", "uv-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "metal-baskisi-icin-hangi-boya",
+    "Metal Baskısı İçin Hangi Boya?",
+    "Metal Baskısı İçin Hangi Serigrafi Boyası Kullanılır?",
+    "Metal Baskı",
+    "metal baskısı için boya",
+    "Metal yüzey işaretleme",
+    "Magellan Boya metal etiket, panel, levha ve endüstriyel yüzeylerde dayanım beklentisine göre ürün seçimini destekler.",
+    "Metal baskıda yüzey hazırlığı, tutunma, çizilme dayanımı ve kuruma sistemi birlikte değerlendirilmelidir.",
+    ["metal-serigrafi-boyasi", "metal-baski-boyasi", "endustriyel-serigrafi-boyasi"]
+  ),
+  technicalBlogPost(
+    "ayakkabi-baskisi-icin-hangi-boya",
+    "Ayakkabı Baskısı İçin Hangi Boya?",
+    "Ayakkabı Baskısı İçin Hangi Serigrafi Boyası Kullanılır?",
+    "Ayakkabı Baskı",
+    "ayakkabı baskısı için boya",
+    "Ayakkabı ve terlik yüzey baskısı",
+    "Magellan Boya ayakkabı, terlik, PVC, suni deri ve karışımlı yüzeylerde tutunma beklentisine göre ürün önerisi yapar.",
+    "Ayakkabı baskısında esneklik, sürtünme, yüzey yapısı ve nihai kullanım şartları birlikte düşünülmelidir.",
+    ["ayakkabi-baski-boyasi", "terlik-baski-boyasi", "deri-boyasi"]
+  ),
+  technicalBlogPost(
+    "serigrafi-boya-fiyatlari-nasil-belirlenir",
+    "Serigrafi Boya Fiyatları Nasıl Belirlenir?",
+    "Serigrafi Boya Fiyatları Nasıl Belirlenir?",
+    "Fiyat Rehberi",
+    "serigrafi boya fiyatları",
+    "Fiyat ve teklif planlama",
+    "Magellan Boya fiyatlandırmada ürün tipi, renk, ambalaj miktarı, özel üretim ihtiyacı ve düzenli alım planını birlikte değerlendirir.",
+    "Fiyat değerlendirmesinde yalnızca ürün birim fiyatı değil, fire oranı, tekrar baskı ve tedarik sürekliliği de hesaba katılmalıdır.",
+    ["serigrafi-boya-fiyatlari", "toptan-serigrafi-boya", "plastisol-boya-fiyatlari"]
+  ),
+  technicalBlogPost(
+    "serigrafi-boya-imalatcisi-nasil-secilir",
+    "Serigrafi Boya İmalatçısı Nasıl Seçilir?",
+    "Serigrafi Boya İmalatçısı Seçerken Nelere Dikkat Edilmeli?",
+    "İmalatçı Seçimi",
+    "serigrafi boya imalatçısı",
+    "Üretici ve tedarikçi seçimi",
+    "Magellan Boya üretici firma yaklaşımıyla serigrafi boyaları, plastisol, PVC, UV ve yardımcı kimyasal gruplarında teknik tedarik sunar.",
+    "İmalatçı seçiminde ürün çeşitliliği, teknik destek, renk standardı, stok sürekliliği ve iletişim hızı önemlidir.",
+    ["serigrafi-boya-imalatcisi", "serigrafi-boya-ureticisi", "serigrafi-boya-tedarikcisi"]
+  ),
+  technicalBlogPost(
+    "toptan-serigrafi-boyasi-alirken-dikkat-edilecekler",
+    "Toptan Serigrafi Boyası Alırken Dikkat Edilecekler",
+    "Toptan Serigrafi Boyası Alırken Nelere Dikkat Edilmeli?",
+    "Toptan Alım",
+    "toptan serigrafi boyası",
+    "Kurumsal ve düzenli tedarik",
+    "Magellan Boya toptan serigrafi boya, plastisol, PVC, UV, tekstil boya ve yardımcı kimyasal alımlarında ürün grubu bazlı tedarik planı sunar.",
+    "Toptan alımda aylık tüketim, renk standardı, ambalaj tercihi, sevkiyat planı ve teknik destek birlikte değerlendirilmelidir.",
+    ["toptan-serigrafi-boyasi", "toptan-serigrafi-boya", "serigrafi-boya-tedarikcisi"]
+  ),
+];
+
+export const blogPosts: BlogPost[] = [...coreBlogPosts, ...additionalBlogPosts];
 
 export const blogPostMap = new Map(blogPosts.map((post) => [post.slug, post]));

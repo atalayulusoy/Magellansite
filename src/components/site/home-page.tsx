@@ -60,6 +60,7 @@ import {
   surfaceShowcaseItems,
   testimonialItems,
 } from "./site-data";
+import { productDetailPages } from "./product-detail-data";
 import { featuredProductCategoryPages } from "./product-category-data";
 import { seoLandingPages } from "./seo-landing-data";
 
@@ -1589,7 +1590,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                 <h2 className="mt-4 font-display text-2xl font-semibold text-white sm:text-3xl">
                   Serigrafi boya ürün gruplarını detaylı inceleyin
                 </h2>
-                <div className="mt-6 grid gap-7 lg:grid-cols-2">
+                <div className="mt-6 grid gap-7 lg:grid-cols-3">
                   <div>
                     <p className="text-xs uppercase tracking-[0.24em] text-white/42">
                       Ürün Kategorileri
@@ -1602,6 +1603,22 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                           className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
                         >
                           {item.eyebrow}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.24em] text-white/42">
+                      Ürün Detayları
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {productDetailPages.slice(0, 26).map((item) => (
+                        <Link
+                          key={item.slug}
+                          href={`/urun/${item.slug}`}
+                          className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
+                        >
+                          {item.focusKeyword}
                         </Link>
                       ))}
                     </div>
@@ -1968,11 +1985,16 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
             </div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-4">
             <div>
-              <p className="footer-title">Menü</p>
+              <p className="footer-title">Kurumsal</p>
               <div className="mt-5 grid gap-3">
-                {navItems.map((item) => (
+                {[
+                  { label: "Hakkımızda", href: "/hakkimizda" },
+                  { label: "Ürünler", href: "/urunler" },
+                  { label: "Blog", href: "/blog" },
+                  { label: "İletişim", href: "/iletisim" },
+                ].map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
@@ -1984,59 +2006,64 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
               </div>
             </div>
             <div>
-              <p className="footer-title">Ürün Kategorileri</p>
+              <p className="footer-title">Serigrafi Boyaları</p>
               <div className="mt-5 grid gap-3">
-                {featuredProductCategoryPages.slice(0, 8).map((item) => (
+                {[
+                  { label: "Plastisol Boya", href: "/plastisol-boya" },
+                  { label: "PVC Serigrafi Boyası", href: "/pvc-serigrafi-boyasi" },
+                  { label: "UV Serigrafi Boyası", href: "/uv-serigrafi-boyasi" },
+                  { label: "Su Bazlı Serigrafi Boyası", href: "/su-bazli-serigrafi-boyasi" },
+                  { label: "Serigrafi Baskı Boyaları", href: "/serigrafi-baski-boyalari" },
+                ].map((item) => (
                   <Link
-                    key={item.slug}
-                    href={`/urun-kategori/${item.slug}`}
+                    key={item.href}
+                    href={item.href}
                     className="text-sm text-white/64 transition-colors hover:text-white"
                   >
-                    {item.eyebrow}
+                    {item.label}
                   </Link>
                 ))}
               </div>
             </div>
             <div>
-              <p className="footer-title">Sosyal Medya</p>
-              <div className="mt-5 flex gap-3">
-                <a
-                  href={companyInfo.instagramHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-button"
-                >
-                  <InstagramIcon className="h-5 w-5" />
-                </a>
-                <a
-                  href={companyInfo.facebookHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-button"
-                >
-                  <FacebookIcon className="h-5 w-5" />
-                </a>
-                <a
-                  href={companyInfo.whatsappHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="social-button"
-                >
-                  <MessageCircleMore className="h-5 w-5" />
-                </a>
-                <a href={companyInfo.phoneHref} className="social-button">
-                  <Phone className="h-5 w-5" />
-                </a>
+              <p className="footer-title">Serigrafi Kimyasalları</p>
+              <div className="mt-5 grid gap-3">
+                {[
+                  { label: "Emülsiyon", href: "/emulsiyon" },
+                  { label: "Emülsiyon Sökücü", href: "/emulsiyon-sokucu" },
+                  { label: "İnceltici", href: "/inceltici" },
+                  { label: "Geciktirici", href: "/geciktirici" },
+                  { label: "Sertleştirici", href: "/sertlestirici" },
+                  { label: "Serigrafi Kimyasalları", href: "/serigrafi-kimyasallari" },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-sm text-white/64 transition-colors hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
               </div>
-
-              <div className="mt-6 rounded-[1.8rem] border border-white/8 bg-white/5 p-5">
-                <p className="text-xs uppercase tracking-[0.28em] text-white/52">
-                  Premium İletişim
-                </p>
-                <p className="mt-3 text-sm leading-7 text-white/68">
-                  Hızlı üretim planı, özel ton danışmanlığı ve teknik bilgi için
-                  WhatsApp hattımız üzerinden anında bağlantı kurabilirsiniz.
-                </p>
+            </div>
+            <div>
+              <p className="footer-title">Teknik Rehberler</p>
+              <div className="mt-5 grid gap-3">
+                {[
+                  { label: "Serigrafi Nedir?", href: "/blog/serigrafi-nedir" },
+                  { label: "Plastisol Boya Nedir?", href: "/blog/plastisol-boya-nedir" },
+                  { label: "PVC Serigrafi Boyası Nedir?", href: "/blog/pvc-serigrafi-boyasi-nedir" },
+                  { label: "UV Serigrafi Boyası Nedir?", href: "/blog/uv-serigrafi-boyasi-nedir" },
+                  { label: "Ragle Nedir?", href: "/blog/ragle-nedir" },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-sm text-white/64 transition-colors hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
