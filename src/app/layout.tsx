@@ -10,13 +10,14 @@ export const metadata: Metadata = {
   applicationName: "Magellan Boya",
   title: {
     default:
-      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     template: "%s | Magellan Boya",
   },
   description:
-    "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
+    "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
   keywords: [
     "serigrafi boyaları",
+    "serigrafi baskı boyaları",
     "serigrafi boya",
     "serigrafi boya imalatçısı",
     "serigrafi boya imalatı",
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     description:
-      "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
+      "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
     url: siteUrl,
     siteName: "Magellan Boya",
     images: [
@@ -57,9 +58,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Serigrafi Boya İmalatçısı | Plastisol ve Serigrafi Boyaları | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     description:
-      "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları ve serigrafi yardımcı kimyasalları üretimi ve satışı yapar.",
+      "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları ve serigrafi yardımcı kimyasalları üretir.",
     images: ["/magellan-label.png"],
   },
   alternates: {

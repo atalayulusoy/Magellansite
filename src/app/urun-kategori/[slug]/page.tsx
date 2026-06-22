@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
-  seoLandingPageMap,
-  seoLandingPages,
-} from "@/components/site/seo-landing-data";
-import {
-  buildSeoLandingFaq,
-  SeoLandingPageView,
-} from "@/components/site/seo-landing-page";
+  productCategoryPageMap,
+  productCategoryPages,
+} from "@/components/site/product-category-data";
+import { ProductCategoryPageView } from "@/components/site/product-category-page";
 
 const siteUrl = "https://www.magellanboya.com";
 
@@ -18,26 +15,27 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return seoLandingPages.map((page) => ({
+  return productCategoryPages.map((page) => ({
     slug: page.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const page = seoLandingPageMap.get(slug);
+  const page = productCategoryPageMap.get(slug);
 
   if (!page) {
     return {};
   }
 
-  const url = `${siteUrl}/${page.slug}`;
+  const url = `${siteUrl}/urun-kategori/${page.slug}`;
 
   return {
     title: {
       absolute: page.title,
     },
     description: page.description,
+    keywords: [page.focusKeyword, ...page.productGroups, ...page.surfaces],
     alternates: {
       canonical: url,
     },
@@ -66,21 +64,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function SeoLandingRoute({ params }: Props) {
+export default async function ProductCategoryRoute({ params }: Props) {
   const { slug } = await params;
-  const page = seoLandingPageMap.get(slug);
+  const page = productCategoryPageMap.get(slug);
 
   if (!page) {
     notFound();
   }
 
-  const url = `${siteUrl}/${page.slug}`;
-  const faq = buildSeoLandingFaq(page);
+  const url = `${siteUrl}/urun-kategori/${page.slug}`;
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": `${url}#webpage`,
+      "@type": "CollectionPage",
+      "@id": `${url}#collection`,
       url,
       name: page.title,
       headline: page.h1,
@@ -96,31 +93,21 @@ export default async function SeoLandingRoute({ params }: Props) {
         "@type": "Thing",
         name: page.focusKeyword,
       },
+      mainEntity: {
+        "@type": "OfferCatalog",
+        name: page.h1,
+        itemListElement: page.productGroups.map((item, index) => ({
+          "@type": "OfferCatalog",
+          position: index + 1,
+          name: item,
+          url,
+        })),
+      },
       publisher: {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
         name: "Magellan Boya",
-        url: siteUrl,
-        telephone: "0532 519 9837",
       },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": `${url}#service`,
-      name: page.h1,
-      serviceType: page.focusKeyword,
-      provider: {
-        "@type": "Organization",
-        "@id": `${siteUrl}/#organization`,
-        name: "Magellan Boya",
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "Türkiye",
-      },
-      url,
-      description: page.description,
     },
     {
       "@context": "https://schema.org",
@@ -135,6 +122,12 @@ export default async function SeoLandingRoute({ params }: Props) {
         {
           "@type": "ListItem",
           position: 2,
+          name: "Ürünler",
+          item: `${siteUrl}/urunler`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
           name: page.h1,
           item: url,
         },
@@ -143,7 +136,7 @@ export default async function SeoLandingRoute({ params }: Props) {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: faq.map((item) => ({
+      mainEntity: page.faq.map((item) => ({
         "@type": "Question",
         name: item.question,
         acceptedAnswer: {
@@ -162,7 +155,7 @@ export default async function SeoLandingRoute({ params }: Props) {
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <SeoLandingPageView page={page} />
+      <ProductCategoryPageView page={page} />
     </>
   );
 }

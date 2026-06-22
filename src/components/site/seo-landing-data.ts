@@ -47,6 +47,42 @@ const coreSeoLandingPages: SeoLandingPage[] = [
       "hangi yüzeye baskı yapılacağını ve beklenen performansı paylaşarak doğru ürün grubuna hızlıca yönlenebilirsiniz",
   },
   {
+    slug: "serigrafi-baski-boyalari",
+    title: "Serigrafi Baskı Boyaları | Mürekkep ve Boya Çeşitleri | Magellan Boya",
+    description:
+      "Serigrafi baskı boyaları, serigrafi mürekkepleri, plastisol, PVC, UV, su bazlı boya ve yardımcı kimyasallar için Magellan Boya.",
+    h1: "Serigrafi Baskı Boyaları, Mürekkep ve Yardımcı Ürünler",
+    eyebrow: "Serigrafi Baskı Boyaları",
+    focusKeyword: "serigrafi baskı boyaları",
+    relatedKeywords: [
+      "serigrafi baskı boyası",
+      "serigrafi mürekkebi",
+      "serigrafi boya çeşitleri",
+      "serigrafi baskı mürekkebi",
+      "serigrafi boya fiyatları",
+    ],
+    productFocus:
+      "plastisol, PVC, UV, su bazlı, tekstil, yaldızlı boya, emülsiyon, inceltici, geciktirici ve sertleştirici ürün grupları",
+    audience:
+      "serigrafi atölyeleri, tekstil baskı üreticileri, ambalaj firmaları, matbaalar, promosyon üreticileri ve endüstriyel baskı işletmeleri",
+    surfaceExamples:
+      "tekstil, tişört, PVC, plastik, kağıt poşet, etiket, ambalaj, deri, cam, metal, levha ve promosyon ürünleri",
+    processNote:
+      "baskı yapılacak yüzey, hedef renk, boya kalınlığı, kuruma sistemi, elek yapısı, üretim hızı ve dayanım beklentisi birlikte değerlendirilir",
+    qualityNote:
+      "net baskı, güçlü tutunma, canlı renk, dengeli viskozite, seri üretimde kararlı sonuç ve düzenli tedarik sürekliliği",
+    priceNote:
+      "serigrafi baskı boyaları için fiyat; ürün tipi, renk, ambalaj miktarı, teknik beklenti ve toptan alım planına göre netleşir",
+    ctaNote:
+      "serigrafi baskı boyası ihtiyacınız için yüzey, renk, adet ve varsa mevcut ürün bilgisini paylaşarak hızlı ürün önerisi ve fiyat alabilirsiniz",
+    relatedSlugs: [
+      "serigrafi-boyalari",
+      "serigrafi-baski-boyasi",
+      "serigrafi-boya-fiyatlari",
+      "toptan-serigrafi-boya",
+    ],
+  },
+  {
     slug: "plastisol-boya",
     title: "Plastisol Boya | Tekstil Baskı Boyaları | Magellan Boya",
     description:

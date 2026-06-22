@@ -60,6 +60,7 @@ import {
   surfaceShowcaseItems,
   testimonialItems,
 } from "./site-data";
+import { featuredProductCategoryPages } from "./product-category-data";
 import { seoLandingPages } from "./seo-landing-data";
 
 type IconKey =
@@ -1588,16 +1589,39 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                 <h2 className="mt-4 font-display text-2xl font-semibold text-white sm:text-3xl">
                   Serigrafi boya ürün gruplarını detaylı inceleyin
                 </h2>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  {seoLandingPages.map((item) => (
-                    <Link
-                      key={item.slug}
-                      href={`/${item.slug}`}
-                      className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
-                    >
-                      {item.eyebrow}
-                    </Link>
-                  ))}
+                <div className="mt-6 grid gap-7 lg:grid-cols-2">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.24em] text-white/42">
+                      Ürün Kategorileri
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {featuredProductCategoryPages.map((item) => (
+                        <Link
+                          key={item.slug}
+                          href={`/urun-kategori/${item.slug}`}
+                          className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
+                        >
+                          {item.eyebrow}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.24em] text-white/42">
+                      SEO Sayfaları
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {seoLandingPages.slice(0, 30).map((item) => (
+                        <Link
+                          key={item.slug}
+                          href={`/${item.slug}`}
+                          className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
+                        >
+                          {item.eyebrow}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -1944,7 +1968,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
             </div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-2">
+          <div className="grid gap-10 sm:grid-cols-3">
             <div>
               <p className="footer-title">Menü</p>
               <div className="mt-5 grid gap-3">
@@ -1955,6 +1979,20 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                     className="text-sm text-white/64 transition-colors hover:text-white"
                   >
                     {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="footer-title">Ürün Kategorileri</p>
+              <div className="mt-5 grid gap-3">
+                {featuredProductCategoryPages.slice(0, 8).map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/urun-kategori/${item.slug}`}
+                    className="text-sm text-white/64 transition-colors hover:text-white"
+                  >
+                    {item.eyebrow}
                   </Link>
                 ))}
               </div>

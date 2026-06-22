@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/components/site/blog-data";
+import { productCategoryPages } from "@/components/site/product-category-data";
 import { seoLandingPages } from "@/components/site/seo-landing-data";
 
 const siteUrl =
@@ -18,6 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/referanslar", priority: 0.75 },
     { path: "/iletisim", priority: 0.9 },
     { path: "/blog", priority: 0.8 },
+    ...productCategoryPages.map((page) => ({
+      path: `/urun-kategori/${page.slug}`,
+      priority: page.slug === "serigrafi-baski-boyalari" ? 0.96 : 0.86,
+    })),
     ...seoLandingPages.map((page) => ({
       path: `/${page.slug}`,
       priority: 0.72,

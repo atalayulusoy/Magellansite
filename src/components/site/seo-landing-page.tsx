@@ -21,7 +21,7 @@ function buildParagraphs(page: SeoLandingPage) {
   ];
 }
 
-function buildFaq(page: SeoLandingPage) {
+export function buildSeoLandingFaq(page: SeoLandingPage) {
   return [
     {
       question: `${page.focusKeyword} seçerken nelere dikkat edilmeli?`,
@@ -95,7 +95,7 @@ function getRelatedBlogPosts(page: SeoLandingPage) {
 
 export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
   const paragraphs = buildParagraphs(page);
-  const faq = buildFaq(page);
+  const faq = buildSeoLandingFaq(page);
   const relatedPages = getRelatedPages(page);
   const relatedBlogPosts = getRelatedBlogPosts(page);
 
@@ -294,6 +294,6 @@ export function buildSeoLandingText(page: SeoLandingPage) {
     page.h1,
     page.description,
     ...buildParagraphs(page),
-    ...buildFaq(page).flatMap((item) => [item.question, item.answer]),
+    ...buildSeoLandingFaq(page).flatMap((item) => [item.question, item.answer]),
   ].join(" ");
 }

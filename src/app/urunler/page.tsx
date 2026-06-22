@@ -1,28 +1,29 @@
 import type { Metadata } from "next";
 import { HomePage } from "@/components/site/home-page";
+import { productCategoryPages } from "@/components/site/product-category-data";
 import { productCatalogItems } from "@/components/site/site-data";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+    absolute: "Serigrafi Baskı Boyaları ve Ürün Çeşitleri | Magellan Boya",
   },
   description:
-    "Plastisol boya, serigrafi boya, emülsiyon, inceltici, geciktirici ve serigrafi baskı yardımcı ürünlerini Magellan Boya’da inceleyin.",
+    "Serigrafi baskı boyaları, plastisol boya, PVC ve UV boya, emülsiyon, inceltici, geciktirici ve yardımcı ürünleri inceleyin.",
   alternates: {
     canonical: "https://www.magellanboya.com/urunler",
   },
   openGraph: {
-    title: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+    title: "Serigrafi Baskı Boyaları ve Ürün Çeşitleri | Magellan Boya",
     description:
-      "Plastisol boya, serigrafi boya, emülsiyon, inceltici, geciktirici ve serigrafi baskı yardımcı ürünlerini Magellan Boya’da inceleyin.",
+      "Serigrafi baskı boyaları, plastisol boya, PVC ve UV boya, emülsiyon, inceltici, geciktirici ve yardımcı ürünleri inceleyin.",
     url: "https://www.magellanboya.com/urunler",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Serigrafi Boyaları ve Plastisol Boya Çeşitleri | Magellan Boya",
+    title: "Serigrafi Baskı Boyaları ve Ürün Çeşitleri | Magellan Boya",
     description:
-      "Magellan Boya’da serigrafi boya, plastisol boya ve serigrafi yardımcı kimyasalları.",
+      "Magellan Boya’da serigrafi baskı boyaları, plastisol boya ve serigrafi yardımcı kimyasalları.",
   },
 };
 
@@ -43,15 +44,39 @@ const productListJsonLd = {
         "@type": "Brand",
         name: "Magellan",
       },
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "TRY",
-        availability: "https://schema.org/InStock",
-        url: "https://www.magellanboya.com/urunler",
-      },
     },
   })),
+};
+
+const categoryListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Magellan Boya serigrafi boya kategori sayfaları",
+  itemListElement: productCategoryPages.map((category, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: category.h1,
+    url: `https://www.magellanboya.com/urun-kategori/${category.slug}`,
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Ana Sayfa",
+      item: "https://www.magellanboya.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Ürünler",
+      item: "https://www.magellanboya.com/urunler",
+    },
+  ],
 };
 
 export default function ProductsPage() {
@@ -60,7 +85,11 @@ export default function ProductsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productListJsonLd),
+          __html: JSON.stringify([
+            productListJsonLd,
+            categoryListJsonLd,
+            breadcrumbJsonLd,
+          ]).replace(/</g, "\\u003c"),
         }}
       />
       <HomePage page="products" />
