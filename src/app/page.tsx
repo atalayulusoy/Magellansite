@@ -11,6 +11,21 @@ export const metadata: Metadata = {
     "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
   alternates: {
     canonical: "https://www.magellanboya.com/",
+    languages: {
+      "tr-TR": "https://www.magellanboya.com/",
+      "x-default": "https://www.magellanboya.com/",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   openGraph: {
     title:
@@ -88,6 +103,11 @@ const websiteJsonLd = {
   name: "Magellan Boya",
   publisher: {
     "@id": "https://www.magellanboya.com/#organization",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.magellanboya.com/arama?q={search_term_string}",
+    "query-input": "required name=search_term_string",
   },
 };
 

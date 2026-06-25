@@ -6,6 +6,7 @@ import {
 } from "@/components/site/seo-landing-data";
 import {
   buildSeoLandingFaq,
+  buildSeoLandingText,
   SeoLandingPageView,
 } from "@/components/site/seo-landing-page";
 
@@ -40,6 +41,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: page.description,
     alternates: {
       canonical: url,
+      languages: {
+        "tr-TR": url,
+        "x-default": url,
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
     openGraph: {
       title: page.title,
@@ -96,12 +112,42 @@ export default async function SeoLandingRoute({ params }: Props) {
         "@type": "Thing",
         name: page.focusKeyword,
       },
+      articleBody: buildSeoLandingText(page),
       publisher: {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
         name: "Magellan Boya",
         url: siteUrl,
         telephone: "0532 519 9837",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${url}#article`,
+      url,
+      headline: page.h1,
+      name: page.title,
+      description: page.description,
+      articleBody: buildSeoLandingText(page),
+      articleSection: page.eyebrow,
+      inLanguage: "tr-TR",
+      author: {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "Magellan Boya",
+      },
+      publisher: {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "Magellan Boya",
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/magellan-logo-square.png`,
+        },
+      },
+      mainEntityOfPage: {
+        "@id": `${url}#webpage`,
       },
     },
     {

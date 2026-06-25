@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.magellanboya.com/sitemap.xml
+Sitemap: https://www.magellanboya.com/blog/sitemap.xml
+Sitemap: https://www.magellanboya.com/urun/sitemap.xml
+Sitemap: https://www.magellanboya.com/urun-kategori/sitemap.xml
+Sitemap: https://www.magellanboya.com/seo/sitemap.xml

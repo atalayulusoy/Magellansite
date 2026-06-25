@@ -62,7 +62,7 @@ import {
 } from "./site-data";
 import { productDetailPages } from "./product-detail-data";
 import { featuredProductCategoryPages } from "./product-category-data";
-import { seoLandingPages } from "./seo-landing-data";
+import { featuredSeoLandingLinks } from "./featured-seo-links";
 
 type IconKey =
   | "badge"
@@ -1628,7 +1628,7 @@ export function HomePage({ page = "home" }: { page?: SitePage }) {
                       SEO Sayfaları
                     </p>
                     <div className="mt-4 flex flex-wrap gap-3">
-                      {seoLandingPages.slice(0, 30).map((item) => (
+                      {featuredSeoLandingLinks.map((item) => (
                         <Link
                           key={item.slug}
                           href={`/${item.slug}`}

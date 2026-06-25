@@ -1,3 +1,5 @@
+import { generatedAuthorityPages } from "./seo-authority-data";
+
 export type SeoLandingPage = {
   slug: string;
   title: string;
@@ -784,7 +786,20 @@ const expandedCommercialSeoPages: SeoLandingPage[] = expandedCommercialSeoPageDa
     commercialPage(slug, keyword, angle, relatedSlugs)
 );
 
-export const seoLandingPages: SeoLandingPage[] = [
+function uniqueSeoLandingPages(pages: SeoLandingPage[]) {
+  const seen = new Set<string>();
+
+  return pages.filter((page) => {
+    if (seen.has(page.slug)) {
+      return false;
+    }
+
+    seen.add(page.slug);
+    return true;
+  });
+}
+
+export const seoLandingPages: SeoLandingPage[] = uniqueSeoLandingPages([
   ...coreSeoLandingPages,
   ...regionalSeoPages,
   ...citySeoPages,
@@ -794,7 +809,8 @@ export const seoLandingPages: SeoLandingPage[] = [
   ...expandedRegionalSeoPages,
   ...expandedProductSeoPages,
   ...expandedCommercialSeoPages,
-];
+  ...generatedAuthorityPages,
+]);
 
 export const seoLandingPageMap = new Map(
   seoLandingPages.map((page) => [page.slug, page])

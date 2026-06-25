@@ -16,6 +16,12 @@ function buildParagraphs(page: SeoLandingPage) {
     `Toptan alım yapan veya düzenli üretim gerçekleştiren firmalar için stok sürekliliği de teknik kalite kadar önemlidir. Serigrafi boya tedarikçisi seçilirken ürün çeşitliliği, termin planı, iletişim hızı ve teknik destek birlikte değerlendirilmelidir. Magellan Boya, ihtiyaç duyulan ürün grubunu belirledikten sonra sevkiyat, ambalaj miktarı ve kullanım sıklığına göre planlama yapılmasına yardımcı olur. Böylece atölye veya üretim hattı, kritik ürünleri son anda aramak zorunda kalmadan daha düzenli çalışabilir.`,
     `Bölgesel ve şehir dışı tedariklerde lojistik planlama da ürün kalitesinin bir parçası haline gelir. Bir işletmenin doğru ürünü seçmesi kadar, o ürüne ihtiyaç duyduğu zamanda ulaşabilmesi de önemlidir. Magellan Boya, İstanbul merkezli üretim ve tedarik yapısının sağladığı esneklikle farklı şehirlerdeki müşterilerin ihtiyaçlarını değerlendirir. Ürün grubu, tüketim miktarı ve teslimat beklentisi netleştiğinde daha sağlıklı bir sevkiyat planı hazırlanabilir. Bu yaklaşım özellikle üretim hattı duran, seri sipariş alan veya sezonluk yoğunluk yaşayan işletmeler için ciddi avantaj sağlar.`,
     `Teknik destek tarafında amaç yalnızca ürün adı vermek değil, baskı sürecini doğru okumaktır. Kullanılan elek numarası, rakle yapısı, baskı adedi, ortam sıcaklığı, kurutma yöntemi ve yüzey hazırlığı ürün performansını etkileyebilir. Aynı boya farklı yüzeylerde farklı davranabileceği için, ürün seçimi pratik üretim bilgisiyle desteklenmelidir. Magellan Boya, ${page.focusKeyword} konusunda bilgi almak isteyen işletmelere bu nedenle ürün ailesi, yardımcı kimyasal ve uygulama koşullarını birlikte düşünmelerini önerir. Bu sayede yalnızca satın alma değil, üretim verimliliği de iyileşir.`,
+    `Avantajlar değerlendirilirken ${page.focusKeyword} için yalnızca ilk baskı görüntüsüne bakmak yeterli değildir. İyi bir sonuç; baskının yüzeyde tutunması, seri üretimde aynı tonun korunması, kalıp üzerinde gereksiz tıkanma oluşturmaması, operatöre pratik çalışma süresi tanıması ve müşteriye teslim edilen üründe uzun süre stabil kalmasıyla ölçülür. Bu nedenle Magellan Boya, ürün önerisini yaparken ${page.qualityNote} başlığını sadece satış cümlesi olarak değil, üretim standardının parçası olarak ele alır. Doğru seçim yapıldığında baskı hattı daha az durur, deneme sayısı azalır ve ekip aynı işi daha öngörülebilir şekilde tekrar edebilir.`,
+    `Dezavantaj ve sınırlar da dürüstçe görülmelidir. Her boya grubu her yüzeyde, her ortamda ve her hızda aynı sonucu vermez. Çok hızlı kuruyan bir sistem yüksek tempoda avantaj sağlarken açık kalma süresi kısa olduğu için kalıp üzerinde dikkat isteyebilir. Esnek yüzeylerde dayanım için farklı bir ürün ailesi gerekirken sert yüzeylerde çizilme direnci daha belirleyici olabilir. ${page.surfaceExamples} gibi yüzeylerde bu farklar küçük görünse bile seri üretimde ciddi sonuç doğurabilir. Bu yüzden numune baskı, karışım kaydı ve kuruma testi atlanmaması gereken güvenlik adımlarıdır.`,
+    `Karışım ve inceltme aşamasında temel ilke ölçülü ilerlemektir. Boyanın akışı, rakle hareketi ve elek yapısı birbirini tamamlamalıdır; fazla inceltme rengin örtücülüğünü, tutunmasını veya kuruma karakterini bozabilir. Geciktirici, sertleştirici ya da özel yardımcı ürün kullanılacaksa amaç net olmalıdır: kalıp tıkanmasını azaltmak, dayanımı artırmak, kuruma hızını yönetmek veya yüzeye uyumu güçlendirmek. ${page.processNote}. Bu bilgiler not edildiğinde aynı iş tekrar geldiğinde yalnızca ürün adı değil, uygulama standardı da tekrar üretilebilir.`,
+    `Kuruma ve dayanım kontrolü, baskı sonrasındaki en kritik aşamalardan biridir. Yüzey kuru görünse bile alt katmanda solvent çıkışı, fikse eksikliği veya UV kürlenme yetersizliği kalabilir. Bu nedenle dokunma kuruması, istifleme süresi, bant testi, çizilme kontrolü ve mümkünse kullanım senaryosuna yakın küçük testler birlikte düşünülmelidir. Tekstil işlerinde yıkama, plastik ve PVC işlerinde tutunma, cam ve metal yüzeylerde çizilme dayanımı daha fazla öne çıkar. Bu kontroller üretim başlamadan önce yapılırsa müşteri tarafında oluşabilecek iade ve tekrar baskı riski düşer.`,
+    `Sık yapılan hataların çoğu tek bir nedene bağlanamaz. Boya soyuluyorsa yüzey temizliği, ürün seçimi, kuruma ve sertleştirici kullanımı birlikte incelenmelidir. Baskı akıyorsa sadece boya değil, viskozite, rakle basıncı, elek gerilimi ve yüzey formu da kontrol edilmelidir. Renk farklı çıkıyorsa zemin rengi, karıştırma standardı, baskı kalınlığı ve parti takibi önem kazanır. Bu yüzden Magellan Boya yaklaşımı, problemi tek cümleyle kapatmak yerine uygulama zincirini adım adım okumaya dayanır. Böyle bir kontrol listesi, özellikle yeni yüzey ve yüksek adetli siparişlerde üretim güvenliğini artırır.`,
+    `Sonuç olarak ${page.focusKeyword} konusu, yalnızca bir ürün adı ya da tek sayfalık teknik bilgi değildir; yüzey, boya, kalıp, kimyasal, kurutma ve tedarik kararlarının birlikte çalıştığı bir üretim meselesidir. Doğru ürün ailesi seçildiğinde renk daha net, tutunma daha güçlü, maliyet daha yönetilebilir ve kalite tekrarı daha kolay olur. Magellan Boya'nın bu sayfadaki amacı, kullanıcıyı aradığı kavramdan doğru ürün grubuna ve uygulanabilir teknik adıma götürmektir. Böylece bilgi merkezi, satın alma sürecini de üretim sürecini de daha anlaşılır hale getirir.`,
     `Uzun vadeli çalışmalarda ürün dokümantasyonu, tekrar sipariş kolaylığı ve renk standardı önemli hale gelir. Aynı müşterinin belirli bir yüzeyde aynı sonucu yeniden alabilmesi için kullanılan ürünün, uygulama notunun ve tedarik planının kayıt altında tutulması faydalıdır. Bu profesyonel yaklaşım, özellikle marka baskısı yapan tekstil atölyeleri, ambalaj üreticileri ve kurumsal promosyon tedarikçileri için değer yaratır. Magellan Boya, ürün seçimi ve fiyatlandırma sürecini mümkün olduğunca açık tutarak müşterinin hem bugünkü hem de sonraki üretim ihtiyaçlarını daha doğru planlamasına yardımcı olur.`,
     `Magellan Boya ile çalışırken ürün seçimi için uzun ve karmaşık bir süreç gerekmez. ${page.ctaNote}. Baskı yüzeyi, mevcut boya deneyimi, hedef renk, üretim adedi ve varsa yaşanan teknik problem paylaşıldığında daha doğru yönlendirme yapılabilir. Ürünler sayfasında serigrafi boyaları, plastisol boya, emülsiyon, inceltici, geciktirici ve yardımcı kimyasal gruplarını inceleyebilir; fiyat ve tedarik detayları için WhatsApp üzerinden doğrudan iletişime geçebilirsiniz.`,
   ];
@@ -93,11 +99,50 @@ function getRelatedBlogPosts(page: SeoLandingPage) {
   return (matches.length > 0 ? matches : blogPosts.slice(0, 3)).slice(0, 3);
 }
 
+const authorityLinkSlugs = [
+  "magellan-akademi",
+  "boya-merkezi",
+  "serigrafi-kullanim-alanlari",
+  "teknik-bilgi-merkezi",
+  "kimyasal-merkezi",
+  "serigrafi-hesaplama-araclari",
+  "serigrafi-wikipedia",
+  "serigrafi-ai",
+  "boya-karsilastirmalari",
+  "pdf-merkezi",
+  "organize-sanayi-bolgeleri",
+  "magellan-marka-merkezi",
+  "serigrafi-boyalari",
+  "plastisol-boya",
+  "pvc-serigrafi-boyasi",
+  "uv-serigrafi-boyasi",
+  "serigrafi-baski-boyasi",
+  "serigrafi-kimyasallari",
+];
+
+function getAuthorityPages(page: SeoLandingPage) {
+  const seen = new Set<string>();
+
+  return [...(page.relatedSlugs ?? []), ...authorityLinkSlugs]
+    .filter((slug) => {
+      if (slug === page.slug || seen.has(slug)) {
+        return false;
+      }
+
+      seen.add(slug);
+      return true;
+    })
+    .map((slug) => seoLandingPageMap.get(slug))
+    .filter((item): item is SeoLandingPage => item !== undefined)
+    .slice(0, 24);
+}
+
 export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
   const paragraphs = buildParagraphs(page);
   const faq = buildSeoLandingFaq(page);
   const relatedPages = getRelatedPages(page);
   const relatedBlogPosts = getRelatedBlogPosts(page);
+  const authorityPages = getAuthorityPages(page);
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#060814] text-white">
@@ -282,6 +327,36 @@ export function SeoLandingPageView({ page }: { page: SeoLandingPage }) {
                 </p>
               </div>
             ))}
+          </section>
+
+          <section className="glass-panel mt-8 rounded-[2rem] p-6 sm:p-8">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs uppercase tracking-[0.28em] text-white/45">
+                  Konu Haritası
+                </p>
+                <h2 className="mt-3 font-display text-2xl font-semibold text-white">
+                  Serigrafi bilgi merkezleri ve ilgili sayfalar
+                </h2>
+              </div>
+              <Link
+                href="/magellan-akademi"
+                className="button-secondary inline-flex items-center justify-center text-sm"
+              >
+                Akademiye Git
+              </Link>
+            </div>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {authorityPages.map((item) => (
+                <Link
+                  key={item.slug}
+                  href={`/${item.slug}`}
+                  className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm text-white/68 transition hover:border-white/20 hover:bg-white/[0.09] hover:text-white"
+                >
+                  {item.eyebrow}
+                </Link>
+              ))}
+            </div>
           </section>
         </div>
       </section>
