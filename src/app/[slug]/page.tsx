@@ -10,7 +10,7 @@ import {
   SeoLandingPageView,
 } from "@/components/site/seo-landing-page";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const dynamicParams = false;
 

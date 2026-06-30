@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/components/site/blog-data";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BlogIndexPage } from "@/components/site/blog-page";
 import { blogPosts } from "@/components/site/blog-data";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const metadata: Metadata = {
   title: {

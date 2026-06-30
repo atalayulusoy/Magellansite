@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Magellan Boya, serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunar.",
   alternates: {
-    canonical: "https://www.magellanboya.com/hakkimizda",
+    canonical: "https://magellanboya.com/hakkimizda",
   },
   openGraph: {
     title: "Serigrafi Boya Üreticisi | Hakkımızda | Magellan Boya",
     description:
       "Magellan Boya, serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunar.",
-    url: "https://www.magellanboya.com/hakkimizda",
+    url: "https://magellanboya.com/hakkimizda",
     type: "website",
   },
   twitter: {

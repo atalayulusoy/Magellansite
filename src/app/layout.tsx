@@ -3,7 +3,7 @@ import "@fontsource-variable/space-grotesk";
 import "@fontsource-variable/sora";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: ["/magellan-label.png"],
   },
   alternates: {
-    canonical: "https://www.magellanboya.com/",
+    canonical: "https://magellanboya.com/",
   },
   icons: {
     icon: [

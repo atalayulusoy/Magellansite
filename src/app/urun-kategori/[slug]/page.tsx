@@ -6,7 +6,7 @@ import {
 } from "@/components/site/product-category-data";
 import { ProductCategoryPageView } from "@/components/site/product-category-page";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const dynamicParams = false;
 

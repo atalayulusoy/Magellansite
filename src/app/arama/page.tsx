@@ -7,7 +7,7 @@ import { productCategoryPages } from "@/components/site/product-category-data";
 import { productDetailPages } from "@/components/site/product-detail-data";
 import { seoLandingPages } from "@/components/site/seo-landing-data";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const metadata: Metadata = {
   title: {

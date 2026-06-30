@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Serigrafi baskı boyaları, plastisol boya, PVC ve UV boya, emülsiyon, inceltici, geciktirici ve yardımcı ürünleri inceleyin.",
   alternates: {
-    canonical: "https://www.magellanboya.com/urunler",
+    canonical: "https://magellanboya.com/urunler",
   },
   openGraph: {
     title: "Serigrafi Baskı Boyaları ve Ürün Çeşitleri | Magellan Boya",
     description:
       "Serigrafi baskı boyaları, plastisol boya, PVC ve UV boya, emülsiyon, inceltici, geciktirici ve yardımcı ürünleri inceleyin.",
-    url: "https://www.magellanboya.com/urunler",
+    url: "https://magellanboya.com/urunler",
     type: "website",
   },
   twitter: {
@@ -40,7 +40,7 @@ const productListJsonLd = {
       name: product.title,
       category: product.category,
       description: product.description,
-      image: `https://www.magellanboya.com${product.image}`,
+      image: `https://magellanboya.com${product.image}`,
       brand: {
         "@type": "Brand",
         name: "Magellan",
@@ -57,7 +57,7 @@ const categoryListJsonLd = {
     "@type": "ListItem",
     position: index + 1,
     name: category.h1,
-    url: `https://www.magellanboya.com/urun-kategori/${category.slug}`,
+    url: `https://magellanboya.com/urun-kategori/${category.slug}`,
   })),
 };
 
@@ -69,7 +69,7 @@ const productDetailListJsonLd = {
     "@type": "ListItem",
     position: index + 1,
     name: product.h1,
-    url: `https://www.magellanboya.com/urun/${product.slug}`,
+    url: `https://magellanboya.com/urun/${product.slug}`,
   })),
 };
 
@@ -81,13 +81,13 @@ const breadcrumbJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Ana Sayfa",
-      item: "https://www.magellanboya.com/",
+      item: "https://magellanboya.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Ürünler",
-      item: "https://www.magellanboya.com/urunler",
+      item: "https://magellanboya.com/urunler",
     },
   ],
 };

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Serigrafi boyalarında özel renk geliştirme, plastisol boya, teknik destek, proses danışmanlığı ve serigrafi boya tedarik hizmetleri.",
   alternates: {
-    canonical: "https://www.magellanboya.com/hizmetler",
+    canonical: "https://magellanboya.com/hizmetler",
   },
   openGraph: {
     title: "Serigrafi Boya Hizmetleri ve Özel Renk Üretimi | Magellan Boya",
     description:
       "Özel renk geliştirme, plastisol boya, teknik destek ve serigrafi boya tedarik hizmetleri.",
-    url: "https://www.magellanboya.com/hizmetler",
+    url: "https://magellanboya.com/hizmetler",
     type: "website",
   },
   twitter: {

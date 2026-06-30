@@ -7,7 +7,7 @@ import {
   buildBlogPostText,
 } from "@/components/site/blog-page";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const dynamicParams = false;
 

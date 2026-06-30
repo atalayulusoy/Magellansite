@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Magellan Boya serigrafi boya imalatında renk analizi, formül geliştirme, kalite kontrol, dolum ve hızlı sevkiyat süreçleri uygular.",
   alternates: {
-    canonical: "https://www.magellanboya.com/uretim",
+    canonical: "https://magellanboya.com/uretim",
   },
   openGraph: {
     title: "Serigrafi Boya İmalatı ve Üretim Süreci | Magellan Boya",
     description:
       "Serigrafi boya imalatı, formül geliştirme, kalite kontrol ve sevkiyat süreçleri.",
-    url: "https://www.magellanboya.com/uretim",
+    url: "https://magellanboya.com/uretim",
     type: "website",
   },
   twitter: {

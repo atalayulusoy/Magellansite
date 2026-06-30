@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
   alternates: {
-    canonical: "https://www.magellanboya.com/",
+    canonical: "https://magellanboya.com/",
     languages: {
-      "tr-TR": "https://www.magellanboya.com/",
-      "x-default": "https://www.magellanboya.com/",
+      "tr-TR": "https://magellanboya.com/",
+      "x-default": "https://magellanboya.com/",
     },
   },
   robots: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     description:
       "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
-    url: "https://www.magellanboya.com/",
+    url: "https://magellanboya.com/",
     type: "website",
   },
   twitter: {
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness"],
-  "@id": "https://www.magellanboya.com/#organization",
+  "@id": "https://magellanboya.com/#organization",
   name: "Magellan Boya",
   legalName: companyInfo.name,
-  url: "https://www.magellanboya.com",
-  logo: "https://www.magellanboya.com/magellan-logo-square.png",
-  image: "https://www.magellanboya.com/magellan-label.png",
+  url: "https://magellanboya.com",
+  logo: "https://magellanboya.com/magellan-logo-square.png",
+  image: "https://magellanboya.com/magellan-label.png",
   description:
     "Serigrafi boya üreticisi ve boya tedarikçisi olarak serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve yardımcı kimyasallar sunar.",
   additionalType: "https://schema.org/Store",
@@ -98,15 +98,15 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://www.magellanboya.com/#website",
-  url: "https://www.magellanboya.com",
+  "@id": "https://magellanboya.com/#website",
+  url: "https://magellanboya.com",
   name: "Magellan Boya",
   publisher: {
-    "@id": "https://www.magellanboya.com/#organization",
+    "@id": "https://magellanboya.com/#organization",
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://www.magellanboya.com/arama?q={search_term_string}",
+    target: "https://magellanboya.com/arama?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

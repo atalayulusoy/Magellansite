@@ -4,9 +4,7 @@ import { productDetailPages } from "@/components/site/product-detail-data";
 import { productCategoryPages } from "@/components/site/product-category-data";
 import { seoLandingPages } from "@/components/site/seo-landing-data";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

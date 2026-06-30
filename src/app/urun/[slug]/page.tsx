@@ -9,7 +9,7 @@ import {
   ProductDetailPageView,
 } from "@/components/site/product-detail-page";
 
-const siteUrl = "https://www.magellanboya.com";
+const siteUrl = "https://magellanboya.com";
 
 export const dynamicParams = false;
 

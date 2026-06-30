@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
   alternates: {
-    canonical: "https://www.magellanboya.com/iletisim",
+    canonical: "https://magellanboya.com/iletisim",
   },
   openGraph: {
     title: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
     description:
       "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
-    url: "https://www.magellanboya.com/iletisim",
+    url: "https://magellanboya.com/iletisim",
     type: "website",
   },
   twitter: {
