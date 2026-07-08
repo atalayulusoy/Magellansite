@@ -13,6 +13,7 @@ export const featuredSeoLandingLinks = [
   { slug: "magellan-marka-merkezi", eyebrow: "Marka Merkezi" },
   { slug: "serigrafi-boyalari", eyebrow: "Serigrafi Boyaları" },
   { slug: "serigrafi-baski-boyalari", eyebrow: "Baskı Boyaları" },
+  { slug: "emprime-baski-boyasi", eyebrow: "Emprime Boya" },
   { slug: "plastisol-boya", eyebrow: "Plastisol Boya" },
   { slug: "pvc-serigrafi-boyasi", eyebrow: "PVC Boya" },
   { slug: "uv-serigrafi-boyasi", eyebrow: "UV Boya" },

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Magellan Boya",
   },
   description:
-    "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
+    "Magellan Boya; serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
   keywords: [
     "serigrafi boyaları",
     "serigrafi baskı boyaları",
@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     "plastisol boya",
     "plastisol boyaları",
     "plastisol boya imalatçısı",
+    "emprime baskı boyası",
+    "emprime baskı boyaları",
     "serigrafi baskı boyası",
     "tekstil baskı boyaları",
     "ipek baskı boyası",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     title:
       "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     description:
-      "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
+      "Magellan Boya; serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
     url: siteUrl,
     siteName: "Magellan Boya",
     images: [
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
     title:
       "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
     description:
-      "Magellan Boya; serigrafi baskı boyaları, plastisol boya, tekstil baskı boyaları ve serigrafi yardımcı kimyasalları üretir.",
+      "Magellan Boya; serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları ve serigrafi yardımcı kimyasalları üretir.",
     images: ["/magellan-label.png"],
   },
   alternates: {

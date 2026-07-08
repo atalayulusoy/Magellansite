@@ -183,6 +183,46 @@ export const productCatalogItems = [
     features: ["Tekstil uyumlu", "Transfer baskı", "Canlı renkler"],
   },
   {
+    title: "Emprime Baskı Boyası",
+    category: "Tekstil ve Emprime Baskı",
+    image: "/products/plastisol-cesitleri.png",
+    description:
+      "Tişört, sweatshirt, bez çanta ve kumaş yüzeylerde serigrafi/emprime baskı için kullanılan; renk, tuşe ve yıkama dayanımı beklentisine göre seçilen Magellan tekstil baskı boyası.",
+    features: ["Emprime baskı", "Tekstil uyumlu", "Özel renk"],
+  },
+  {
+    title: "Dyo - Toyo Serigrafi Mürekkepleri",
+    category: "Serigrafi Baskı Boyaları",
+    image: "/products/uv-renkliler.jpeg",
+    description:
+      "Dyo, Toyo ve benzer serigrafi mürekkebi ihtiyaçlarında beyaz, siyah, lacivert ve bayrak kırmızı gibi renkler için yüzeye göre ürün seçimi ve tedarik desteği.",
+    features: ["Marka renkleri", "Ambalaj ve etiket", "Tiner uyumu"],
+  },
+  {
+    title: "Sericol ve Coates Baskı Boyaları",
+    category: "Endüstriyel Serigrafi",
+    image: "/products/uv-renkliler.jpeg",
+    description:
+      "Sericol Polyplast/Polyscreen ve Coates Wiederhold Z serisi gibi plastik, PVC, etiket ve teknik parça baskılarında aranan serigrafi boya grupları.",
+    features: ["Plastik yüzey", "Teknik baskı", "Beyaz-siyah-kırmızı"],
+  },
+  {
+    title: "Argon Epoksi ve Asit Maske Boyaları",
+    category: "Cam, Metal ve Elektronik Baskı",
+    image: "/products/uv-renkliler.jpeg",
+    description:
+      "Cam, metal, alüminyum, elektronik baskı devre ve asit maskeleme uygulamaları için epoksi karakterli ve teknik serigrafi boya tedarik seçenekleri.",
+    features: ["Cam-metal", "Asit maske", "Dayanım"],
+  },
+  {
+    title: "Su Bazlı Baskı Patları",
+    category: "Tekstil Baskı Patları",
+    image: "/products/su-bazli-siyah-beyaz.jpeg",
+    description:
+      "Açık zemin, koyu zemin ve beyaz baskı patı gibi tekstil yüzeylerde yumuşak tuşe ve su bazlı emprime baskı isteyen üretimler için ürün grupları.",
+    features: ["Açık/koyu zemin", "Yumuşak tuşe", "Renklendirilebilir"],
+  },
+  {
     title: "Su Bazlı Siyah Beyaz Boyalar",
     category: "Su Bazlı Baskı Boyaları",
     image: "/products/su-bazli-siyah-beyaz.jpeg",

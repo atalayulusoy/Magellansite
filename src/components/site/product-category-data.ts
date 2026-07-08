@@ -179,8 +179,50 @@ export const productCategoryPages: ProductCategoryPage[] = [
           "Renk, ambalaj miktarı, opaklık ihtiyacı, ürün serisi ve düzenli alım planına göre belirlenir.",
       },
     ],
-    relatedSlugs: ["tekstil-baski-boyalari", "su-bazli-tekstil-boyalari", "serigrafi-baski-boyalari"],
+    relatedSlugs: ["emprime-baski-boyalari", "tekstil-baski-boyalari", "su-bazli-tekstil-boyalari", "serigrafi-baski-boyalari"],
     relatedLandingSlugs: ["plastisol-boya", "plastisol-boya-fiyatlari", "plastisol-boya-ureticisi"],
+  },
+  {
+    slug: "emprime-baski-boyalari",
+    title: "Emprime Baskı Boyaları | Tekstil ve Tişört Baskı Boyası | Magellan Boya",
+    description:
+      "Emprime baskı boyaları; tişört, kumaş, bez çanta, tekstil ve transfer baskı uygulamaları için Magellan Boya tedarik seçenekleri.",
+    h1: "Emprime Baskı Boyaları ve Tekstil Serigrafi Çözümleri",
+    eyebrow: "Emprime Baskı",
+    focusKeyword: "emprime baskı boyaları",
+    intro:
+      "Emprime baskı boyaları, kumaş yüzeylerde net desen, canlı renk, yıkama dayanımı ve üretim tekrar edilebilirliği için seçilir. Ürün tercihi kumaş tipi, baskı kalınlığı, hedef tuşe, fikse koşulu ve renk örtücülüğü birlikte değerlendirilerek yapılmalıdır.",
+    buyerIntent:
+      "Emprime baskı boyası, tekstil baskı boyası, tişört baskı boyası veya transfer baskıya uygun boya arayan atölyeler için ürün ve teknik seçim ihtiyacına cevap verir.",
+    productGroups: [
+      "Emprime baskı boyası",
+      "Tekstil baskı boyası",
+      "Plastisol emprime boya",
+      "Su bazlı emprime boya",
+      "Tişört baskı boyası",
+      "Transfer baskı boyası",
+    ],
+    surfaces: ["tişört", "sweatshirt", "pamuklu kumaş", "bez çanta", "promosyon tekstili", "karışım kumaş"],
+    technicalNotes: [
+      "Kumaş yapısı ve renk zemini ürün seçimini doğrudan etkiler.",
+      "Yıkama dayanımı için doğru fikse ve kurutma koşulu takip edilmelidir.",
+      "Koyu kumaşlarda opaklık, alt zemin ve baskı kalınlığı numune ile kontrol edilmelidir.",
+    ],
+    featuredProducts: ["Emprime Baskı Boyası", "Plastisol Çeşitleri", "Su Bazlı Siyah Beyaz Boyalar"],
+    faq: [
+      {
+        question: "Emprime baskı boyası hangi yüzeylerde kullanılır?",
+        answer:
+          "Tişört, sweatshirt, pamuklu kumaş, bez çanta ve promosyon tekstili gibi kumaş yüzeylerde uygun ürün grubu seçilerek kullanılabilir.",
+      },
+      {
+        question: "Emprime baskı boyası fiyatı nasıl belirlenir?",
+        answer:
+          "Fiyat; boya tipi, renk, ambalaj miktarı, kumaş türü, opaklık beklentisi ve düzenli alım planına göre netleşir.",
+      },
+    ],
+    relatedSlugs: ["tekstil-baski-boyalari", "plastisol-boyalari", "su-bazli-serigrafi-boyalari", "tisort-baski-boyalari"],
+    relatedLandingSlugs: ["emprime-baski-boyasi", "tekstil-baski-boyasi", "kumas-baski-boyasi", "plastisol-boya"],
   },
   {
     slug: "tekstil-baski-boyalari",
@@ -214,7 +256,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
           "Yoğun renk ve örtücülük için plastisol; daha yumuşak tuşe beklentisi olan işlerde su bazlı sistemler değerlendirilebilir.",
       },
     ],
-    relatedSlugs: ["plastisol-boyalari", "su-bazli-tekstil-boyalari", "tisort-baski-boyalari"],
+    relatedSlugs: ["emprime-baski-boyalari", "plastisol-boyalari", "su-bazli-tekstil-boyalari", "tisort-baski-boyalari"],
     relatedLandingSlugs: ["tekstil-baski-boyasi", "tisort-baski-boyasi", "plastisol-vs-su-bazli-boya"],
   },
   {

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     absolute: "Site İçi Arama | Magellan Boya",
   },
   description:
-    "Magellan Boya içinde serigrafi boya, PVC, UV, plastisol, kimyasal, kullanım alanı ve teknik rehber araması yapın.",
+    "Magellan Boya içinde serigrafi boya, emprime, PVC, UV, plastisol, kimyasal, kullanım alanı ve teknik rehber araması yapın.",
   alternates: {
     canonical: `${siteUrl}/arama`,
     languages: {
@@ -126,7 +126,7 @@ export default async function SearchPage({ searchParams }: Props) {
               <input
                 name="q"
                 defaultValue={q}
-                placeholder="PVC boya, rakle izi, plastisol, OSB..."
+                placeholder="emprime, PVC boya, rakle izi, plastisol..."
                 className="min-h-12 flex-1 rounded-2xl border border-white/10 bg-white/[0.06] px-4 text-base text-white outline-none transition placeholder:text-white/35 focus:border-white/25"
               />
               <button className="button-primary inline-flex justify-center" type="submit">
