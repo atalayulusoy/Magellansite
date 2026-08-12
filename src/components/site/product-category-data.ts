@@ -25,12 +25,12 @@ export const productCategoryPages: ProductCategoryPage[] = [
     title:
       "Serigrafi Baskı Boyaları | Serigrafi Boya ve Mürekkep Çeşitleri | Magellan Boya",
     description:
-      "Serigrafi baskı boyaları, plastisol, PVC, UV, su bazlı boya ve yardımcı kimyasallar için Magellan Boya ürün gruplarını inceleyin.",
+      "Serigrafi baskı boyaları, plastisol, PVC, UV, su bazlı boya ve yardımcı kimyasal ürün gruplarını inceleyin.",
     h1: "Serigrafi Baskı Boyaları ve Profesyonel Mürekkep Çeşitleri",
     eyebrow: "Ana Kategori",
     focusKeyword: "serigrafi baskı boyaları",
     intro:
-      "Serigrafi baskı boyaları seçilirken yalnızca renk değil; baskı yüzeyi, kuruma sistemi, tutunma beklentisi, elek yapısı, üretim adedi ve yardımcı kimyasal uyumu birlikte değerlendirilmelidir. Magellan Boya bu kategoride tekstil, PVC, UV, su bazlı, yaldızlı ve yardımcı ürün gruplarını tek bir tedarik yapısı altında sunar.",
+      "Serigrafi baskı boyaları seçilirken yalnızca renk değil; baskı yüzeyi, kuruma sistemi, tutunma beklentisi, elek yapısı, üretim adedi ve yardımcı kimyasal uyumu birlikte değerlendirilmelidir. Tekstil, PVC, UV, su bazlı, yaldızlı ve yardımcı ürün gruplarını tek bir tedarik yapısı altında inceleyebilirsiniz.",
     buyerIntent:
       "Serigrafi boya satın almak, toptan ürün tedariği kurmak, fiyat almak veya baskı yüzeyine göre doğru ürün grubunu seçmek isteyen atölyeler için hazırlanmıştır.",
     productGroups: [
@@ -151,7 +151,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "plastisol-boyalari",
     title: "Plastisol Boyaları | Tekstil Baskı ve Transfer Boyaları | Magellan Boya",
     description:
-      "Plastisol boyaları; tişört, sweatshirt, tekstil ve transfer baskı uygulamaları için Magellan Boya tedarik seçenekleri.",
+      "Plastisol boyaları; tişört, sweatshirt, tekstil ve transfer baskı uygulamaları için tedarik seçenekleri.",
     h1: "Plastisol Boyaları ve Tekstil Baskı Çözümleri",
     eyebrow: "Plastisol",
     focusKeyword: "plastisol boyaları",
@@ -186,7 +186,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "emprime-baski-boyalari",
     title: "Emprime Baskı Boyaları | Tekstil ve Tişört Baskı Boyası | Magellan Boya",
     description:
-      "Emprime baskı boyaları; tişört, kumaş, bez çanta, tekstil ve transfer baskı uygulamaları için Magellan Boya tedarik seçenekleri.",
+      "Emprime baskı boyaları; tişört, kumaş, bez çanta, tekstil ve transfer baskı uygulamaları için tedarik seçenekleri.",
     h1: "Emprime Baskı Boyaları ve Tekstil Serigrafi Çözümleri",
     eyebrow: "Emprime Baskı",
     focusKeyword: "emprime baskı boyaları",
@@ -228,7 +228,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "tekstil-baski-boyalari",
     title: "Tekstil Baskı Boyaları | Tişört, Kumaş ve İpek Baskı | Magellan Boya",
     description:
-      "Tekstil baskı boyaları, plastisol, su bazlı ve ipek baskı boya seçenekleri için Magellan Boya teknik tedarik çözümleri.",
+      "Tekstil baskı boyaları, plastisol, su bazlı ve ipek baskı boya seçenekleri için teknik tedarik çözümleri.",
     h1: "Tekstil Baskı Boyaları ve Kumaş Üstü Baskı Çözümleri",
     eyebrow: "Tekstil Baskı",
     focusKeyword: "tekstil baskı boyaları",
@@ -333,7 +333,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "su-bazli-serigrafi-boyalari",
     title: "Su Bazlı Serigrafi Boyaları | Tekstil ve Yumuşak Tuşe | Magellan Boya",
     description:
-      "Su bazlı serigrafi boyaları ve su bazlı tekstil baskı ürünleri için Magellan Boya kullanım alanları ve tedarik bilgisi.",
+      "Su bazlı serigrafi boyaları ve su bazlı tekstil baskı ürünleri için kullanım alanları ve tedarik bilgisi.",
     h1: "Su Bazlı Serigrafi Boyaları ve Yumuşak Baskı Çözümleri",
     eyebrow: "Su Bazlı",
     focusKeyword: "su bazlı serigrafi boyaları",
@@ -363,6 +363,41 @@ export const productCategoryPages: ProductCategoryPage[] = [
     ],
     relatedSlugs: ["tekstil-baski-boyalari", "plastisol-boyalari", "serigrafi-baski-boyalari"],
     relatedLandingSlugs: ["su-bazli-serigrafi-boyasi", "su-bazli-tekstil-boyasi", "tekstil-baski-boyasi"],
+  },
+  {
+    slug: "hobi-boyalari",
+    title: "Hobi Boyaları | Dekoratif ve Yaratıcı Boya Seçenekleri | Magellan Boya",
+    description:
+      "Hobi boyaları, dekoratif çalışmalar, el sanatları ve yaratıcı uygulamalar için Magellan boya seçenekleri.",
+    h1: "Hobi Boyaları ve Yaratıcı Uygulama Çözümleri",
+    eyebrow: "Hobi Boyaları",
+    focusKeyword: "hobi boyaları",
+    intro:
+      "Hobi boyaları dekoratif çalışmalar, el sanatları ve farklı yaratıcı uygulamalarda renk, yüzey görünümü ve uygulama ihtiyacına göre değerlendirilir. Ürün seçimi yapılacak yüzey, hedef görünüm ve kullanım koşullarıyla birlikte ele alınmalıdır.",
+    buyerIntent:
+      "Hobi boyası, dekoratif boya veya yaratıcı uygulamalara yönelik boya seçeneği arayan kullanıcıları Magellan ürün portföyüne yönlendirir.",
+    productGroups: ["Hobi boyaları", "Dekoratif boya seçenekleri", "Yaratıcı uygulama boyaları"],
+    surfaces: ["dekoratif obje", "el sanatları", "yaratıcı yüzeyler", "atölye uygulamaları"],
+    technicalNotes: [
+      "Yüzey tipi ve beklenen görünüm ürün seçiminde belirleyicidir.",
+      "Teknik sertifikasyon veya özel uygunluk iddiası için ürün datası kontrol edilmelidir.",
+      "Uygulama öncesi küçük yüzey denemesi yapmak sonucu netleştirir.",
+    ],
+    featuredProducts: ["Hobi Boyaları"],
+    faq: [
+      {
+        question: "Hobi boyası seçerken hangi bilgi gerekir?",
+        answer:
+          "Uygulama yapılacak yüzey, hedef renk/görünüm ve kullanım koşulu paylaşıldığında uygun ürün grubu daha doğru belirlenebilir.",
+      },
+      {
+        question: "Hobi boyaları için teknik sertifika bilgisi var mı?",
+        answer:
+          "Sertifikasyon, özel uygunluk veya formülasyon bilgisi ürün datasına göre değerlendirilmelidir; doğrulanmamış teknik iddia kullanılmamalıdır.",
+      },
+    ],
+    relatedSlugs: ["serigrafi-boya-cesitleri", "su-bazli-serigrafi-boyalari", "serigrafi-baski-boyalari"],
+    relatedLandingSlugs: ["serigrafi-boyalari", "toptan-serigrafi-boya", "serigrafi-boya-ureticisi"],
   },
   {
     slug: "serigrafi-yardimci-kimyasallari",
@@ -403,7 +438,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "serigrafi-emulsiyonlari",
     title: "Serigrafi Emülsiyonları | Kalıp Hazırlama Ürünleri | Magellan Boya",
     description:
-      "Serigrafi emülsiyonları, fotoemülsiyon ve kalıp hazırlama ürünleri için Magellan Boya teknik tedarik çözümleri.",
+      "Serigrafi emülsiyonları, fotoemülsiyon ve kalıp hazırlama ürünleri için teknik tedarik çözümleri.",
     h1: "Serigrafi Emülsiyonları ve Kalıp Hazırlama Ürünleri",
     eyebrow: "Emülsiyon",
     focusKeyword: "serigrafi emülsiyonları",
@@ -438,7 +473,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "serigrafi-inceltici-geciktirici",
     title: "Serigrafi İnceltici ve Geciktirici | Baskı Yardımcıları | Magellan Boya",
     description:
-      "Serigrafi inceltici, geciktirici ve viskozite ayarlayıcı yardımcı ürünler için Magellan Boya teknik tedarik sayfası.",
+      "Serigrafi inceltici, geciktirici ve viskozite ayarlayıcı yardımcı ürünler için teknik tedarik sayfası.",
     h1: "Serigrafi İnceltici, Geciktirici ve Viskozite Yardımcıları",
     eyebrow: "İnceltici",
     focusKeyword: "serigrafi inceltici geciktirici",
@@ -473,14 +508,14 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "toptan-serigrafi-boyalari",
     title: "Toptan Serigrafi Boyaları | Uygun Fiyatlı Tedarik | Magellan Boya",
     description:
-      "Toptan serigrafi boyaları, düzenli üretim, ambalaj, tekstil ve baskı atölyeleri için Magellan Boya fiyat ve tedarik çözümleri.",
+      "Toptan serigrafi boyaları, düzenli baskı, ambalaj, tekstil ve baskı atölyeleri için fiyat ve tedarik çözümleri.",
     h1: "Toptan Serigrafi Boyaları ve Düzenli Tedarik Planı",
     eyebrow: "Toptan",
     focusKeyword: "toptan serigrafi boyaları",
     intro:
-      "Toptan serigrafi boyaları, düzenli üretim yapan firmalar için yalnızca fiyat avantajı değil; stok sürekliliği, renk standardı, ürün tekrar edilebilirliği ve teknik destek anlamına gelir.",
+      "Toptan serigrafi boyaları, düzenli boya tüketen firmalar için yalnızca fiyat avantajı değil; stok sürekliliği, renk standardı, ürün tekrar edilebilirliği ve teknik destek anlamına gelir.",
     buyerIntent:
-      "Toptan fiyat, bayilik, düzenli sevkiyat ve üretici firma arayan ticari kullanıcıları hedefler.",
+      "Toptan fiyat, bayilik, düzenli sevkiyat ve kurumsal tedarik arayan ticari kullanıcıları hedefler.",
     productGroups: ["Toptan serigrafi boya", "Toptan plastisol boya", "Toptan yardımcı kimyasal", "Kurumsal tedarik"],
     surfaces: ["tekstil", "ambalaj", "poşet", "PVC", "plastik", "etiket", "deri"],
     technicalNotes: [
@@ -496,7 +531,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
           "Ürün listesi, ambalaj miktarı, aylık tüketim ve sevkiyat beklentisi paylaşılarak fiyat alınabilir.",
       },
       {
-        question: "Düzenli üretim yapan firmalara tedarik yapılır mı?",
+        question: "Düzenli boya tüketen firmalara tedarik yapılır mı?",
         answer:
           "Evet. Matbaa, tekstil baskı, ambalaj ve endüstriyel baskı işletmeleri için düzenli tedarik planı oluşturulabilir.",
       },
@@ -508,7 +543,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "plastik-baski-boyalari",
     title: "Plastik Baskı Boyaları | PVC, PP, PE ve Serigrafi Baskı | Magellan Boya",
     description:
-      "Plastik baskı boyaları; PVC, PP, PE, promosyon, ambalaj ve etiket yüzeyleri için Magellan Boya serigrafi çözümleri.",
+      "Plastik baskı boyaları; PVC, PP, PE, promosyon, ambalaj ve etiket yüzeyleri için serigrafi çözümleri.",
     h1: "Plastik Baskı Boyaları ve Serigrafi Yüzey Çözümleri",
     eyebrow: "Plastik Baskı",
     focusKeyword: "plastik baskı boyaları",
@@ -578,7 +613,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "pvc-yaldiz-boyalari",
     title: "PVC Yaldız Boyaları | Altın ve Gümüş Serigrafi Baskı | Magellan Boya",
     description:
-      "PVC altın yaldız, gümüş yaldız ve dekoratif serigrafi baskı boyaları için Magellan Boya ürün ve tedarik bilgisi.",
+      "PVC altın yaldız, gümüş yaldız ve dekoratif serigrafi baskı boyaları için ürün ve tedarik bilgisi.",
     h1: "PVC Yaldız Boyaları ve Dekoratif Serigrafi Baskılar",
     eyebrow: "Yaldız",
     focusKeyword: "PVC yaldız boyaları",
@@ -613,7 +648,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
     slug: "tisort-baski-boyalari",
     title: "Tişört Baskı Boyaları | Plastisol ve Tekstil Serigrafi | Magellan Boya",
     description:
-      "Tişört baskı boyaları, plastisol, su bazlı tekstil boya ve ipek baskı ürünleri için Magellan Boya tedarik çözümleri.",
+      "Tişört baskı boyaları, plastisol, su bazlı tekstil boya ve ipek baskı ürünleri için tedarik çözümleri.",
     h1: "Tişört Baskı Boyaları ve Tekstil Serigrafi Ürünleri",
     eyebrow: "Tişört Baskı",
     focusKeyword: "tişört baskı boyaları",
@@ -671,7 +706,7 @@ export const productCategoryPages: ProductCategoryPage[] = [
           "Boya, kalıp/emülsiyon, ragle, inceltici veya yardımcı kimyasal, yüzeye göre uygun ürün ve temizlik ekipmanları gerekir.",
       },
       {
-        question: "Magellan Boya serigrafi malzemesi tedariği yapıyor mu?",
+        question: "Serigrafi malzemesi tedariği yapılır mı?",
         answer:
           "Boya, emülsiyon, emülsiyon sökücü, inceltici, sertleştirici ve ragle gibi ürün grupları için tedarik desteği sunar.",
       },

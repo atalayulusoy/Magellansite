@@ -155,10 +155,10 @@ export function ProductCategoryPageView({ page }: { page: ProductCategoryPage })
               <div className="mt-6 space-y-6 text-base leading-8 text-white/72">
                 <p>{page.intro}</p>
                 <p>
-                  Magellan Boya bu kategoriyi yalnızca ürün listesi olarak değil,
-                  baskı yüzeyi, uygulama koşulu, kalite beklentisi ve düzenli
-                  tedarik ihtiyacını birlikte değerlendiren bir satın alma rehberi
-                  olarak ele alır.
+                  Bu kategori yalnızca ürün listesi olarak değil, baskı yüzeyi,
+                  uygulama koşulu, kalite beklentisi ve düzenli tedarik
+                  ihtiyacını birlikte değerlendiren bir satın alma rehberi
+                  olarak ele alınır.
                 </p>
               </div>
             </article>

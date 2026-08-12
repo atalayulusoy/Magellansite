@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Serigrafi Boya Blog ve Teknik Rehber | Magellan Boya",
   },
   description:
-    "Serigrafi boya, plastisol boya, PVC ve UV baskı boyaları, emülsiyon, kalıp hazırlama ve tekstil baskı boyası hakkında Magellan Boya rehberleri.",
+    "Serigrafi boya, plastisol boya, PVC ve UV baskı boyaları, emülsiyon, kalıp hazırlama ve tekstil baskı boyası hakkında teknik rehberler.",
   alternates: {
     canonical: `${siteUrl}/blog`,
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Serigrafi Boya Blog ve Teknik Rehber | Magellan Boya",
     description:
-      "Serigrafi boya ve baskı boyaları hakkında Magellan Boya teknik rehberleri.",
+      "Serigrafi boya ve baskı boyaları hakkında teknik rehberler.",
     images: ["/magellan-label.png"],
   },
 };
@@ -44,7 +44,7 @@ const blogJsonLd = {
   "@type": "Blog",
   "@id": `${siteUrl}/blog#blog`,
   url: `${siteUrl}/blog`,
-  name: "Magellan Boya Serigrafi Rehberi",
+  name: "Serigrafi Boya Rehberi",
   description: metadata.description,
   publisher: {
     "@type": "Organization",

@@ -213,7 +213,7 @@ const academyTopics: NamedTopic[] = [
   ["serigrafi-poset-baski", "Serigrafi Poşet Baskı", "poşet yüzeylerinde logo okunurluğu, kuruma ve seri üretim", "kraft, plastik, PE ve PVC poşet"],
   ["serigrafi-katalog-hazirlama", "Serigrafi Katalog Hazırlama", "ürün, teknik bilgi ve kullanım alanlarını doğru organize etme", "satış ekibi ve bayilik yapısı"],
   ["serigrafi-satin-alma-rehberi", "Serigrafi Satın Alma Rehberi", "fiyat, kalite, tedarik ve teknik destek dengesini kurma", "atölye, matbaa ve fabrika satın alma"],
-  ["serigrafi-imalatci-secimi", "Serigrafi İmalatçı Seçimi", "üretici firma ile tedarikçi arasındaki farkları değerlendirme", "kurumsal ve toptan alım"],
+  ["serigrafi-imalatci-secimi", "Serigrafi Tedarikçi Seçimi", "ürün çeşitliliği, teknik destek ve tedarik planını değerlendirme", "kurumsal ve toptan alım"],
   ["serigrafi-boya-sertlestirici", "Serigrafi Sertleştirici Kullanımı", "dayanım beklentisi olan yüzeylerde yardımcı kimyasal seçimi", "cam, metal, PVC ve endüstriyel baskı"],
   ["serigrafi-inceltici-orani", "Serigrafi İnceltici Oranı", "akış, viskozite ve tutunmayı bozmadan inceltme planı", "solvent bazlı ve PVC boya"],
   ["serigrafi-geciktirici-kullanimi", "Serigrafi Geciktirici Kullanımı", "sıcak ortam, kalıp tıkanması ve çalışma süresi yönetimi", "PVC, solvent bazlı ve teknik baskı"],
@@ -223,7 +223,7 @@ const academyTopics: NamedTopic[] = [
   ["serigrafi-mesh-secimi", "Serigrafi Mesh Seçimi", "elek numarası ve boya geçişini doğru eşleştirme", "opak, ince detay ve yaldız baskı"],
   ["serigrafi-shore-secimi", "Serigrafi Shore Seçimi", "rakle sertliğinin boya transferine etkisi", "tekstil ve endüstriyel baskı"],
   ["serigrafi-kurumsal-renk", "Serigrafide Kurumsal Renk", "marka rengini farklı yüzeylerde tekrar edilebilir hale getirme", "ambalaj, tekstil ve etiket"],
-  ["serigrafi-uretim-planlama", "Serigrafi Üretim Planlama", "stok, termin, numune ve kalite kontrol akışı", "seri üretim yapan firmalar"],
+  ["serigrafi-uretim-planlama", "Serigrafi Tedarik Planlama", "stok, termin, numune ve kalite kontrol akışı", "seri baskı yapan firmalar"],
   ["serigrafi-boya-standardi", "Serigrafi Boya Standardı", "ürün reçetesi, uygulama notu ve tekrar sipariş disiplini", "kurumsal tedarik süreçleri"],
   ["serigrafi-teknik-destek", "Serigrafi Teknik Destek", "sorunu doğru tanımlama ve ürün grubunu birlikte seçme", "matbaa, tekstil ve ambalaj firmaları"],
   ["serigrafi-ihracat-uretim", "Serigrafi İhracat Üretimi", "dökümantasyon, kalite tekrarları ve düzenli tedarik", "ihracat odaklı üreticiler"],
@@ -459,12 +459,12 @@ const calculatorTopics = [
 ];
 
 const brandTopics = [
-  ["magellan-hakkimizda", "Magellan Hakkımızda", "markanın serigrafi boya üretimindeki uzmanlık ve tedarik yaklaşımı"],
+  ["magellan-hakkimizda", "Magellan Hakkımızda", "markanın serigrafi boya ürünleri ve tedarik yaklaşımı"],
   ["magellan-fabrikamiz", "Magellan Fabrikamız", "üretim alanı, stok düzeni ve kalite kontrol disiplini"],
   ["magellan-uretim-sureci", "Magellan Üretim Süreci", "renk, karışım, dolum, kontrol ve sevkiyat akışı"],
   ["magellan-kalite-kontrol", "Magellan Kalite Kontrol", "renk, viskozite, tutunma ve parti standardı"],
   ["magellan-ar-ge", "Magellan Ar-Ge", "yüzey uyumu, özel renk ve teknik çözüm geliştirme"],
-  ["neden-magellan", "Neden Magellan?", "ürün sürekliliği, teknik destek ve üretici firma avantajı"],
+  ["neden-magellan", "Neden Magellan?", "ürün sürekliliği, teknik destek ve tedarik avantajı"],
   ["magellan-sertifikalar", "Magellan Sertifikalar", "dokümantasyon ve kalite güveni için hazırlanan merkez"],
   ["magellan-bayilik", "Magellan Bayilik", "bölgesel satış, stok planı ve bayi destek modeli"],
   ["magellan-distributorluk", "Magellan Distribütörlük", "yurt içi ve yurt dışı dağıtım için iş ortaklığı"],
@@ -584,9 +584,9 @@ const academyPages = academyTopics.map((topic) =>
       "serigrafi baskı",
       "serigrafi teknik bilgi",
     ],
-    productFocus: `${topic.angle}; Magellan Boya ürün ailesiyle birlikte ele alınan öğretici serigrafi konusu`,
+    productFocus: `${topic.angle}; ürün ailesiyle birlikte ele alınan öğretici serigrafi konusu`,
     audience:
-      "serigrafi öğrenenler, baskı atölyeleri, satın alma ekipleri, matbaalar ve teknik üretim sorumluları",
+      "serigrafi öğrenenler, baskı atölyeleri, satın alma ekipleri, matbaalar ve teknik süreç sorumluları",
     surfaceExamples: topic.surface,
     processNote:
       "konunun temel tanımı, uygulama adımları, boya ve yardımcı kimyasal ilişkisi, kalite kontrol ve sık yapılan hatalar birlikte okunur",
@@ -595,7 +595,7 @@ const academyPages = academyTopics.map((topic) =>
     priceNote:
       "teknik bilgi doğru kurulduğunda yanlış ürün seçimi ve gereksiz fire azalır; toplam satın alma maliyeti daha sağlıklı değerlendirilir",
     ctaNote:
-      "öğrenmek istediğiniz yüzeyi, baskı tipini ve yaşadığınız problemi paylaşarak Magellan Boya'dan teknik yönlendirme alabilirsiniz",
+      "öğrenmek istediğiniz yüzeyi, baskı tipini ve yaşadığınız problemi paylaşarak teknik yönlendirme alabilirsiniz",
     relatedSlugs: uniq([hubSlugs.academy, hubSlugs.technical, hubSlugs.wiki, ...evergreenSlugs.slice(0, 5)]),
   })
 );
@@ -617,7 +617,7 @@ const paintCenterPages = paintSystems.flatMap((system) =>
       ],
       productFocus: `${system.angle}; ${variant.angle} için doğru reçete ve uygulama yaklaşımı`,
       audience:
-        "serigrafi atölyeleri, üretici firmalar, ambalaj ve promosyon işletmeleri, tekstil ve endüstriyel baskı ekipleri",
+        "serigrafi atölyeleri, ambalaj ve promosyon işletmeleri, tekstil ve endüstriyel baskı ekipleri",
       surfaceExamples: system.surface,
       processNote: `${system.chemistry}, hedef renk, baskı adedi, elek yapısı, rakle sertliği ve kurutma koşulu birlikte değerlendirilir`,
       qualityNote:
@@ -647,7 +647,7 @@ const applicationPages = applicationAreas.map((topic) =>
     ],
     productFocus: `${topic.angle}; doğru boya sistemi, yardımcı kimyasal ve test baskısı planı`,
     audience:
-      "ürün baskısı yapan imalatçılar, fason baskı atölyeleri, kurumsal satın alma ekipleri ve teknik üretim sorumluları",
+      "ürün baskısı yapan işletmeler, fason baskı atölyeleri, kurumsal satın alma ekipleri ve teknik süreç sorumluları",
     surfaceExamples: topic.surface,
     processNote:
       "yüzey malzemesi, kullanım ortamı, baskı detayı, renk standardı, dayanım beklentisi ve üretim adedi birlikte değerlendirilir",
@@ -656,7 +656,7 @@ const applicationPages = applicationAreas.map((topic) =>
     priceNote:
       "uygulama alanına göre boya seçimi doğru yapıldığında numune tekrarı, fire ve yeniden baskı maliyeti düşer",
     ctaNote:
-      "ürün yüzeyini, baskı görselini ve beklenen dayanımı paylaşarak uygun Magellan boya grubuna yönlenebilirsiniz",
+      "ürün yüzeyini, baskı görselini ve beklenen dayanımı paylaşarak uygun boya grubuna yönlenebilirsiniz",
     relatedSlugs: uniq([hubSlugs.applications, hubSlugs.ai, hubSlugs.paint, hubSlugs.technical, ...evergreenSlugs]),
   })
 );
@@ -752,7 +752,7 @@ const glossaryPages = glossaryTerms.map((term) =>
     priceNote:
       "kavramların doğru anlaşılması, yanlış ürün veya yanlış uygulama kaynaklı maliyeti azaltmaya yardımcı olur",
     ctaNote:
-      "anlamını netleştirmek istediğiniz terimi ve uygulama bağlamını paylaşarak Magellan Boya'dan teknik açıklama alabilirsiniz",
+      "anlamını netleştirmek istediğiniz terimi ve uygulama bağlamını paylaşarak teknik açıklama alabilirsiniz",
     relatedSlugs: uniq([hubSlugs.wiki, hubSlugs.academy, hubSlugs.technical, hubSlugs.paint, ...evergreenSlugs]),
   })
 );
@@ -814,7 +814,7 @@ const calculatorPages = calculatorTopics.map(([slug, name, angle]) =>
     priceNote:
       "hesaplama araçları, ürün fiyatından bağımsız olarak toplam maliyet ve tüketim miktarını öngörmeye yardımcı olur",
     ctaNote:
-      "ölçü, adet ve yüzey bilgisini paylaşarak Magellan Boya'dan daha net tüketim ve ürün önerisi alabilirsiniz",
+      "ölçü, adet ve yüzey bilgisini paylaşarak daha net tüketim ve ürün önerisi alabilirsiniz",
     relatedSlugs: uniq([hubSlugs.calculators, hubSlugs.ai, hubSlugs.paint, "serigrafi-boya-maliyet-hesabi", ...evergreenSlugs]),
   })
 );
@@ -823,19 +823,19 @@ const brandPages = brandTopics.map(([slug, name, angle]) =>
   page({
     slug,
     title: `${name} | Magellan Marka Merkezi`,
-    description: `${name}: ${angle}. Magellan Boya'nın serigrafi boya üretimi, teknik destek ve kurumsal tedarik yaklaşımı.`,
+    description: `${name}: ${angle}. Serigrafi boya ürünleri, teknik destek ve kurumsal tedarik yaklaşımı.`,
     h1: name,
     eyebrow: "Magellan Marka Merkezi",
     focusKeyword: name,
     relatedKeywords: [
       "Magellan Boya",
-      "serigrafi boya üreticisi",
-      "serigrafi boya imalatçısı",
+      "serigrafi boya satışı",
+      "serigrafi boya ürünleri",
       "kurumsal boya tedariki",
     ],
     productFocus: `${angle}; serigrafi boya, yardımcı kimyasal, kalite kontrol ve düzenli tedarik yapısının marka tarafı`,
     audience:
-      "kurumsal müşteriler, bayiler, distribütörler, satın alma ekipleri ve uzun vadeli tedarik arayan üreticiler",
+      "kurumsal müşteriler, bayiler, distribütörler, satın alma ekipleri ve uzun vadeli tedarik arayan işletmeler",
     surfaceExamples:
       "tekstil, PVC, plastik, ambalaj, etiket, cam, metal, deri ve endüstriyel baskı müşterileri",
     processNote:
@@ -845,7 +845,7 @@ const brandPages = brandTopics.map(([slug, name, angle]) =>
     priceNote:
       "kurumsal tedarikte fiyat, kalite standardı, stok güvenliği ve uzun vadeli iş ortaklığı birlikte değerlendirilir",
     ctaNote:
-      "bayilik, ihracat, teknik tedarik veya ürün grubu hakkında bilgi almak için Magellan Boya ile doğrudan iletişime geçebilirsiniz",
+      "bayilik, ihracat, teknik tedarik veya ürün grubu hakkında bilgi almak için doğrudan iletişime geçebilirsiniz",
     relatedSlugs: uniq([hubSlugs.brand, hubSlugs.pdf, hubSlugs.tv, "serigrafi-boya-imalatcisi", ...evergreenSlugs]),
   })
 );
@@ -907,7 +907,7 @@ const pdfPages = pdfTopics.map((name) =>
     priceNote:
       "teknik dokümanlar, ürünün gerçek kullanım değerini ve toplam tedarik maliyetini daha doğru okumayı sağlar",
     ctaNote:
-      "ihtiyacınız olan TDS, MSDS veya kullanım kılavuzu bilgisini paylaşarak Magellan Boya'dan döküman desteği alabilirsiniz",
+      "ihtiyacınız olan TDS, MSDS veya kullanım kılavuzu bilgisini paylaşarak döküman desteği alabilirsiniz",
     relatedSlugs: uniq([hubSlugs.pdf, hubSlugs.brand, hubSlugs.paint, "magellan-kataloglar", ...evergreenSlugs]),
   })
 );
@@ -928,7 +928,7 @@ const osbPages = osbTopics.map((name) =>
     ],
     productFocus: `${name} bölgesindeki tekstil, ambalaj, plastik, metal, reklam ve promosyon üreticileri için ürün grubu planlama`,
     audience:
-      "organize sanayi bölgesinde üretim yapan atölyeler, fabrikalar, matbaalar, ambalaj ve promosyon firmaları",
+      "organize sanayi bölgesinde faaliyet gösteren atölyeler, fabrikalar, matbaalar, ambalaj ve promosyon firmaları",
     surfaceExamples:
       "PVC, plastik, tekstil, etiket, ambalaj, metal, cam, deri, poşet ve teknik ürün yüzeyleri",
     processNote:
@@ -1091,7 +1091,7 @@ const hubPages = [
     priceNote:
       "hesap araçları fiyat teklifinin tüketim tarafını netleştirmeye yardımcı olur",
     ctaNote:
-      "ölçü, adet ve yüzey bilgisini paylaşarak Magellan Boya'dan tüketim hesabı desteği alabilirsiniz",
+      "ölçü, adet ve yüzey bilgisini paylaşarak tüketim hesabı desteği alabilirsiniz",
     relatedSlugs: uniq([...calculatorPages.map((item) => item.slug), hubSlugs.ai, hubSlugs.paint]),
   }),
   page({
@@ -1152,11 +1152,11 @@ const hubPages = [
     h1: "Magellan Marka Merkezi",
     eyebrow: "Marka Merkezi",
     focusKeyword: "Magellan Marka Merkezi",
-    relatedKeywords: ["Magellan Boya", "serigrafi boya üreticisi", "serigrafi boya imalatçısı", "bayilik"],
+    relatedKeywords: ["Magellan Boya", "serigrafi boya satışı", "serigrafi boya ürünleri", "bayilik"],
     productFocus:
-      "Magellan Boya'nın üretim, kalite, Ar-Ge, dokümantasyon, bayilik ve ihracat tarafını arama motorlarına açık şekilde anlatır",
+      "ürün, kalite, Ar-Ge, dokümantasyon, bayilik ve ihracat tarafını arama motorlarına açık şekilde anlatır",
     audience:
-      "kurumsal müşteriler, bayiler, distribütörler, ihracat müşterileri ve güvenilir üretici arayan satın alma ekipleri",
+      "kurumsal müşteriler, bayiler, distribütörler, ihracat müşterileri ve güvenilir tedarik arayan satın alma ekipleri",
     surfaceExamples:
       "serigrafi boya, plastisol, PVC, UV, su bazlı, kimyasal ve endüstriyel baskı müşterileri",
     processNote:
@@ -1166,7 +1166,7 @@ const hubPages = [
     priceNote:
       "marka güveni, uzun vadeli tedarikte fiyat kadar stok ve kalite standardı açısından da değer yaratır",
     ctaNote:
-      "bayilik, distribütörlük, ihracat veya teknik tedarik talebinizi Magellan Boya ile paylaşabilirsiniz",
+      "bayilik, distribütörlük, ihracat veya teknik tedarik talebinizi paylaşabilirsiniz",
     relatedSlugs: uniq([...brandPages.map((item) => item.slug), hubSlugs.pdf, hubSlugs.tv]),
   }),
   page({

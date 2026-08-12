@@ -41,7 +41,7 @@ function productDetailPage(
   return {
     slug,
     title: `${name} | Kullanım Alanları ve Teklif | Magellan Boya`,
-    description: `${name} kullanım alanları, yüzey uyumu, teknik seçim ve fiyat teklifi için Magellan Boya ürün sayfasını inceleyin.`,
+    description: `${name} kullanım alanları, yüzey uyumu, teknik seçim ve fiyat teklifi için ürün sayfasını inceleyin.`,
     h1: `${name} Kullanım Alanları ve Teknik Tedarik Bilgisi`,
     eyebrow: categoryLabel,
     focusKeyword: name.toLocaleLowerCase("tr-TR"),

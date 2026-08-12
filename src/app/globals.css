@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #060814;
-  --foreground: #f8fafc;
-  --muted: rgba(248, 250, 252, 0.68);
-  --line: rgba(255, 255, 255, 0.08);
+  --background: #f7f7f5;
+  --foreground: #10243e;
+  --muted: #66717d;
+  --line: rgba(16, 36, 62, 0.12);
   --accent-1: #f97316;
   --accent-2: #22d3ee;
   --accent-3: #f43f5e;
@@ -22,11 +22,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(244, 63, 94, 0.12), transparent 28%),
-    radial-gradient(circle at 20% 20%, rgba(249, 115, 22, 0.14), transparent 24%),
-    radial-gradient(circle at 80% 18%, rgba(34, 211, 238, 0.14), transparent 26%),
-    linear-gradient(180deg, #060814 0%, #09101f 40%, #060814 100%);
+  background: #f7f7f5;
   color: var(--foreground);
   font-family: "Space Grotesk Variable", sans-serif;
   overflow-x: hidden;
@@ -74,6 +70,15 @@ img {
   backdrop-filter: blur(24px);
 }
 
+.light-panel {
+  border: 1px solid #e3e7ec;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 20px 55px rgba(16, 36, 62, 0.08);
+  backdrop-filter: blur(18px);
+}
+
 .button-primary,
 .button-secondary {
   gap: 0.75rem;
@@ -88,16 +93,17 @@ img {
 }
 
 .button-primary {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  border: 1px solid rgba(194, 86, 18, 0.2);
+  background: var(--accent-1);
   color: #fff;
   padding: 0.85rem 1.3rem;
-  box-shadow: 0 16px 40px rgba(34, 211, 238, 0.22);
+  box-shadow: 0 16px 34px rgba(249, 115, 22, 0.22);
 }
 
 .button-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 24px 55px rgba(34, 211, 238, 0.26);
+  background: #ea580c;
+  box-shadow: 0 22px 44px rgba(249, 115, 22, 0.28);
 }
 
 .button-secondary {
@@ -113,6 +119,164 @@ img {
   border-color: rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
+}
+
+.button-secondary-light {
+  gap: 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #cfd6df;
+  background: rgba(255, 255, 255, 0.72);
+  color: #10243e;
+  font-weight: 500;
+  padding: 0.85rem 1.3rem;
+  box-shadow: 0 14px 32px rgba(16, 36, 62, 0.08);
+  backdrop-filter: blur(18px);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.button-secondary-light:hover {
+  transform: translateY(-2px);
+  border-color: #10243e;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(16, 36, 62, 0.12);
+}
+
+.home-light-page .page-noise {
+  opacity: 0.035;
+}
+
+.home-light-page .page-grid {
+  opacity: 0.5;
+  background-image:
+    linear-gradient(rgba(16, 36, 62, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 36, 62, 0.055) 1px, transparent 1px);
+}
+
+.home-light-page .section-heading-label {
+  border-color: #dbe3ec !important;
+  background: rgba(255, 255, 255, 0.78) !important;
+  color: #34455c !important;
+  letter-spacing: 0.16em !important;
+}
+
+.home-light-page .section-heading-title {
+  color: #10243e !important;
+}
+
+.home-light-page .section-heading-description {
+  color: #66717d !important;
+}
+
+.home-light-page .home-light-copy,
+.home-light-page .home-light-copy :is(h2, h3, p, span, li, a, div) {
+  color: inherit;
+}
+
+.home-light-page .home-light-copy [class*="text-white"] {
+  color: #10243e !important;
+}
+
+.home-light-page .home-light-copy p[class*="text-white/"],
+.home-light-page .home-light-copy [class*="text-white/6"],
+.home-light-page .home-light-copy [class*="text-white/5"],
+.home-light-page .home-light-copy [class*="text-white/4"] {
+  color: #66717d !important;
+}
+
+.hero-media-panel .glass-panel,
+.hero-media-panel .glass-panel [class*="text-white"] {
+  color: inherit;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) {
+  border-color: #e3e7ec !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 251, 252, 0.9)),
+    rgba(255, 255, 255, 0.92) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 18px 46px rgba(16, 36, 62, 0.08) !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) :is(h2, h3, p, li, span, label, a, button) {
+  color: #10243e;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) :is(p, li, span, label, a, button)[class*="text-white/"] {
+  color: #66717d !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) [class*="border-white"] {
+  border-color: #e3e7ec !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) [class*="bg-white/"] {
+  background: rgba(248, 250, 252, 0.82) !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) .button-primary,
+.site-light-page .glass-panel:not(.dark-panel) .button-primary * {
+  color: #fff !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) .button-secondary {
+  border-color: #cfd6df !important;
+  background: rgba(255, 255, 255, 0.74) !important;
+  color: #10243e !important;
+  box-shadow: 0 14px 32px rgba(16, 36, 62, 0.08);
+}
+
+.site-light-page .glass-panel:not(.dark-panel) .button-secondary:hover {
+  border-color: #10243e !important;
+  background: #fff !important;
+}
+
+.site-light-page .glass-panel:not(.dark-panel) .media-caption,
+.site-light-page .glass-panel:not(.dark-panel) .media-caption *,
+.site-light-page .media-caption,
+.site-light-page .media-caption * {
+  color: #fff !important;
+}
+
+.site-light-page footer {
+  border-color: #dfe6ee !important;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.site-light-page footer p[class*="text-white/"],
+.site-light-page footer a[class*="text-white/"],
+.site-light-page footer div[class*="text-white/"] {
+  color: #66717d !important;
+}
+
+.site-light-page footer .footer-title {
+  color: #10243e !important;
+  letter-spacing: 0.14em;
+}
+
+.site-light-page footer a[class*="text-white/"]:hover {
+  color: #10243e !important;
+}
+
+.site-light-page footer .button-primary,
+.site-light-page footer .button-primary * {
+  color: #fff !important;
+}
+
+.site-light-page footer .button-secondary {
+  border-color: #cfd6df !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: #10243e !important;
+}
+
+.site-light-page footer .button-secondary:hover {
+  border-color: #10243e !important;
+  background: #fff !important;
 }
 
 .page-noise {
@@ -187,6 +351,41 @@ img {
 
 .paint-card:hover::after {
   opacity: 0.55;
+}
+
+.site-light-page .paint-card {
+  border-color: #e3e7ec !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 18px 46px rgba(16, 36, 62, 0.08);
+}
+
+.site-light-page .paint-card::before {
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 30%);
+}
+
+.site-light-page .paint-card::after {
+  opacity: 0;
+}
+
+.site-light-page .paint-card > .mt-6 p,
+.site-light-page .paint-card > .mt-6 li,
+.site-light-page .paint-card > .mt-6 span {
+  color: #66717d !important;
+}
+
+.site-light-page .paint-card > .mt-8 .button-primary,
+.site-light-page .paint-card > .mt-8 .button-primary * {
+  color: #fff !important;
+}
+
+.site-light-page .paint-card > .mt-8 .button-secondary {
+  border-color: #cfd6df !important;
+  background: rgba(255, 255, 255, 0.74) !important;
+  color: #10243e !important;
 }
 
 .product-orb-grid {
@@ -272,6 +471,41 @@ img {
   border-color: rgba(34, 211, 238, 0.42);
   background: rgba(255, 255, 255, 0.055);
   box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.1);
+}
+
+.site-light-page .contact-tile {
+  border-color: #e3e7ec;
+  background: rgba(248, 250, 252, 0.86);
+}
+
+.site-light-page .contact-tile:hover {
+  border-color: #cfd6df;
+  background: #fff;
+}
+
+.site-light-page .contact-label {
+  color: #66717d !important;
+  letter-spacing: 0.14em;
+}
+
+.site-light-page .contact-value {
+  color: #10243e !important;
+}
+
+.site-light-page .input-field {
+  border-color: #d9e1ea;
+  background: rgba(255, 255, 255, 0.9);
+  color: #10243e;
+}
+
+.site-light-page .input-field::placeholder {
+  color: #8a95a3;
+}
+
+.site-light-page .input-field:focus {
+  border-color: rgba(249, 115, 22, 0.44);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
 }
 
 .footer-title {

@@ -6,14 +6,14 @@ export const metadata: Metadata = {
     absolute: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
   },
   description:
-    "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
+    "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için iletişime geçin.",
   alternates: {
     canonical: "https://magellanboya.com/iletisim",
   },
   openGraph: {
     title: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
     description:
-      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya ile iletişime geçin.",
+      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için iletişime geçin.",
     url: "https://magellanboya.com/iletisim",
     type: "website",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Serigrafi Boya Siparişi ve İletişim | Magellan Boya",
     description:
-      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için Magellan Boya iletişim bilgileri.",
+      "Serigrafi boya, plastisol boya ve yardımcı kimyasallar için iletişim bilgileri.",
   },
 };
 

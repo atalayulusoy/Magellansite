@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     absolute: "Serigrafi Baskı Örnekleri ve Referanslar | Magellan Boya",
   },
   description:
-    "Magellan Boya serigrafi boyaları ile poşet, tekstil, deri, plastik bardak, levha ve ambalaj yüzeylerinde yapılan baskı örnekleri.",
+    "Serigrafi boyaları ile poşet, tekstil, deri, plastik bardak, levha ve ambalaj yüzeylerinde yapılan baskı örnekleri.",
   alternates: {
     canonical: "https://magellanboya.com/referanslar",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Serigrafi Baskı Örnekleri | Magellan Boya",
     description:
-      "Magellan Boya serigrafi boyaları ile yapılan baskı örnekleri.",
+      "Serigrafi boyaları ile yapılan baskı örnekleri.",
   },
 };
 

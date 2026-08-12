@@ -3,7 +3,7 @@ import { HomePage } from "@/components/site/home-page";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Serigrafi Boya Hizmetleri ve Özel Renk Üretimi | Magellan Boya",
+    absolute: "Serigrafi Boya Hizmetleri ve Özel Renk Çözümleri | Magellan Boya",
   },
   description:
     "Serigrafi boyalarında özel renk geliştirme, plastisol boya, teknik destek, proses danışmanlığı ve serigrafi boya tedarik hizmetleri.",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://magellanboya.com/hizmetler",
   },
   openGraph: {
-    title: "Serigrafi Boya Hizmetleri ve Özel Renk Üretimi | Magellan Boya",
+    title: "Serigrafi Boya Hizmetleri ve Özel Renk Çözümleri | Magellan Boya",
     description:
       "Özel renk geliştirme, plastisol boya, teknik destek ve serigrafi boya tedarik hizmetleri.",
     url: "https://magellanboya.com/hizmetler",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Serigrafi Boya Hizmetleri | Magellan Boya",
     description:
-      "Serigrafi boya üretimi, özel renk geliştirme ve teknik destek hizmetleri.",
+      "Serigrafi boya ürünleri, özel renk geliştirme ve teknik destek hizmetleri.",
   },
 };
 

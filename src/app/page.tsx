@@ -5,10 +5,10 @@ import { companyInfo } from "@/components/site/site-data";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Emprime ve Plastisol Boyaları | Magellan Boya",
   },
   description:
-    "Magellan Boya; serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
+    "Serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasalları inceleyin.",
   alternates: {
     canonical: "https://magellanboya.com/",
     languages: {
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Emprime ve Plastisol Boyaları | Magellan Boya",
     description:
-      "Magellan Boya; serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasallar üretir.",
+      "Serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, PVC ve UV boya, emülsiyon, inceltici ve yardımcı kimyasalları inceleyin.",
     url: "https://magellanboya.com/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Serigrafi Baskı Boyaları | Serigrafi Boya İmalatçısı | Magellan Boya",
+      "Serigrafi Baskı Boyaları | Emprime ve Plastisol Boyaları | Magellan Boya",
     description:
       "Serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı ürünleri ve serigrafi yardımcı kimyasalları için Magellan Boya.",
   },
@@ -54,9 +54,9 @@ const organizationJsonLd = {
   logo: "https://magellanboya.com/magellan-logo-square.png",
   image: "https://magellanboya.com/magellan-label.png",
   description:
-    "Serigrafi boya üreticisi ve boya tedarikçisi olarak serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve yardımcı kimyasallar sunar.",
+    "Serigrafi baskı boyaları, emprime baskı boyası, plastisol boya, tekstil baskı boyaları, emülsiyon, inceltici, geciktirici ve yardımcı kimyasal seçenekleri sunar.",
   additionalType: "https://schema.org/Store",
-  category: "Serigrafi boya üreticisi / boya tedarikçisi",
+  category: "Serigrafi boya satışı / boya tedarikçisi",
   telephone: companyInfo.phoneDisplay,
   address: {
     "@type": "PostalAddress",
@@ -77,7 +77,7 @@ const organizationJsonLd = {
   makesOffer: [
     "Serigrafi boyaları",
     "Serigrafi baskı boyaları",
-    "Serigrafi boya imalatı",
+    "Serigrafi boya satışı",
     "Emprime baskı boyası",
     "Plastisol boya",
     "Tekstil baskı boyaları",

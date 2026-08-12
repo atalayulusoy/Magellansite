@@ -13,11 +13,11 @@ export const companyInfo = {
     "https://www.google.com/maps/place/Magellan+Serigrafi+Boylar%C4%B1/@41.0845741,28.8034047,17z/data=!3m1!4b1!4m6!3m5!1s0x14caafb050f00b17:0xac12d282c1d67d52!8m2!3d41.0845742!4d28.8082756!16s%2Fg%2F11z6ss239k?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D",
   mapsEmbedHref:
     "https://www.google.com/maps?q=Magellan%20Serigrafi%20Boylar%C4%B1%2C%2041.0845742%2C28.8082756&z=17&output=embed",
-  heroTitle: "Serigrafi Boya İmalatçısı ve Plastisol Boya Üreticisi",
+  heroTitle: "Serigrafi, Emprime ve Plastisol Boyaları",
   heroDescription:
-    "Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyaları, ipek baskı boyası ve yardımcı kimyasallar alanında üretim ve satış hizmeti sunar.",
+    "Serigrafi, plastisol, emprime, tekstil baskı, PVC ve UV boyaları ile yardımcı kimyasalları keşfedin. Baskı uygulamanız için ihtiyacınıza uygun ürünleri inceleyin.",
   aboutDescription:
-    "Magellan Boya olarak serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunuyoruz. Müşterilerimizin ihtiyaçlarına özel renk ve içerik üretimi yapabiliyor; güçlü tutuculuk, kaliteli pigment yapısı, uzun ömürlü baskı performansı ve rekabetçi fiyat yaklaşımıyla profesyonel çözümler sağlıyoruz.",
+    "Serigrafi boya, plastisol boya ve tekstil baskı ürünleri için güçlü tutuculuk, kaliteli pigment yapısı, uzun ömürlü baskı performansı ve rekabetçi fiyat yaklaşımıyla profesyonel ürün seçeneklerini inceleyin.",
 };
 
 export const navItems = [
@@ -151,8 +151,8 @@ export const productItems = [
 ];
 
 export const productHighlights = [
-  "İstenilen her renk üretilebilir.",
-  "Özel üretim yapılabilir.",
+  "İstenilen her renk için seçenek oluşturulabilir.",
+  "İhtiyaca göre özel formül seçeneği değerlendirilebilir.",
   "Yüksek kalite pigment kullanılır.",
   "Uzun ömürlü baskı performansı sağlar.",
 ];
@@ -303,7 +303,7 @@ export const serviceItems = [
     icon: "users",
     title: "Kurumsal Tedarik İşbirliği",
     description:
-      "Sürekli üretim yapan işletmeler için planlı tedarik, hızlı sevkiyat ve sürdürülebilir kalite sunuyoruz.",
+      "Sürekli baskı yapan işletmeler için planlı tedarik, hızlı sevkiyat ve sürdürülebilir kalite seçenekleri.",
   },
 ];
 
@@ -407,7 +407,7 @@ export const applicationShowcaseItems = [
     title: "Uyarı Levhası",
     category: "Endüstriyel işaretleme",
     image:
-      "https://images.pexels.com/photos/28308520/pexels-photo-28308520.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/36380562/pexels-photo-36380562.jpeg?auto=compress&cs=tinysrgb&w=1400",
     summary:
       "Şantiye, yönlendirme ve iş güvenliği levhalarında okunaklı, dayanıklı ve net baskı.",
   },
@@ -454,7 +454,7 @@ export const surfaceShowcaseItems = [
     title: "Uyarı ve Şantiye Levhaları",
     category: "İş güvenliği baskıları",
     image:
-      "https://images.pexels.com/photos/28308520/pexels-photo-28308520.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/36380562/pexels-photo-36380562.jpeg?auto=compress&cs=tinysrgb&w=1400",
     summary:
       "Şantiye, fabrika ve saha kullanımı için dikkat, uyarı, yönlendirme ve zorunluluk levhaları.",
     tags: ["Levha", "İSG", "Dış ortam"],
@@ -471,8 +471,7 @@ export const surfaceShowcaseItems = [
   {
     title: "Plastik Bardak Baskısı",
     category: "Plastik yüzeyler",
-    image:
-      "https://images.pexels.com/photos/7829478/pexels-photo-7829478.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    image: "/plastic-paper-cup-printing.png",
     summary:
       "Şeffaf ve sert plastik bardaklarda kafe, etkinlik ve marka baskıları için güçlü yüzey uyumu.",
     tags: ["Bardak", "Plastik", "Kafe"],
@@ -480,8 +479,7 @@ export const surfaceShowcaseItems = [
   {
     title: "Şişe ve Kozmetik Ambalaj",
     category: "Ürün ambalajı",
-    image:
-      "https://images.pexels.com/photos/1887946/pexels-photo-1887946.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    image: "/cosmetic-plastic-bottle.png",
     summary:
       "Parfüm, kozmetik ve promosyon ambalajlarında ince yazı, logo ve marka etiket görünümü.",
     tags: ["Şişe", "Kozmetik", "Ambalaj"],
@@ -494,7 +492,7 @@ export const referenceBrands = [
     mark: "GEZER",
     descriptor: "Terlik",
     logoKind: "gezer",
-    logoUrl: "https://logo.clearbit.com/gezer.com.tr",
+    logoUrl: "/references/gezer-logo.png",
     tone: "from-sky-500/24 via-cyan-400/14 to-white/5",
   },
   {
@@ -502,7 +500,7 @@ export const referenceBrands = [
     mark: "STARBUCKS",
     descriptor: "Coffee",
     logoKind: "starbucks",
-    logoUrl: "https://logo.clearbit.com/starbucks.com",
+    logoUrl: "/references/starbucks-logo.png",
     tone: "from-emerald-500/24 via-green-400/14 to-white/5",
   },
   {
@@ -510,7 +508,7 @@ export const referenceBrands = [
     mark: "ESPRESSO LAB",
     descriptor: "Coffee",
     logoKind: "espresso",
-    logoUrl: "https://logo.clearbit.com/espressolab.com",
+    logoUrl: "/references/espressolab-logo.png",
     tone: "from-stone-300/20 via-amber-500/14 to-white/5",
   },
   {
@@ -518,7 +516,7 @@ export const referenceBrands = [
     mark: "MAVI",
     descriptor: "Denim",
     logoKind: "mavi",
-    logoUrl: "https://logo.clearbit.com/mavi.com",
+    logoUrl: "/references/mavi-logo.png",
     tone: "from-blue-500/24 via-sky-300/14 to-white/5",
   },
   {
@@ -526,7 +524,7 @@ export const referenceBrands = [
     mark: "LUFIAN",
     descriptor: "Menswear",
     logoKind: "lufian",
-    logoUrl: "https://logo.clearbit.com/lufian.com",
+    logoUrl: "/references/lufian-logo.png",
     tone: "from-zinc-200/18 via-white/10 to-white/5",
   },
   {
@@ -534,7 +532,7 @@ export const referenceBrands = [
     mark: "NIKE",
     descriptor: "Sport",
     logoKind: "nike",
-    logoUrl: "https://logo.clearbit.com/nike.com",
+    logoUrl: "/references/nike-logo.png",
     tone: "from-white/20 via-neutral-300/12 to-white/5",
   },
   {
@@ -542,7 +540,7 @@ export const referenceBrands = [
     mark: "ADIDAS",
     descriptor: "Sport",
     logoKind: "adidas",
-    logoUrl: "https://logo.clearbit.com/adidas.com",
+    logoUrl: "/references/adidas-logo.png",
     tone: "from-indigo-400/20 via-white/12 to-white/5",
   },
   {
@@ -550,7 +548,7 @@ export const referenceBrands = [
     mark: "PUMA",
     descriptor: "Sport",
     logoKind: "puma",
-    logoUrl: "https://logo.clearbit.com/puma.com",
+    logoUrl: "/references/puma-logo.png",
     tone: "from-red-500/22 via-orange-300/12 to-white/5",
   },
 ];
@@ -596,7 +594,7 @@ export const galleryItems = [
     title: "Ürün Çekimi",
     category: "Premium Ambalaj",
     image:
-      "https://images.pexels.com/photos/1887946/pexels-photo-1887946.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "https://images.pexels.com/photos/9775110/pexels-photo-9775110.jpeg?auto=compress&cs=tinysrgb&w=1400",
     aspect: "aspect-[16/11]",
     summary:
       "Kurumsal görünüm, güven veren ambalaj dili ve raf üzerinde güçlü premium etki.",
@@ -633,7 +631,7 @@ export const testimonialItems = [
   },
   {
     name: "Gizem Y.",
-    company: "Kurumsal Promosyon Üreticisi",
+    company: "Kurumsal Promosyon Firması",
     quote:
       "Canlı renkler, temiz baskı ve zamanında teslimat. Uzun vadeli çalışmak isteyen firmalar için güven verici.",
   },

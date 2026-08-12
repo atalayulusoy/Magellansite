@@ -3,25 +3,25 @@ import { HomePage } from "@/components/site/home-page";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Serigrafi Boya Üreticisi | Hakkımızda | Magellan Boya",
+    absolute: "Hakkımızda | Serigrafi ve Baskı Boyaları | Magellan Boya",
   },
   description:
-    "Magellan Boya, serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunar.",
+    "Magellan Boya; serigrafi, emprime, plastisol, PVC, UV ve tekstil baskı boyaları ile yardımcı kimyasallarda profesyonel ürün, teknik destek ve tedarik çözümleri sunar.",
   alternates: {
     canonical: "https://magellanboya.com/hakkimizda",
   },
   openGraph: {
-    title: "Serigrafi Boya Üreticisi | Hakkımızda | Magellan Boya",
+    title: "Hakkımızda | Serigrafi ve Baskı Boyaları | Magellan Boya",
     description:
-      "Magellan Boya, serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri alanında üretim ve tedarik hizmeti sunar.",
+      "Magellan Boya; serigrafi, emprime, plastisol, PVC, UV ve tekstil baskı boyaları ile yardımcı kimyasallarda profesyonel ürün, teknik destek ve tedarik çözümleri sunar.",
     url: "https://magellanboya.com/hakkimizda",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Serigrafi Boya Üreticisi | Hakkımızda | Magellan Boya",
+    title: "Hakkımızda | Serigrafi ve Baskı Boyaları | Magellan Boya",
     description:
-      "Serigrafi boya imalatı, plastisol boya ve tekstil baskı ürünleri için Magellan Boya.",
+      "Serigrafi, emprime, plastisol, PVC, UV ve tekstil baskı boyaları için Magellan Boya.",
   },
 };
 

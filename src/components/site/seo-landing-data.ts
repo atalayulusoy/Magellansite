@@ -23,7 +23,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "serigrafi-boyalari",
     title: "Serigrafi Boyaları | Plastisol ve Baskı Boyaları | Magellan Boya",
     description:
-      "Serigrafi boyaları, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallar için Magellan Boya'nın profesyonel üretim ve tedarik çözümlerini inceleyin.",
+      "Serigrafi boyaları, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallar için profesyonel ürün ve tedarik çözümlerini inceleyin.",
     h1: "Serigrafi Boyaları ve Profesyonel Baskı Çözümleri",
     eyebrow: "Serigrafi Boyaları",
     focusKeyword: "serigrafi boyaları",
@@ -124,13 +124,13 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "plastisol-boya",
     title: "Plastisol Boya | Tekstil Baskı Boyaları | Magellan Boya",
     description:
-      "Plastisol boya çeşitleri, tekstil baskı boyaları ve serigrafi baskı çözümleri için Magellan Boya'nın üretim ve tedarik yaklaşımını inceleyin.",
+      "Plastisol boya çeşitleri, tekstil baskı boyaları ve serigrafi baskı çözümleri için ürün ve tedarik seçeneklerini inceleyin.",
     h1: "Plastisol Boya ve Tekstil Baskı İçin Kalıcı Renk Çözümleri",
     eyebrow: "Plastisol Boya",
     focusKeyword: "plastisol boya",
     relatedKeywords: [
       "plastisol boyaları",
-      "plastisol boya imalatçısı",
+      "plastisol boya satışı",
       "tekstil baskı boyası",
       "ipek baskı boyası",
     ],
@@ -151,22 +151,22 @@ const coreSeoLandingPages: SeoLandingPage[] = [
   },
   {
     slug: "serigrafi-boya-imalatcisi",
-    title: "Serigrafi Boya İmalatçısı | Magellan Boya",
+    title: "Serigrafi Boya Satışı | Magellan Boya",
     description:
-      "Serigrafi boya imalatçısı Magellan Boya; plastisol, PVC, UV, tekstil baskı boyaları ve yardımcı kimyasallar için üretim ve tedarik hizmeti sunar.",
-    h1: "Serigrafi Boya İmalatçısı Olarak Üretim ve Tedarik Gücü",
-    eyebrow: "Boya İmalatı",
-    focusKeyword: "serigrafi boya imalatçısı",
+      "Serigrafi boya satışı için plastisol, PVC, UV, tekstil baskı boyaları ve yardımcı kimyasal ürün seçeneklerini inceleyin.",
+    h1: "Serigrafi Boya Satışı ve Tedarik Seçenekleri",
+    eyebrow: "Boya Satışı",
+    focusKeyword: "serigrafi boya satışı",
     relatedKeywords: [
-      "serigrafi boya imalatı",
-      "serigrafi boya üreticisi",
+      "serigrafi boya satışı",
+      "serigrafi boya ürünleri",
       "serigrafi boya tedarikçisi",
       "toptan serigrafi boya",
     ],
     productFocus:
       "müşteri ihtiyacına göre formüle edilen serigrafi boya grupları ve yardımcı ürünler",
     audience:
-      "sürekli üretim yapan matbaalar, kurumsal baskı tedarikçileri ve yüksek adetli üretim yapan firmalar",
+      "sürekli baskı yapan matbaalar, kurumsal baskı tedarikçileri ve yüksek adetli çalışan firmalar",
     surfaceExamples:
       "ambalaj, poşet, tekstil, plastik ürün, deri yüzey, etiket ve endüstriyel işaretleme yüzeyleri",
     processNote:
@@ -174,21 +174,21 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     qualityNote:
       "partiler arası renk tutarlılığı, kararlı viskozite ve üretim hattında kolay uygulanabilir yapı",
     priceNote:
-      "imalatçıdan tedarik avantajı ile uygun maliyetli ve sürdürülebilir satın alma planı",
+      "kurumsal tedarik avantajı ile uygun maliyetli ve sürdürülebilir satın alma planı",
     ctaNote:
-      "mevcut numunenizi, renk kodunuzu veya baskı yüzeyinizi paylaşarak imalat sürecini hızlandırabilirsiniz",
+      "mevcut numunenizi, renk kodunuzu veya baskı yüzeyinizi paylaşarak ürün seçim sürecini hızlandırabilirsiniz",
   },
   {
     slug: "serigrafi-boya-ureticisi",
-    title: "Serigrafi Boya Üreticisi | Magellan Boya",
+    title: "Serigrafi Boya Ürünleri | Magellan Boya",
     description:
-      "Serigrafi boya üreticisi Magellan Boya; serigrafi baskı boyası, plastisol boya, emülsiyon ve yardımcı kimyasallarda profesyonel çözümler sunar.",
-    h1: "Serigrafi Boya Üreticisi Magellan Boya",
-    eyebrow: "Üretici Firma",
-    focusKeyword: "serigrafi boya üreticisi",
+      "Serigrafi boya ürünleri, serigrafi baskı boyası, plastisol boya, emülsiyon ve yardımcı kimyasallarda profesyonel seçenekler sunar.",
+    h1: "Serigrafi Boya Ürünleri ve Tedarik Seçenekleri",
+    eyebrow: "Ürün Grupları",
+    focusKeyword: "serigrafi boya ürünleri",
     relatedKeywords: [
       "serigrafi boya",
-      "serigrafi boya imalatı",
+      "serigrafi boya satışı",
       "serigrafi boya tedarikçisi",
       "serigrafi yardımcı kimyasalları",
     ],
@@ -203,7 +203,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     qualityNote:
       "güçlü pigment, yüzeye uyum, baskı netliği, depolama stabilitesi ve sevkiyat sürekliliği",
     priceNote:
-      "üretici firma avantajı ile toptan serigrafi boya ihtiyaçlarında rekabetçi fiyat seçenekleri",
+      "kurumsal tedarik avantajı ile toptan serigrafi boya ihtiyaçlarında rekabetçi fiyat seçenekleri",
     ctaNote:
       "uygun ürün önerisi için baskı yaptığınız yüzeyi, renk beklentinizi ve tüketim miktarınızı iletebilirsiniz",
   },
@@ -211,7 +211,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "serigrafi-emulsiyonu",
     title: "Serigrafi Emülsiyonu | Kalıp Hazırlama Ürünleri | Magellan Boya",
     description:
-      "Serigrafi emülsiyonu, emülsiyon serigrafi ürünleri ve kalıp hazırlama yardımcıları için Magellan Boya'nın profesyonel çözümlerini inceleyin.",
+      "Serigrafi emülsiyonu, emülsiyon serigrafi ürünleri ve kalıp hazırlama yardımcıları için profesyonel çözümleri inceleyin.",
     h1: "Serigrafi Emülsiyonu ve Net Kalıp Hazırlama Çözümleri",
     eyebrow: "Kalıp Hazırlama",
     focusKeyword: "serigrafi emülsiyonu",
@@ -240,7 +240,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "emulsiyon-sokucu",
     title: "Emülsiyon Sökücü | Serigrafi Kalıp Temizleme | Magellan Boya",
     description:
-      "Emülsiyon sökücü, serigrafi kalıp temizleme ürünleri ve yardımcı kimyasallar için Magellan Boya'nın profesyonel tedarik çözümlerini inceleyin.",
+      "Emülsiyon sökücü, serigrafi kalıp temizleme ürünleri ve yardımcı kimyasallar için profesyonel tedarik çözümlerini inceleyin.",
     h1: "Emülsiyon Sökücü ve Serigrafi Kalıp Temizleme Ürünleri",
     eyebrow: "Kalıp Temizleme",
     focusKeyword: "emülsiyon sökücü",
@@ -269,7 +269,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "serigrafi-yardimci-kimyasallari",
     title: "Serigrafi Yardımcı Kimyasalları | Magellan Boya",
     description:
-      "Serigrafi yardımcı kimyasalları, emülsiyon, emülsiyon sökücü, inceltici ve geciktirici ürünleri için Magellan Boya tedarik çözümleri.",
+      "Serigrafi yardımcı kimyasalları, emülsiyon, emülsiyon sökücü, inceltici ve geciktirici ürünleri için tedarik çözümleri.",
     h1: "Serigrafi Yardımcı Kimyasalları ve Üretim Destek Ürünleri",
     eyebrow: "Yardımcı Kimyasallar",
     focusKeyword: "serigrafi yardımcı kimyasalları",
@@ -298,7 +298,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "tekstil-baski-boyasi",
     title: "Tekstil Baskı Boyası | Plastisol ve İpek Baskı Boyaları | Magellan Boya",
     description:
-      "Tekstil baskı boyası, plastisol boya, ipek baskı boyası ve özel renk çözümleri için Magellan Boya'nın profesyonel üretim yaklaşımını inceleyin.",
+      "Tekstil baskı boyası, plastisol boya, ipek baskı boyası ve özel renk çözümleri için profesyonel ürün yaklaşımını inceleyin.",
     h1: "Tekstil Baskı Boyası ve İpek Baskı İçin Profesyonel Çözümler",
     eyebrow: "Tekstil Baskı",
     focusKeyword: "tekstil baskı boyası",
@@ -327,14 +327,14 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "pvc-serigrafi-boyasi",
     title: "PVC Serigrafi Boyası | PVC Baskı Boyaları | Magellan Boya",
     description:
-      "PVC serigrafi boyası, PVC yüzey baskıları ve özel renk çözümleri için Magellan Boya'nın serigrafi boya üretim ve tedarik hizmetlerini inceleyin.",
+      "PVC serigrafi boyası, PVC yüzey baskıları ve özel renk çözümleri için serigrafi boya ve tedarik seçeneklerini inceleyin.",
     h1: "PVC Serigrafi Boyası ve PVC Yüzeyler İçin Baskı Çözümleri",
     eyebrow: "PVC Baskı",
     focusKeyword: "PVC serigrafi boyası",
     relatedKeywords: [
       "serigrafi boya",
       "serigrafi baskı boyası",
-      "serigrafi boya imalatçısı",
+      "serigrafi boya satışı",
       "serigrafi boya tedarikçisi",
     ],
     productFocus:
@@ -356,7 +356,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "uv-serigrafi-boyasi",
     title: "UV Serigrafi Boyası | Hızlı Kürlenen Baskı Boyaları | Magellan Boya",
     description:
-      "UV serigrafi boyası, parlak ve hızlı kürlenen baskı çözümleri için Magellan Boya'nın ürün ve teknik tedarik yaklaşımını inceleyin.",
+      "UV serigrafi boyası, parlak ve hızlı kürlenen baskı çözümleri için ürün ve teknik tedarik seçeneklerini inceleyin.",
     h1: "UV Serigrafi Boyası ve Hızlı Kürlenen Baskı Çözümleri",
     eyebrow: "UV Baskı",
     focusKeyword: "UV serigrafi boyası",
@@ -385,7 +385,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "toptan-serigrafi-boya",
     title: "Toptan Serigrafi Boya | Uygun Fiyatlı Tedarik | Magellan Boya",
     description:
-      "Toptan serigrafi boya, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallar için Magellan Boya'nın rekabetçi tedarik çözümlerini inceleyin.",
+      "Toptan serigrafi boya, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallar için rekabetçi tedarik çözümlerini inceleyin.",
     h1: "Toptan Serigrafi Boya ve Rekabetçi Tedarik Çözümleri",
     eyebrow: "Toptan Tedarik",
     focusKeyword: "toptan serigrafi boya",
@@ -393,7 +393,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
       "uygun fiyatlı serigrafi boya",
       "serigrafi boyaları en uygun",
       "serigrafi boya tedarikçisi",
-      "serigrafi boya imalatçısı",
+      "serigrafi boya satışı",
     ],
     productFocus:
       "serigrafi boyaları, plastisol seriler, tekstil baskı boyaları ve yardımcı kimyasal grupları",
@@ -414,7 +414,7 @@ const coreSeoLandingPages: SeoLandingPage[] = [
     slug: "serigrafi-boya-fiyatlari",
     title: "Serigrafi Boya Fiyatları | Uygun Fiyatlı Serigrafi Boya | Magellan Boya",
     description:
-      "Serigrafi boya fiyatları; ürün tipi, yüzey, tüketim miktarı ve teknik beklentiye göre değişir. Magellan Boya'dan uygun fiyatlı teklif alın.",
+      "Serigrafi boya fiyatları; ürün tipi, yüzey, tüketim miktarı ve teknik beklentiye göre değişir. Uygun fiyatlı teklif alın.",
     h1: "Serigrafi Boya Fiyatları ve Uygun Tedarik Planı",
     eyebrow: "Fiyat ve Teklif",
     focusKeyword: "serigrafi boya fiyatları",
@@ -450,7 +450,7 @@ function regionalPage(
   return {
     slug,
     title: `${location} Serigrafi Boya | Plastisol ve Baskı Boyaları | Magellan Boya`,
-    description: `${location} serigrafi boya ihtiyaçları için Magellan Boya; serigrafi boyaları, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallarda tedarik çözümleri sunar.`,
+    description: `${location} serigrafi boya ihtiyaçları için serigrafi boyaları, plastisol boya, tekstil baskı boyası ve yardımcı kimyasallarda tedarik seçeneklerini inceleyin.`,
     h1: `${location} Serigrafi Boya ve Baskı Boyaları Tedariki`,
     eyebrow: `${location} Serigrafi Boya`,
     focusKeyword: `${location} serigrafi boya`,
@@ -462,7 +462,7 @@ function regionalPage(
     ],
     productFocus:
       "serigrafi boyaları, plastisol boya, tekstil baskı boyası, PVC serigrafi boyası, UV boya ve yardımcı kimyasal grupları",
-    audience: `${areaNote} içinde üretim yapan tekstil atölyeleri, ambalaj firmaları, matbaalar, tabela üreticileri ve endüstriyel baskı işletmeleri`,
+    audience: `${areaNote} içinde faaliyet gösteren tekstil atölyeleri, ambalaj firmaları, matbaalar, tabela üreticileri ve endüstriyel baskı işletmeleri`,
     surfaceExamples:
       "tekstil ürünleri, poşet, ambalaj, plastik yüzeyler, deri ürünler, etiket, levha ve promosyon baskıları",
     processNote:
@@ -486,7 +486,7 @@ function cityPage(
   return {
     slug,
     title: `${city} Serigrafi Boya | Toptan Baskı Boyaları | Magellan Boya`,
-    description: `${city} serigrafi boya, plastisol boya, tekstil baskı boyası ve serigrafi yardımcı kimyasalları için Magellan Boya'nın tedarik çözümlerini inceleyin.`,
+    description: `${city} serigrafi boya, plastisol boya, tekstil baskı boyası ve serigrafi yardımcı kimyasalları için tedarik çözümlerini inceleyin.`,
     h1: `${city} Serigrafi Boya ve Toptan Baskı Boyaları`,
     eyebrow: `${city} Tedarik`,
     focusKeyword: `${city} serigrafi boya`,
@@ -522,7 +522,7 @@ function productPage(
   return {
     slug,
     title: `${name} | Kullanım Alanları ve Tedarik | Magellan Boya`,
-    description: `${name} kullanım alanları, teknik özellikleri, avantajları ve uygulama örnekleri için Magellan Boya'nın profesyonel tedarik yaklaşımını inceleyin.`,
+    description: `${name} kullanım alanları, teknik özellikleri, avantajları ve uygulama örnekleri için profesyonel tedarik seçeneklerini inceleyin.`,
     h1: `${name} Kullanım Alanları ve Profesyonel Tedarik Çözümleri`,
     eyebrow: name,
     focusKeyword: name.toLocaleLowerCase("tr-TR"),
@@ -558,13 +558,13 @@ function commercialPage(
   return {
     slug,
     title: `${keyword} | Kurumsal Tedarik | Magellan Boya`,
-    description: `${keyword} arayan işletmeler için Magellan Boya; serigrafi boya üretimi, plastisol boya, toptan satış ve yardımcı kimyasal tedarik çözümleri sunar.`,
+    description: `${keyword} arayan işletmeler için serigrafi boya, plastisol boya, toptan satış ve yardımcı kimyasal tedarik seçeneklerini inceleyin.`,
     h1: `${keyword} İçin Kurumsal Serigrafi Boya Çözümleri`,
     eyebrow: keyword,
     focusKeyword: keyword.toLocaleLowerCase("tr-TR"),
     relatedKeywords: [
-      "serigrafi boya imalatı",
-      "serigrafi boya üreticisi",
+      "serigrafi boya satışı",
+      "serigrafi boya ürünleri",
       "toptan serigrafi boya",
       "serigrafi boya tedarikçisi",
     ],
@@ -599,12 +599,12 @@ const regionalSeoPages: SeoLandingPage[] = [
 ];
 
 const citySeoPages: SeoLandingPage[] = [
-  cityPage("gaziantep-serigrafi-boya", "Gaziantep", "Gaziantep'in ambalaj, tekstil, halı, plastik ve sanayi üretim yapısı"),
+  cityPage("gaziantep-serigrafi-boya", "Gaziantep", "Gaziantep'in ambalaj, tekstil, halı, plastik ve sanayi yapısı"),
   cityPage("konya-serigrafi-boya", "Konya", "Konya'nın makine, ambalaj, plastik, reklam ve üretim sanayisi"),
-  cityPage("ankara-serigrafi-boya", "Ankara", "Ankara'nın tabela, reklam, matbaa, ambalaj ve kurumsal üretim yapısı"),
+  cityPage("ankara-serigrafi-boya", "Ankara", "Ankara'nın tabela, reklam, matbaa, ambalaj ve kurumsal baskı yapısı"),
   cityPage("kocaeli-serigrafi-boya", "Kocaeli", "Kocaeli'nin endüstriyel üretim, ambalaj, plastik ve yan sanayi yapısı"),
   cityPage("bursa-serigrafi-boya", "Bursa", "Bursa'nın tekstil, otomotiv yan sanayi, ambalaj ve promosyon üretim gücü"),
-  cityPage("izmir-serigrafi-boya", "İzmir", "İzmir'in ambalaj, tekstil, reklam, plastik ve ihracat odaklı üretim yapısı"),
+  cityPage("izmir-serigrafi-boya", "İzmir", "İzmir'in ambalaj, tekstil, reklam, plastik ve ihracat odaklı sanayi yapısı"),
 ];
 
 const additionalProductSeoPages: SeoLandingPage[] = [
@@ -641,10 +641,10 @@ const commercialSeoPages: SeoLandingPage[] = [
   commercialPage("pvc-serigrafi-boyasi-fiyatlari", "PVC Serigrafi Boyası Fiyatları", "PVC serigrafi boyası fiyatlarında yüzey tipi, kuruma beklentisi, renk standardı, tutunma ihtiyacı ve toptan alım miktarı birlikte değerlendirilir", ["pvc-serigrafi-boyasi", "pvc-baski-boyasi", "serigrafi-boya-fiyatlari"]),
   commercialPage("uv-serigrafi-boyasi-fiyatlari", "UV Serigrafi Boyası Fiyatları", "UV serigrafi boyası fiyatları kürlenme sistemi, renk yapısı, parlaklık beklentisi, üretim adedi ve ambalaj tercihine göre planlanır", ["uv-serigrafi-boyasi", "uv-kurumali-serigrafi-boyasi", "serigrafi-boya-fiyatlari"]),
   commercialPage("tekstil-baski-boyasi-fiyatlari", "Tekstil Baskı Boyası Fiyatları", "tekstil baskı boyası fiyatlarında kumaş türü, plastisol veya su bazlı ürün seçimi, renk adedi, tüketim miktarı ve sevkiyat planı önemlidir", ["tekstil-baski-boyasi", "plastisol-boya-fiyatlari", "tisort-baski-boyasi"]),
-  commercialPage("plastisol-boya-ureticisi", "Plastisol Boya Üreticisi", "plastisol boya üretiminde renk kararlılığı, opaklık, yıkama dayanımı, fikse koşulları ve düzenli tedarik birlikte yönetilir", ["plastisol-boya", "plastisol-boya-fiyatlari", "tekstil-baski-boyasi"]),
-  commercialPage("pvc-serigrafi-boya-ureticisi", "PVC Serigrafi Boya Üreticisi", "PVC serigrafi boya üretiminde yüzey tutunması, solvent dengesi, parlaklık, kuruma davranışı ve endüstriyel uygulama ihtiyacı dikkate alınır", ["pvc-serigrafi-boyasi", "pvc-bazli-serigrafi-boyasi", "pvc-serigrafi-boyasi-fiyatlari"]),
-  commercialPage("uv-serigrafi-boya-ureticisi", "UV Serigrafi Boya Üreticisi", "UV serigrafi boya üretiminde hızlı kürlenme, baskı netliği, parlak görünüm ve seri üretimde tekrarlanabilir kalite hedeflenir", ["uv-serigrafi-boyasi", "uv-bazli-serigrafi-boyasi", "uv-serigrafi-boyasi-fiyatlari"]),
-  commercialPage("tekstil-baski-boyasi-ureticisi", "Tekstil Baskı Boyası Üreticisi", "tekstil baskı boyası üretiminde kumaş uyumu, yıkama dayanımı, esneklik, renk canlılığı ve toptan tedarik sürekliliği birlikte planlanır", ["tekstil-baski-boyasi", "su-bazli-tekstil-boyasi", "plastisol-boya-ureticisi"]),
+  commercialPage("plastisol-boya-ureticisi", "Plastisol Boya Satışı", "plastisol boya seçiminde renk kararlılığı, opaklık, yıkama dayanımı, fikse koşulları ve düzenli tedarik birlikte değerlendirilir", ["plastisol-boya", "plastisol-boya-fiyatlari", "tekstil-baski-boyasi"]),
+  commercialPage("pvc-serigrafi-boya-ureticisi", "PVC Serigrafi Boya Satışı", "PVC serigrafi boya seçiminde yüzey tutunması, solvent dengesi, parlaklık, kuruma davranışı ve endüstriyel uygulama ihtiyacı dikkate alınır", ["pvc-serigrafi-boyasi", "pvc-bazli-serigrafi-boyasi", "pvc-serigrafi-boyasi-fiyatlari"]),
+  commercialPage("uv-serigrafi-boya-ureticisi", "UV Serigrafi Boya Satışı", "UV serigrafi boya seçiminde hızlı kürlenme, baskı netliği, parlak görünüm ve seri üretimde tekrarlanabilir kalite hedeflenir", ["uv-serigrafi-boyasi", "uv-bazli-serigrafi-boyasi", "uv-serigrafi-boyasi-fiyatlari"]),
+  commercialPage("tekstil-baski-boyasi-ureticisi", "Tekstil Baskı Boyası Satışı", "tekstil baskı boyası seçiminde kumaş uyumu, yıkama dayanımı, esneklik, renk canlılığı ve toptan tedarik sürekliliği birlikte planlanır", ["tekstil-baski-boyasi", "su-bazli-tekstil-boyasi", "plastisol-boya-ureticisi"]),
   commercialPage("serigrafi-boya-tedarikcisi", "Serigrafi Boya Tedarikçisi", "serigrafi boya tedarikinde doğru ürün grubu, stok sürekliliği, teknik destek, toptan fiyat ve hızlı sevkiyat satın alma kararını belirler", ["serigrafi-boya-ureticisi", "serigrafi-boya-fiyatlari", "toptan-serigrafi-boya"]),
   productPage("ayakkabi-baski-boyasi", "Ayakkabı Baskı Boyası", "ayakkabı, taban, suni deri ve tekstil karışımlı yüzeylerde logo, desen ve teknik baskı için kullanılan boya çözümleri", ["deri-boyasi", "pvc-serigrafi-boyasi", "serigrafi-baski-boyasi"]),
   productPage("terlik-baski-boyasi", "Terlik Baskı Boyası", "terlik, kaygan plastik, PVC ve suni deri yüzeylerde marka baskısı ve dayanıklı işaretleme için boya çözümleri", ["ayakkabi-baski-boyasi", "plastik-serigrafi-boyasi", "pvc-baski-boyasi"]),
@@ -658,13 +658,13 @@ const commercialSeoPages: SeoLandingPage[] = [
 ];
 
 const expandedCitySeoPageData: Array<[string, string, string]> = [
-  ["adana-serigrafi-boya", "Adana", "Adana'nın tekstil, ambalaj, plastik ve baskı odaklı üretim yapısı"],
+  ["adana-serigrafi-boya", "Adana", "Adana'nın tekstil, ambalaj, plastik ve baskı odaklı sanayi yapısı"],
   ["antalya-serigrafi-boya", "Antalya", "Antalya'nın reklam, promosyon, turizm ekipmanı ve ambalaj üretim ağı"],
   ["kayseri-serigrafi-boya", "Kayseri", "Kayseri'nin mobilya, tekstil, ambalaj ve sanayi üretim gücü"],
-  ["mersin-serigrafi-boya", "Mersin", "Mersin'in lojistik, ambalaj, plastik ve ihracat odaklı üretim yapısı"],
+  ["mersin-serigrafi-boya", "Mersin", "Mersin'in lojistik, ambalaj, plastik ve ihracat odaklı sanayi yapısı"],
   ["denizli-serigrafi-boya", "Denizli", "Denizli'nin tekstil, havlu, promosyon ve ihracat odaklı baskı ihtiyaçları"],
   ["manisa-serigrafi-boya", "Manisa", "Manisa'nın plastik, beyaz eşya yan sanayi, ambalaj ve endüstriyel üretim alanları"],
-  ["sakarya-serigrafi-boya", "Sakarya", "Sakarya'nın otomotiv yan sanayi, ambalaj, plastik ve reklam üretim yapısı"],
+  ["sakarya-serigrafi-boya", "Sakarya", "Sakarya'nın otomotiv yan sanayi, ambalaj, plastik ve reklam baskı yapısı"],
   ["tekirdag-serigrafi-boya", "Tekirdağ", "Tekirdağ'ın tekstil, plastik, ambalaj ve sanayi bölgesi yoğunluğu"],
   ["corlu-serigrafi-boya", "Çorlu", "Çorlu'nun tekstil, deri, plastik, ambalaj ve sanayi üretim ağı"],
   ["corum-serigrafi-boya", "Çorum", "Çorum'un makine, ambalaj, reklam ve yerel üretim işletmeleri"],
@@ -674,17 +674,17 @@ const expandedCitySeoPageData: Array<[string, string, string]> = [
   ["balikesir-serigrafi-boya", "Balıkesir", "Balıkesir'in ambalaj, gıda, plastik ve yerel üretim sanayisi"],
   ["canakkale-serigrafi-boya", "Çanakkale", "Çanakkale'nin ambalaj, reklam, promosyon ve yerel üretim ağı"],
   ["mugla-serigrafi-boya", "Muğla", "Muğla'nın turizm promosyonu, tabela, ambalaj ve butik üretim ihtiyaçları"],
-  ["aydin-serigrafi-boya", "Aydın", "Aydın'ın ambalaj, tekstil, reklam ve gıda etiketleme üretim yapısı"],
+  ["aydin-serigrafi-boya", "Aydın", "Aydın'ın ambalaj, tekstil, reklam ve gıda etiketleme yapısı"],
   ["diyarbakir-serigrafi-boya", "Diyarbakır", "Diyarbakır'ın tekstil, ambalaj, reklam ve bölgesel üretim gücü"],
   ["malatya-serigrafi-boya", "Malatya", "Malatya'nın ambalaj, gıda, reklam ve sanayi üretim alanları"],
   ["kahramanmaras-serigrafi-boya", "Kahramanmaraş", "Kahramanmaraş'ın tekstil, ambalaj, iplik ve sanayi üretim altyapısı"],
-  ["hatay-serigrafi-boya", "Hatay", "Hatay'ın ambalaj, metal, reklam ve lojistik odaklı üretim yapısı"],
+  ["hatay-serigrafi-boya", "Hatay", "Hatay'ın ambalaj, metal, reklam ve lojistik odaklı sanayi yapısı"],
   ["adiyaman-serigrafi-boya", "Adıyaman", "Adıyaman'ın tekstil, ambalaj, reklam ve yerel üretim işletmeleri"],
   ["sanliurfa-serigrafi-boya", "Şanlıurfa", "Şanlıurfa'nın tekstil, ambalaj, tarım ekipmanı ve reklam üretim ağı"],
   ["van-serigrafi-boya", "Van", "Van'ın reklam, tabela, promosyon ve bölgesel ambalaj üretim ihtiyaçları"],
   ["erzurum-serigrafi-boya", "Erzurum", "Erzurum'un reklam, tabela, ambalaj ve Doğu Anadolu üretim ağı"],
   ["sivas-serigrafi-boya", "Sivas", "Sivas'ın makine, reklam, ambalaj ve sanayi üretim işletmeleri"],
-  ["afyon-serigrafi-boya", "Afyon", "Afyon'un gıda ambalajı, mermer yan sanayi, reklam ve etiket üretim yapısı"],
+  ["afyon-serigrafi-boya", "Afyon", "Afyon'un gıda ambalajı, mermer yan sanayi, reklam ve etiket yapısı"],
   ["usak-serigrafi-boya", "Uşak", "Uşak'ın tekstil, deri, ambalaj ve geri dönüşüm odaklı sanayi yapısı"],
   ["nevsehir-serigrafi-boya", "Nevşehir", "Nevşehir'in turizm promosyonu, ambalaj, reklam ve yerel üretim ağı"],
   ["karaman-serigrafi-boya", "Karaman", "Karaman'ın gıda ambalajı, reklam, plastik ve üretim işletmeleri"],
@@ -695,14 +695,14 @@ const expandedCitySeoPages: SeoLandingPage[] = expandedCitySeoPageData.map(
 );
 
 const expandedRegionalSeoPageData: Array<[string, string, string]> = [
-  ["tuzla-serigrafi-boya", "Tuzla", "Tuzla OSB, deri sanayi ve tersane çevresindeki endüstriyel üretim yapısı"],
+  ["tuzla-serigrafi-boya", "Tuzla", "Tuzla OSB, deri sanayi ve tersane çevresindeki endüstriyel sanayi yapısı"],
   ["pendik-serigrafi-boya", "Pendik", "Pendik'in plastik, reklam, ambalaj ve atölye odaklı üretim ağı"],
   ["kartal-serigrafi-boya", "Kartal", "Kartal'ın reklam, promosyon, ambalaj ve küçük sanayi işletmeleri"],
   ["umraniye-serigrafi-boya", "Ümraniye", "Ümraniye'nin tabela, reklam, tekstil ve ambalaj üretim çevresi"],
   ["sancaktepe-serigrafi-boya", "Sancaktepe", "Sancaktepe'nin ambalaj, plastik, mobilya yan sanayi ve reklam işletmeleri"],
-  ["sultanbeyli-serigrafi-boya", "Sultanbeyli", "Sultanbeyli'nin promosyon, reklam, tekstil ve yerel üretim yapısı"],
+  ["sultanbeyli-serigrafi-boya", "Sultanbeyli", "Sultanbeyli'nin promosyon, reklam, tekstil ve yerel baskı yapısı"],
   ["atasehir-serigrafi-boya", "Ataşehir", "Ataşehir'in kurumsal promosyon, reklam ve marka baskı ihtiyaçları"],
-  ["gebze-serigrafi-boya", "Gebze", "Gebze OSB ve çevresindeki plastik, otomotiv yan sanayi, ambalaj ve teknik üretim yapısı"],
+  ["gebze-serigrafi-boya", "Gebze", "Gebze OSB ve çevresindeki plastik, otomotiv yan sanayi, ambalaj ve teknik sanayi yapısı"],
   ["arnavutkoy-serigrafi-boya", "Arnavutköy", "Arnavutköy'ün lojistik, ambalaj, tekstil ve sanayi işletmeleri"],
   ["bagcilar-serigrafi-boya", "Bağcılar", "Bağcılar'ın tekstil, promosyon, matbaa ve reklam atölyeleri"],
   ["gungoren-serigrafi-boya", "Güngören", "Güngören'in tekstil, hazır giyim, etiket ve baskı atölyeleri"],
@@ -718,7 +718,7 @@ const expandedRegionalSeoPageData: Array<[string, string, string]> = [
   ["sultangazi-serigrafi-boya", "Sultangazi", "Sultangazi'nin tekstil, ayakkabı yan sanayi, plastik ve reklam işletmeleri"],
   ["kagithane-serigrafi-boya", "Kağıthane", "Kağıthane'nin reklam, tabela, promosyon ve kurumsal baskı ihtiyaçları"],
   ["topkapi-serigrafi-boya", "Topkapı", "Topkapı ve çevresindeki matbaa, ambalaj, etiket ve baskı üretim ağı"],
-  ["davutpasa-serigrafi-boya", "Davutpaşa", "Davutpaşa'nın tekstil, matbaa, ambalaj ve küçük sanayi üretim yapısı"],
+  ["davutpasa-serigrafi-boya", "Davutpaşa", "Davutpaşa'nın tekstil, matbaa, ambalaj ve küçük sanayi yapısı"],
   ["dudullu-serigrafi-boya", "Dudullu", "Dudullu OSB ve çevresindeki ambalaj, plastik, metal ve endüstriyel üretim ağı"],
 ];
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     absolute: "Site İçi Arama | Magellan Boya",
   },
   description:
-    "Magellan Boya içinde serigrafi boya, emprime, PVC, UV, plastisol, kimyasal, kullanım alanı ve teknik rehber araması yapın.",
+    "Serigrafi boya, emprime, PVC, UV, plastisol, kimyasal, kullanım alanı ve teknik rehber araması yapın.",
   alternates: {
     canonical: `${siteUrl}/arama`,
     languages: {

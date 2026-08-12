@@ -6,14 +6,14 @@ export const metadata: Metadata = {
     absolute: "Serigrafi Baskı Uygulamaları | Magellan Boya",
   },
   description:
-    "Poşet, tekstil, deri, plastik, uyarı levhası ve ambalaj baskılarında Magellan Boya serigrafi boyalarının kullanım alanlarını inceleyin.",
+    "Poşet, tekstil, deri, plastik, uyarı levhası ve ambalaj baskılarında serigrafi boyalarının kullanım alanlarını inceleyin.",
   alternates: {
     canonical: "https://magellanboya.com/uygulamalar",
   },
   openGraph: {
     title: "Serigrafi Baskı Uygulamaları | Magellan Boya",
     description:
-      "Poşet, tekstil, deri, plastik, uyarı levhası ve ambalaj baskılarında Magellan Boya serigrafi boyalarının kullanım alanları.",
+      "Poşet, tekstil, deri, plastik, uyarı levhası ve ambalaj baskılarında serigrafi boyalarının kullanım alanları.",
     url: "https://magellanboya.com/uygulamalar",
     type: "website",
   },

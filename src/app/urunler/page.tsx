@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Serigrafi Baskı Boyaları ve Ürün Çeşitleri | Magellan Boya",
     description:
-      "Magellan Boya’da serigrafi baskı boyaları, emprime baskı boyası, plastisol boya ve serigrafi yardımcı kimyasalları.",
+      "Serigrafi baskı boyaları, emprime baskı boyası, plastisol boya ve serigrafi yardımcı kimyasalları.",
   },
 };
 
 const productListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Magellan Boya serigrafi boyaları, emprime baskı boyası ve plastisol boya ürün kataloğu",
+  name: "Serigrafi boyaları, emprime baskı boyası ve plastisol boya ürün kataloğu",
   itemListElement: productCatalogItems.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -52,7 +52,7 @@ const productListJsonLd = {
 const categoryListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Magellan Boya serigrafi boya kategori sayfaları",
+  name: "Serigrafi boya kategori sayfaları",
   itemListElement: productCategoryPages.map((category, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -64,7 +64,7 @@ const categoryListJsonLd = {
 const productDetailListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Magellan Boya ürün detay sayfaları",
+  name: "Ürün detay sayfaları",
   itemListElement: productDetailPages.map((product, index) => ({
     "@type": "ListItem",
     position: index + 1,
